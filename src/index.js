@@ -5,6 +5,8 @@ import "./styles/index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 
+export const transitionSetting = "opacity 0.6s .1s, transform 0.4s";
+
 ReactDOM.render(
 	<BrowserRouter>
 		<App />

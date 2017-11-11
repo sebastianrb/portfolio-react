@@ -1,0 +1,5 @@
+@import "abstract.scss";
+
+.header {
+	@include flex-row(nowrap, space-between, flex-start);
+}

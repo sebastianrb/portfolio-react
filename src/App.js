@@ -1,27 +1,58 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import projects from "./data/projects.json";
-import classnames from "classnames";
-import Test from "./components/Header";
-import Project from "./components/Project";
+import Helmet from "react-helmet";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ProjectDescription from "./components/ProjectDescription";
+import ProjectListSection from "./components/ProjectListSection";
+import PortfolioDescription from "./components/PortfolioDescription";
+
+import "./styles/normalize.css";
+import "./styles/App.css";
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			projects,
+			selectedProject: ""
+		};
+	}
+
 	componentWillMount() {}
 
 	render() {
-		console.log("project data: ", projects);
+		console.log("project data: ", this.state.projects);
 		console.log("Environemnt: ", process.env.NODE_ENV);
 		return (
 			<div className="app">
-				<h3>Header</h3>
+				<Helmet>
+					<title>Sebastian | Front-end Portfolio</title>
+					<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+				</Helmet>
+				<Header />
+				<PortfolioDescription projects={this.state.projects} />
 				<div className="main-content">
 					<Switch>
-						<Route exact path="/" component={Test} />
-						<Route path="/project/:id" component={Project} />
+						<Route
+							exact
+							path="/"
+							render={props => {
+								return <ProjectListSection {...props} projects={this.state.projects} />;
+							}}
+						/>
+						<Route
+							path="/project/:id"
+							render={props => {
+								return <ProjectDescription {...props} projects={this.state.projects} />;
+							}}
+						/>} />
 						<Redirect to="/" />
 					</Switch>
 				</div>
-				<h3>This is the footer</h3>
+				<Footer />
 			</div>
 		);
 	}
