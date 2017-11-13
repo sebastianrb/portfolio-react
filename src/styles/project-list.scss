@@ -27,11 +27,22 @@
 
 	.project-list__project {
 		width: 300px;
-		height: 300px;
+		height: 400px;
 		text-align: center;
 		// padding: 20px 0;
-		background: navy;
+		background: transparentize(navy, .2);
 		margin: 50px;
+		border-radius: 5px;
+		transition: background .4s;
+		cursor: pointer;
+
+		&:hover {
+			background: navy;
+
+			img {
+				transform: scale(1);
+			}
+		}
 
 		a {
 			@include flex-column(nowrap, space-between, center);
@@ -49,6 +60,8 @@
 		img {
 			width: 100%;
 			object-fit: cover;
+			transition: all .3s;
+			transform: scale(1.1);
 		}
 	}
 
