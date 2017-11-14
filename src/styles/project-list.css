@@ -58,7 +58,7 @@
     cursor: pointer;
     transition: margin .3s;
     overflow: hidden;
-    border-top: 7px solid #f94c0c;
+    border-top: 9px solid #f94c0c;
     box-shadow: 0 2px 8px 0 gray; }
     .project-list .project-list__project:hover {
       margin: 40px 60px 80px; }
