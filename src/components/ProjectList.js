@@ -16,60 +16,6 @@ export default class ProjectList extends React.Component {
 		const searchTerm = this.props.searchTerm;
 		let list;
 
-		// if (this.props.searchTerm === "") {
-		// 	list = projects.map(project => {
-		// 		let id = project.id;
-		// 		return (
-		// 			<li key={id} className="project-list__project">
-		// 				<Link to={`/project/${id}`}>
-		// 					<h3 className="project-list__project-name">
-		// 						{project.name}
-		// 					</h3>
-		// 					<p className="project-list__project-short-description">
-		// 						{project.shortDescription}
-		// 					</p>
-		// 					<div className="project-list__project-image-container">
-		// 						<img src={project.image} alt="project" />
-		// 					</div>
-		// 				</Link>
-		// 			</li>
-		// 		);
-		// 	});
-		// } else {
-		// 	list = projects
-		// 		.filter(project => {
-		// 			const searchThrough = `${project.name} ${project.shortDescription} ${project.description} ${project.technologies}`.toLowerCase();
-		// 			const searchTermArray = searchTerm.split(" ");
-		// 			let match = false;
-		// 			for (var i = 0; i < searchTermArray.length; i++) {
-		// 				if (searchThrough.indexOf(searchTermArray[i].toLowerCase()) >= 0) {
-		// 					match = true;
-		// 					break;
-		// 				}
-		// 			}
-
-		// 			return match;
-		// 		})
-		// 		.map(project => {
-		// 			let id = project.id;
-		// 			return (
-		// 				<li key={id} className="project-list__project">
-		// 					<Link to={`/project/${id}`}>
-		// 						<h3 className="project-list__project-name">
-		// 							{project.name}
-		// 						</h3>
-		// 						<p className="project-list__project-short-description">
-		// 							{project.shortDescription}
-		// 						</p>
-		// 						<div className="project-list__project-image-container">
-		// 							<img src={project.image} alt="project" />
-		// 						</div>
-		// 					</Link>
-		// 				</li>
-		// 			);
-		// 		});
-		// }
-
 		list = projects
 			.filter(project => {
 				const searchThrough = `${project.name} ${project.shortDescription} ${project.description} ${project.technologies}`.toLowerCase();
@@ -86,21 +32,40 @@ export default class ProjectList extends React.Component {
 			})
 			.map(project => {
 				let id = project.id;
-				return (
-					<li key={id} className="project-list__project">
-						<Link to={`/project/${id}`}>
-							<h3 className="project-list__project-name">
-								{project.name}
-							</h3>
-							<p className="project-list__project-short-description">
-								{project.shortDescription}
-							</p>
-							<div className="project-list__project-image-container">
-								<img src={project.image} alt="project" />
-							</div>
-						</Link>
-					</li>
-				);
+				if (id === 0) {
+					return (
+						<li key={id} className="project-list__project portfolio-tile">
+							<Link to={`/project/${id}`}>
+								<div className="project-list__project-text">
+									<h3 className="project-list__project-name">
+										{project.name}
+									</h3>
+									<p className="project-list__project-short-description">
+										{project.shortDescription}
+									</p>
+								</div>
+							</Link>
+						</li>
+					);
+				} else {
+					return (
+						<li key={id} className="project-list__project">
+							<Link to={`/project/${id}`}>
+								<div className="project-list__project-text">
+									<h3 className="project-list__project-name">
+										{project.name}
+									</h3>
+									<p className="project-list__project-short-description">
+										{project.shortDescription}
+									</p>
+								</div>
+								<div className="project-list__project-image-container">
+									<img src={project.image} alt="project" />
+								</div>
+							</Link>
+						</li>
+					);
+				}
 			});
 
 		if (list.length <= 0) {
@@ -115,7 +80,7 @@ export default class ProjectList extends React.Component {
 			<div className="project-list">
 				<ul className="project-list__list">
 					<FlipMove
-						duration={400}
+						duration={500}
 						easing="ease"
 						staggerDelayBy={30}
 						staggerDurationBy={20}

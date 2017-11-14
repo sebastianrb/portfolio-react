@@ -92,7 +92,7 @@ $hover-highlight: white;
   transition: all .4s cubic-bezier(0, 0, 0.29, 0.97);
   -webkit-transition-delay: .1s;
   transition-delay: .2s;
-  background: transparentize($primary-color, .8);
+  background: transparentize($primary-color, 0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

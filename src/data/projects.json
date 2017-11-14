@@ -63,7 +63,7 @@
 		"id": 6,
 		"name": "Jigsaw Puzzle",
 		"shortDescription": "A jigsaw puzzle built with pure Javascript",
-		"description": "This is a photo gallery featuring some of my amateur photography work. The application is built using the Vue.js JavaScript framework.",
+		"description": "A jigsaw game!",
 		"technologies": "Pure JavaScript, CSS",
 		"demoLink": "https://sebastianrb.github.io/jigsaw/",
 		"githubLink": "https://github.com/sebastianrb/jigsaw",
@@ -77,13 +77,13 @@
 		"technologies": "jQuery, Sass",
 		"demoLink": "https://sebastianrb.github.io/tic-tac-toe/",
 		"githubLink": "https://github.com/sebastianrb/tic-tac-toe",
-		"image": "https://image.ibb.co/dG9wcb/tictactoe.png"
+		"image": "https://image.ibb.co/nhxiAw/tictactoe.png"
 	},
 	{
 		"id": 8,
 		"name": "Random Fact Generator",
 		"shortDescription": "A random fact genertaor using Ajax",
-		"description": "This is a photo gallery featuring some of my amateur photography work. The application is built using the Vue.js JavaScript framework.",
+		"description": "A random fatc generator!",
 		"technologies": "jQuery, Ajax, CSS",
 		"demoLink": "https://sebastianrb.github.io/random-facts/",
 		"githubLink": "https://github.com/sebastianrb/random-facts",

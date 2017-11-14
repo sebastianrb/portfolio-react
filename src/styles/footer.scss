@@ -1,7 +1,10 @@
+@import "abstract.scss", "variables.scss";
+
 .footer {
 	width: 100%;
 	padding: 75px 30px;
-	background: navy;
+	background: $primary-color;
 	color: white;
 	text-align: center;
+	box-shadow: 0 0 20px 2px grey;
 }

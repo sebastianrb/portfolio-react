@@ -6,7 +6,11 @@ const Footer = props => {
 	//logic
 
 	//return
-	return <footer className="footer">&copy; Sebastian Ramirez-Brunner</footer>;
+	return (
+		<footer className="footer">
+			&copy; 2017<br />Sebastian Ramirez-Brunner
+		</footer>
+	);
 };
 
 export default Footer;
