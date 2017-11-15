@@ -33,7 +33,7 @@
 		background-size: 25px;
 		background-repeat: no-repeat;
 		font-weight: lighter;
-		transition: all .2s;
+		transition: all .25s;
 		margin-bottom: 6px;
 
 		&:focus {
@@ -72,7 +72,7 @@
 	}
 
 	.project-list__project {
-		width: 350px;
+		width: 340px;
 		height: 400px;
 		text-align: center;
 		background: radial-gradient(circle, transparentize($primary-color, .5), transparentize($primary-color, .4));
@@ -107,6 +107,16 @@
 			@include flex-column(nowrap, center, center);
 			padding: 0 40px;
 			text-decoration: none;
+		}
+
+		.project-list__project-name {
+			font-size: 1.3rem;
+			font-weight: bold;
+		}
+
+		.project-list__project-short-description {
+			font-weight: 200;
+			margin-top: 15px;
 		}
 
 		&.portfolio-tile {

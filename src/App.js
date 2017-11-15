@@ -31,7 +31,7 @@ class App extends Component {
 				<Helmet>
 					<title>Sebastian | Front-end Portfolio</title>
 					<link
-						href="https://fonts.googleapis.com/css?family=Bad+Script|Roboto:100,300,400,500"
+						href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300|Bad+Script|Roboto:100,300,400,500|Indie+Flower|Oxygen:300,400|Quicksand:300,400,500"
 						rel="stylesheet"
 					/>
 				</Helmet>

@@ -21,7 +21,7 @@
 	},
 	{
 		"id": 2,
-		"name": "Bov Academy Student Profile Site",
+		"name": "Student Profile Site",
 		"shortDescription": "Student profile site built with pure Javascript",
 		"description": "I was a lead developer on the team that built a student profile site for Bov Academy. The site contains profiles for the school's student body and heavily utilizes multimedia and various animation effects.",
 		"technologies": "Vanilla Javascript, CSS, Handlebars.js, Grunt",
