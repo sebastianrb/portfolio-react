@@ -5,14 +5,13 @@
   .project-search .project-search__form {
     width: 75%;
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
     max-width: 900px; }
   .project-search .project-search__search-box {
     width: 100%;
     color: #010138;
     border: none;
-    border-bottom: 0px solid rgba(1, 1, 56, 0.9);
+    margin-bottom: 20px;
     padding: 20px 60px;
     background: rgba(1, 1, 56, 0.2);
     font-size: 1.3rem;
@@ -23,13 +22,23 @@
     background-repeat: no-repeat;
     font-weight: lighter;
     transition: all .25s;
-    margin-bottom: 6px; }
-    .project-search .project-search__search-box:focus {
-      border-bottom: 6px solid rgba(1, 1, 56, 0.9);
-      margin-bottom: 0; }
+    z-index: 1; }
+    .project-search .project-search__search-box:focus + .project-search__loading-bar-container {
+      bottom: -6px;
+      opacity: 1; }
+  .project-search .project-search__loading-bar-container {
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #010138;
+    transition: all .25s;
+    bottom: 0;
+    display: block;
+    opacity: 0; }
   .project-search .project-search__loading-bar {
     width: 0;
-    height: 6px;
+    height: 100%;
     background: #f94c0c;
     opacity: 0;
     bottom: 0;
@@ -62,7 +71,7 @@
     transition: margin .25s, border .20s;
     overflow: hidden;
     border-top: 9px solid #f94c0c;
-    box-shadow: 0 2px 8px 0 gray; }
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.43); }
     .project-list .project-list__project:hover {
       border-top: 9px solid white;
       margin: 40px 60px 80px; }

@@ -66,7 +66,9 @@ export default class ProjectSearch extends React.Component {
 						}}
 						doneTypingInterval={700}
 					/>
-					<div className={`project-search__loading-bar ${this.state.loading ? "loading" : ""}`} />
+					<div className="project-search__loading-bar-container">
+						<div className={`project-search__loading-bar ${this.state.loading ? "loading" : ""}`} />
+					</div>
 				</form>
 			</div>
 		);

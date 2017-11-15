@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import projects from "./data/projects.json";
+import { projects, facts } from "./data/projects";
 import Helmet from "react-helmet";
 import Header from "./components/Header";
 import Footer from "./components/Footer";

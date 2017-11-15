@@ -12,7 +12,7 @@
 	.project-search__form {
 		width: 75%;
 		margin: 0 auto;
-		overflow: hidden;
+		// overflow: hidden;
 		// border-radius: 5px;
 		position: relative;
 		max-width: 900px;
@@ -22,8 +22,7 @@
 		width: 100%;
 		color: $primary-color;
 		border: none;
-		// border-bottom: 6px solid transparentize($primary-color, .1);
-		border-bottom: 0px solid transparentize($primary-color, .1);
+		margin-bottom: 20px;
 		padding: 20px 60px;
 		background: transparentize($primary-color, .8);
 		font-size: 1.3rem;
@@ -34,17 +33,29 @@
 		background-repeat: no-repeat;
 		font-weight: lighter;
 		transition: all .25s;
-		margin-bottom: 6px;
+		z-index: 1;
 
-		&:focus {
-			border-bottom: 6px solid transparentize($primary-color, .1);
-			margin-bottom: 0;
+		&:focus + .project-search__loading-bar-container {
+			bottom: -6px;
+			opacity: 1;
 		}
+	}
+
+	.project-search__loading-bar-container {
+		height: 6px;
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+		background: $primary-color;
+		transition: all .25s;
+		bottom: 0;
+		display: block;
+		opacity: 0;
 	}
 
 	.project-search__loading-bar {
 		width: 0;
-		height: 6px;
+		height: 100%;
 		background: $secondary-color;
 		opacity: 0;
 		bottom: 0;
@@ -81,7 +92,8 @@
 		transition: margin .25s, border .20s;
 		overflow: hidden;
 		border-top: 9px solid $secondary-color;
-		box-shadow: 0 2px 8px 0 gray;
+		// box-shadow: 0 2px 8px 0 gray;
+		box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.43);
 
 		&:hover {
 			border-top: 9px solid white;
