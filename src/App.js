@@ -30,7 +30,10 @@ class App extends Component {
 			<div className="app">
 				<Helmet>
 					<title>Sebastian | Front-end Portfolio</title>
-					<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500" rel="stylesheet" />
+					<link
+						href="https://fonts.googleapis.com/css?family=Bad+Script|Roboto:100,300,400,500"
+						rel="stylesheet"
+					/>
 				</Helmet>
 				<div className="upper-content">
 					<div className="header__overlay" />

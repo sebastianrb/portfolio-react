@@ -51,20 +51,10 @@ export default class ProjectSearch extends React.Component {
 		return (
 			<div className="project-search">
 				<form onSubmit={this.onSubmit} className="project-search__form">
-					{/*					<input
-						type="text"
-						className="project-search__search-box"
-						placeholder="Find projects based on technology, project title, or anything else!"
-						value={this.props.searchTerm}
-						onChange={this.onSearchChange}
-						onFocus={this.props.onSearchFocus}
-						onBlur={this.props.onSearchBlur}
-					/>*/}
-
 					<InputBoxDoneTyping
 						id="input-box-done-typing"
 						className="project-search__search-box"
-						placeholder="Find projects based on technology, project title, or anything else!"
+						placeholder="Find projects based on technologies used, project title, keywords, etc..."
 						maxLength={20}
 						defaultValue=""
 						autoComplete="off"
@@ -74,7 +64,7 @@ export default class ProjectSearch extends React.Component {
 						doneTyping={value => {
 							this.onSearchChange(value);
 						}}
-						doneTypingInterval={400}
+						doneTypingInterval={700}
 					/>
 					<div className={`project-search__loading-bar ${this.state.loading ? "loading" : ""}`} />
 				</form>
