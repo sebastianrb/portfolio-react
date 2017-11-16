@@ -8,6 +8,8 @@ export default class HeaderNav extends React.Component {
 		this.state = {};
 	}
 
+	componentDidMount() {}
+
 	render() {
 		return (
 			<header className="header">

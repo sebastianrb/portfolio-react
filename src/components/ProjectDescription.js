@@ -11,7 +11,7 @@ export default class ProjectDescription extends React.Component {
 	componentDidMount() {
 		$("body, html").animate(
 			{
-				scrollTop: 400
+				scrollTop: 250
 			},
 			800
 		);

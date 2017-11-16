@@ -26,7 +26,7 @@
 		top: 55%;
 		transform: translateY(-50%) translateX(-50%);
 		// background: rgba(1, 1, 56, 0.7);
-		background: radial-gradient(rgba(1, 1, 56, 0.6), $primary-color);
+		background: radial-gradient(rgba(1, 1, 56, 0.70), $primary-color);
 		padding: 30px 20px;
 		color: white;
 		width: 65%;
@@ -34,12 +34,12 @@
 		box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.25);
 		line-height: 1.5;
 		max-width: 1000px;
-		min-width: 850px;
+		min-width: 875px;
 		text-align: center;
 
 		.portfolio-description__quote {
-			font-family: "Alegreya Sans", "Indie Flower", cursive;
-			font-size: 1.7rem;
+			font-family: "Architects Daughter", "Handlee", "Alegreya Sans", "Indie Flower", cursive;
+			font-size: 1.5rem;
 			letter-spacing: .8px;
 		}
 
@@ -71,7 +71,7 @@
 
 		.header__title {
 			font-size: 2.5rem;
-			font-weight: 400;
+			font-weight: 500;
 		}
 
 		.header__subtitle {
