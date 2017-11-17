@@ -18,17 +18,27 @@
 		left: 50%;
 		transform: translateX(-50%);
 		padding: 5px;
-		background: $primary-color;
+		// background: $primary-color;
 		border-radius: 50%;
 		@include flex-row(wrap, center, center);
 		animation: downArrow 1s infinite ease;
-		opacity: .7;
+		opacity: .8;
 
 		img {
-			width: 75%;
-			position: relative;
-			left: 1px;
-			top: 1px;
+			width: 90%;
+		}
+	}
+
+	&.project-background {
+		.banner__down-arrow {
+			background: $primary-color;
+
+			img {
+				width: 75%;
+				position: relative;
+				// left: 1px;
+				top: 1px;
+			}
 		}
 	}
 
@@ -51,13 +61,15 @@
 	}
 
 	&.intro-background {
-		background-image: url("../images/portfolio-banner.jpg");
+		// background-image: url("../images/portfolio-banner.jpg");
+		background-image: url("../images/water-banner.jpg");
 
 		.banner__overlay {
 			height: 100%;
 			width: 100%;
 			// background: radial-gradient(circle, transparent, rgba(2, 0, 36, 0.7));
-			background: transparentize(white, .75);
+			// background: transparentize(white, .75);
+			background: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.7));
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -82,12 +94,13 @@
 		top: 55%;
 		transform: translateY(-50%) translateX(-50%);
 		// background: rgba(1, 1, 56, 0.7);
-		background: radial-gradient(rgba(1, 1, 56, 0.70), $primary-color);
+		// background: radial-gradient(rgba(1, 1, 56, 0.70), $primary-color);
 		padding: 30px 20px;
 		color: white;
-		width: 65%;
+		// width: 65%;
+		width: 100%;
 		left: 50%;
-		box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.25);
+		// box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.25);
 		line-height: 1.5;
 		max-width: 1000px;
 		min-width: 875px;
@@ -95,8 +108,9 @@
 
 		.portfolio-description__quote {
 			font-family: "Alegreya Sans", "Indie Flower", cursive;
-			font-size: 1.5rem;
+			font-size: 2.1rem;
 			letter-spacing: 1px;
+			font-weight: 900;
 		}
 	}
 
@@ -168,7 +182,7 @@
 .header {
 	@include flex-row(nowrap, space-between, flex-start);
 	color: $secondary-color;
-	padding: 50px;
+	padding: 40px 50px;
 	position: absolute;
 	top: 0;
 	left: 0;

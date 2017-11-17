@@ -15,18 +15,20 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 5px;
-    background: #010138;
     border-radius: 50%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     animation: downArrow 1s infinite ease;
-    opacity: .7; }
+    opacity: .8; }
     .banner .banner__down-arrow img {
+      width: 90%; }
+  .banner.project-background .banner__down-arrow {
+    background: #010138; }
+    .banner.project-background .banner__down-arrow img {
       width: 75%;
       position: relative;
-      left: 1px;
       top: 1px; }
   .banner .banner__project-description {
     position: absolute;
@@ -43,11 +45,11 @@
       color: #f94c0c;
       font-weight: bold; }
   .banner.intro-background {
-    background-image: url("../images/portfolio-banner.jpg"); }
+    background-image: url("../images/water-banner.jpg"); }
     .banner.intro-background .banner__overlay {
       height: 100%;
       width: 100%;
-      background: rgba(255, 255, 255, 0.25);
+      background: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.7));
       position: absolute;
       left: 0;
       top: 0;
@@ -64,20 +66,19 @@
     position: absolute;
     top: 55%;
     transform: translateY(-50%) translateX(-50%);
-    background: radial-gradient(rgba(1, 1, 56, 0.7), #010138);
     padding: 30px 20px;
     color: white;
-    width: 65%;
+    width: 100%;
     left: 50%;
-    box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.25);
     line-height: 1.5;
     max-width: 1000px;
     min-width: 875px;
     text-align: center; }
     .banner .portfolio-description .portfolio-description__quote {
       font-family: "Alegreya Sans", "Indie Flower", cursive;
-      font-size: 1.5rem;
-      letter-spacing: 1px; }
+      font-size: 2.1rem;
+      letter-spacing: 1px;
+      font-weight: 900; }
   .banner .banner__picture-popup-container {
     position: absolute;
     bottom: 5px;
@@ -136,7 +137,7 @@
   justify-content: space-between;
   align-items: flex-start;
   color: #f94c0c;
-  padding: 50px;
+  padding: 40px 50px;
   position: absolute;
   top: 0;
   left: 0;
