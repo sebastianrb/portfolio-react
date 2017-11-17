@@ -50,6 +50,7 @@ export default class ProjectSearch extends React.Component {
 	render() {
 		return (
 			<div className="project-search">
+				<h3 className="project-search__caption">Project List</h3>
 				<form onSubmit={this.onSubmit} className="project-search__form">
 					<InputBoxDoneTyping
 						id="input-box-done-typing"

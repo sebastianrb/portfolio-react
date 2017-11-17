@@ -8,10 +8,21 @@
 	z-index: 200;
 	position: relative;
 	padding: 100px 0 0;
+	@include flex-row(wrap, center, center);
+
+	.project-search__caption {
+		height: 100%;
+		display: block;
+		padding: 20px;
+		font-size: 1.8rem;
+		border-right: 3px solid $secondary-color;
+		margin-right: 20px;
+		color: $primary-color;
+	}
 
 	.project-search__form {
-		width: 75%;
-		margin: 0 auto;
+		width: 55%;
+		// margin: 0 auto;
 		position: relative;
 		max-width: 900px;
 	}
@@ -20,10 +31,10 @@
 		width: 100%;
 		color: $primary-color;
 		border: none;
-		margin-bottom: 20px;
-		padding: 20px 60px;
+		// margin-bottom: 20px;
+		padding: 20px 60px 20px 30px;
 		background: transparentize($primary-color, .8);
-		font-size: 1.3rem;
+		font-size: 1.25rem;
 		display: block;
 		background-image: url("../images/search.svg");
 		background-position: 95% 50%;
@@ -48,7 +59,8 @@
 		z-index: -1;
 		background: transparentize($primary-color, .3);
 		transition: all .25s;
-		top: 100%;
+		// top: 100%;
+		bottom: 0;
 		display: block;
 		// opacity: 0;
 	}
@@ -78,7 +90,7 @@
 	.project-list__list > div {
 		@include flex-row(wrap, center, flex-start);
 		margin: 0 auto;
-		padding: 30px 0 60px;
+		padding: 40px 0 70px;
 		min-height: 500px;
 	}
 
