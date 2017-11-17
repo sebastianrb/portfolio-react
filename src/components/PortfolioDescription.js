@@ -3,8 +3,7 @@ import _ from "lodash";
 
 const PortfolioDescription = props => {
 	//logic
-	const portfolioProject = _.find(props.projects, project => project.name === "Front-end Portfolio");
-	const portfolioDescription = portfolioProject.description;
+
 	//return
 	return (
 		<section className="portfolio-description">
@@ -12,7 +11,6 @@ const PortfolioDescription = props => {
 				I'm a React-focused front-end developer based in NYC. Some fun facts:
 			</p>
 			<ul className="portfolio-description__fact-list" />
-			{/*			<p className="portfolio-description__author">-Conan O'Brien</p>*/}
 		</section>
 	);
 };

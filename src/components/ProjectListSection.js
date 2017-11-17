@@ -3,9 +3,11 @@ import EasyTransition from "react-easy-transition";
 import { transitionSetting } from "../index.js";
 import ProjectSearch from "./ProjectSearch";
 import ProjectList from "./ProjectList";
-// import FocusBackground from "./FocusBackground";
+import Banner from "./Banner";
+import PortfolioDescription from "./PortfolioDescription";
 
 import "../styles/project-list.css";
+import pictureIcon from "../images/picture.svg";
 
 export default class ProjectListSection extends React.Component {
 	constructor(props) {
@@ -19,6 +21,10 @@ export default class ProjectListSection extends React.Component {
 		this.onSearchChange = this.onSearchChange.bind(this);
 	}
 
+	componentWillMount() {
+		window.scroll(0, 0);
+	}
+
 	onSearchChange(text) {
 		this.setState({
 			searchTerm: text
@@ -26,6 +32,14 @@ export default class ProjectListSection extends React.Component {
 	}
 
 	render() {
+		const PhotoIcon = props =>
+			<div className="banner__picture-popup-container">
+				<p class="header__photo-info-button">
+					<img src={pictureIcon} alt="picture icon" />
+				</p>
+				<p className="banner__picture-popup">Photo taken by Sebastian</p>;
+			</div>;
+
 		return (
 			<EasyTransition
 				path={window.location.pathname}
@@ -34,8 +48,11 @@ export default class ProjectListSection extends React.Component {
 				transition={transitionSetting}
 				finalStyle={{ opacity: 1, transform: "scale(1)" }}
 			>
+				<Banner type={`intro`}>
+					<PortfolioDescription />
+					<PhotoIcon />
+				</Banner>
 				<section className="project-list-section">
-					{/*<FocusBackground shown={this.state.searchFocused} />*/}
 					<ProjectSearch
 						searchTerm={this.state.searchTerm}
 						onSearchChange={this.onSearchChange}

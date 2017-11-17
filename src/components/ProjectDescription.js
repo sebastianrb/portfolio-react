@@ -4,17 +4,13 @@ import { transitionSetting } from "../index.js";
 import { Link } from "react-router-dom";
 import _ from "lodash";
 import $ from "jquery";
+import Banner from "./Banner";
 
 import "../styles/project-description.css";
 
 export default class ProjectDescription extends React.Component {
 	componentDidMount() {
-		$("body, html").animate(
-			{
-				scrollTop: 250
-			},
-			800
-		);
+		window.scroll(0, 0);
 	}
 
 	render() {
@@ -31,14 +27,20 @@ export default class ProjectDescription extends React.Component {
 				transition={transitionSetting}
 				finalStyle={{ opacity: 1, transform: "scale(1)" }}
 			>
-				<div className="project-description">
+				<Banner type="project" project={project}>
+					<h3 className="banner__project-description">
+						<span>Project: </span>
+						{project.name}
+					</h3>
+				</Banner>
+				<section className="project-description">
 					<p>
 						Title: {project ? project.name : "Sorry, nothing found"}
 					</p>
 					<p>
 						<Link to="/">Go Home</Link>
 					</p>
-				</div>
+				</section>
 			</EasyTransition>
 		);
 	}

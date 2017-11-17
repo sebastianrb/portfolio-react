@@ -12,8 +12,6 @@
 	.project-search__form {
 		width: 75%;
 		margin: 0 auto;
-		// overflow: hidden;
-		// border-radius: 5px;
 		position: relative;
 		max-width: 900px;
 	}
@@ -91,7 +89,7 @@
 		background: radial-gradient(circle, transparentize($primary-color, .5), transparentize($primary-color, .4));
 		margin: 60px;
 		cursor: pointer;
-		transition: border .3s, box-shadow .3s;
+		transition: border .25s, box-shadow .3s;
 		overflow: hidden;
 		border-top: 9px solid $secondary-color;
 		// box-shadow: 0 2px 8px 0 gray;
@@ -128,7 +126,7 @@
 		.project-list__project-name {
 			font-size: 1.3rem;
 			font-weight: bold;
-			font-family: "Architects Daughter";
+			font-family: "Quicksand", Arial;
 		}
 
 		.project-list__project-short-description {

@@ -1,22 +1,64 @@
-.upper-content {
+.banner {
   font-size: 1.2rem;
-  background-image: url("../images/portfolio-banner.jpg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 780px;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 10; }
-  .upper-content .header__overlay {
+  .banner .banner__down-arrow {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background: #010138;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f94c0c;
+    animation: downArrow 1s infinite ease;
+    opacity: .7; }
+    .banner .banner__down-arrow img {
+      width: 75%; }
+  .banner .banner__project-description {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    padding: 25px;
+    color: white;
+    font-size: 1.5rem;
+    background: rgba(1, 1, 56, 0.9);
+    font-weight: lighter;
+    letter-spacing: 1px; }
+    .banner .banner__project-description span {
+      color: #f94c0c;
+      font-weight: bold; }
+  .banner.intro-background {
+    background-image: url("../images/portfolio-banner.jpg"); }
+    .banner.intro-background .banner__overlay {
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.25);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -10; }
+  .banner.project-background .banner__overlay {
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle, transparent, rgba(2, 0, 36, 0.7));
+    background: rgba(255, 255, 255, 0.8);
     position: absolute;
     left: 0;
     top: 0;
     z-index: -10; }
-  .upper-content .portfolio-description {
+  .banner .portfolio-description {
     position: absolute;
     top: 55%;
     transform: translateY(-50%) translateX(-50%);
@@ -30,10 +72,58 @@
     max-width: 1000px;
     min-width: 875px;
     text-align: center; }
-    .upper-content .portfolio-description .portfolio-description__quote {
-      font-family: "Architects Daughter", "Handlee", "Alegreya Sans", "Indie Flower", cursive;
+    .banner .portfolio-description .portfolio-description__quote {
+      font-family: "Alegreya Sans", "Indie Flower", cursive;
       font-size: 1.5rem;
-      letter-spacing: .8px; }
+      letter-spacing: 1px; }
+  .banner .banner__picture-popup-container {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 50px;
+    height: 50px; }
+    @media screen and (max-width: 900px) {
+      .banner .banner__picture-popup-container {
+        display: none; } }
+  .banner .header__photo-info-button {
+    border-radius: 1px;
+    padding: 4px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    transition: opacity .2s;
+    background: white;
+    opacity: .8; }
+    .banner .header__photo-info-button img {
+      width: 97%; }
+    .banner .header__photo-info-button:hover {
+      opacity: 1; }
+      .banner .header__photo-info-button:hover + .banner__picture-popup {
+        opacity: 1;
+        z-index: 10;
+        transition: z-index 0s 0s step-end, opacity .2s 0s; }
+  .banner .banner__picture-popup {
+    z-index: -10;
+    opacity: 0;
+    transition: z-index .1s .2s step-end, opacity .2s 0s;
+    width: 215px;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: .85rem;
+    background: white;
+    color: #f94c0c;
+    position: absolute;
+    position: absolute;
+    left: 100%;
+    top: -13%;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .7px; }
 
 .portfolio-description .portfolio-description__text {
   margin-bottom: 0; }
@@ -44,13 +134,27 @@
   justify-content: space-between;
   align-items: flex-start;
   color: #f94c0c;
-  padding: 50px; }
+  padding: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(1, 1, 56, 0.7); }
   .header .header__title-container {
     color: #f94c0c; }
     .header .header__title-container .header__title {
       font-size: 2.5rem;
-      font-weight: 500; }
+      font-weight: 300; }
     .header .header__title-container .header__subtitle {
       margin-top: 15px;
       font-size: 1.7rem;
       font-weight: 300; }
+
+@keyframes downArrow {
+  0% {
+    bottom: 10px; }
+  50% {
+    bottom: 20px; }
+  100% {
+    bottom: 10px; } }

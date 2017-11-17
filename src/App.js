@@ -31,15 +31,11 @@ class App extends Component {
 				<Helmet>
 					<title>Sebastian | Front-end Portfolio</title>
 					<link
-						href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300|Bad+Script|Roboto:100,300,400,500|Indie+Flower|Oxygen:300,400|Quicksand:300,400,500|Handlee|Architects+Daughter"
+						href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300|Bad+Script|Roboto:100,300,400,500|Indie+Flower|Oxygen:300,400|Quicksand:300,400,500"
 						rel="stylesheet"
 					/>
 				</Helmet>
-				<div className="upper-content">
-					<div className="header__overlay" />
-					<Header />
-					<PortfolioDescription projects={this.state.projects} />
-				</div>
+				<Header />
 				<div className="main-content">
 					<Switch>
 						<Route
