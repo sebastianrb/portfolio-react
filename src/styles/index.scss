@@ -12,7 +12,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Quicksand", Arial, sans-serif;
+	font-family: $primary-font, Arial, sans-serif;
 	overflow-x: hidden;
 	// background: radial-gradient(circle, white, #b5b5b5);
 	background: linear-gradient(to right, white, #b5b5b5);

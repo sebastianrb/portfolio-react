@@ -103,12 +103,12 @@
       padding: 0 40px;
       text-decoration: none; }
     .project-list .project-list__project .project-list__project-name {
-      font-size: 1.3rem;
-      font-weight: bold;
-      font-family: "Quicksand", Arial; }
+      font-size: 1.35rem;
+      font-weight: bold; }
     .project-list .project-list__project .project-list__project-short-description {
       font-weight: 200;
-      margin-top: 15px; }
+      margin-top: 15px;
+      letter-spacing: .5px; }
     .project-list .project-list__project.portfolio-tile .project-list__project-text {
       height: 100%;
       padding: 20px; }

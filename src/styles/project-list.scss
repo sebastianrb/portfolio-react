@@ -136,14 +136,14 @@
 		}
 
 		.project-list__project-name {
-			font-size: 1.3rem;
+			font-size: 1.35rem;
 			font-weight: bold;
-			font-family: "Quicksand", Arial;
 		}
 
 		.project-list__project-short-description {
 			font-weight: 200;
 			margin-top: 15px;
+			letter-spacing: .5px;
 		}
 
 		&.portfolio-tile {

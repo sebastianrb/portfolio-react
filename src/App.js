@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import ProjectDescription from "./components/ProjectDescription";
 import ProjectListSection from "./components/ProjectListSection";
 import PortfolioDescription from "./components/PortfolioDescription";
+import LoadingPanel from "./components/LoadingPanel";
 
 import "./styles/normalize.css";
 import "./styles/App.css";
@@ -31,10 +32,11 @@ class App extends Component {
 				<Helmet>
 					<title>Sebastian | Front-end Portfolio</title>
 					<link
-						href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300|Bad+Script|Roboto:100,300,400,500|Indie+Flower|Oxygen:300,400|Quicksand:300,400,500"
+						href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300|Bad+Script|Roboto:100,300,400,500|Quicksand:300,400,500|Josefin+Sans:300,400,600"
 						rel="stylesheet"
 					/>
 				</Helmet>
+				<LoadingPanel />
 				<Header />
 				<div className="main-content">
 					<Switch>

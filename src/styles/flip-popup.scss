@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 $primary-color: #010138;
 $secondary-color: #f94c0c;
 $secondary-color-muted: #d4643b;
@@ -37,11 +39,15 @@ $hover-highlight: white;
   margin: 0 auto 9px;
   cursor: pointer;
   z-index: 0;
-  -webkit-transition: z-index 1s;
-  transition: z-index 1s;
+  transition: z-index 1s, transform .3s .3s;
   width: 170px;
   margin: 0;
   height: auto;
+
+  &:hover {
+    transition: z-index .8s, transform .4s 0s;
+    transform: translateY(-50%);
+  }
 
   @media screen and (max-width: 920px) {
     display: none;
@@ -235,6 +241,7 @@ $hover-highlight: white;
   font-size: .90em;
   width: auto;
   font-weight: bold;
+  font-family: $secondary-font;
 
   &::after {
     content: "";
@@ -259,14 +266,15 @@ $hover-highlight: white;
 
 .evo_c-expand-and-fold-out-popup__popup-button:hover {
   z-index: 100;
-  transition: z-index .8s;
+  transition: z-index .8s, transform .3s .1s;
 }
 
 .evo_c-expand-and-fold-out-popup__popup-button:hover .evo_c-expand-and-fold-out-popup__popup {
   right: 0;
   top: 0;
   width: 200%;
-  height: 195%;
+  // height: 195%;
+  height: $header-height * .55;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
   -webkit-transition: all .7s cubic-bezier(0.215, 0.610, 0.355, 1.000) .1s;
