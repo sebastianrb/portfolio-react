@@ -10,38 +10,38 @@
 	height: 100%;
 	background: $primary-color;
 	@include flex-column(nowrap, center, center);
-	transition: opacity .3s, transform .3s, z-index .1s 1s step-end;
+	transition: opacity .3s, transform .3s, z-index .1s 1.2s step-end;
 	z-index: $header-z + 1;
-	font-family: Arial, sans-serif;
+	// font-family: sans-serif;
 	font-weight: lighter;
 
 	.loading-panel__letter {
-		transform: scale(.1);
+		transform: scale(0);
 		opacity: 0;
 		transition: all .3s;
 		display: inline-block;
 	}
 
 	.loading-panel__letter.letter-1 {
-		transition-delay: .2s;
-	}
-	.loading-panel__letter.letter-2 {
-		transition-delay: .3s;
-	}
-	.loading-panel__letter.letter-3 {
 		transition-delay: .4s;
 	}
-	.loading-panel__letter.letter-4 {
+	.loading-panel__letter.letter-2 {
 		transition-delay: .5s;
 	}
-	.loading-panel__letter.letter-5 {
+	.loading-panel__letter.letter-3 {
 		transition-delay: .6s;
 	}
-	.loading-panel__letter.letter-6 {
+	.loading-panel__letter.letter-4 {
 		transition-delay: .7s;
 	}
-	.loading-panel__letter.letter-7 {
+	.loading-panel__letter.letter-5 {
 		transition-delay: .8s;
+	}
+	.loading-panel__letter.letter-6 {
+		transition-delay: .9s;
+	}
+	.loading-panel__letter.letter-7 {
+		transition-delay: 1s;
 	}
 
 	&.loading-started {

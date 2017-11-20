@@ -7,7 +7,7 @@ export default class LoadingPanel extends React.Component {
 		this.state = {
 			started: false,
 			finished: false,
-			loadingDuration: 2.5
+			loadingDuration: 2.6
 		};
 	}
 
@@ -33,7 +33,7 @@ export default class LoadingPanel extends React.Component {
 					? "loading-finished"
 					: ""}`}
 			>
-				<h3 className="loading-panel__text">
+				<p className="loading-panel__text">
 					<span className="loading-panel__letter letter-1">w</span>
 					<span className="loading-panel__letter letter-2">e</span>
 					<span className="loading-panel__letter letter-3">l</span>
@@ -41,7 +41,7 @@ export default class LoadingPanel extends React.Component {
 					<span className="loading-panel__letter letter-5">o</span>
 					<span className="loading-panel__letter letter-6">m</span>
 					<span className="loading-panel__letter letter-7">e</span>
-				</h3>
+				</p>
 			</div>
 		);
 	}

@@ -145,15 +145,15 @@
   z-index: 100;
   background: rgba(1, 1, 56, 0.7);
   height: 170px; }
-  .header .header__title-container {
+  .header .header__title-container .header__title {
+    font-size: 2.5rem;
+    font-weight: 500;
     color: #f94c0c; }
-    .header .header__title-container .header__title {
-      font-size: 2.5rem;
-      font-weight: 500; }
-    .header .header__title-container .header__subtitle {
-      margin-top: 15px;
-      font-size: 1.7rem;
-      font-weight: 300; }
+  .header .header__title-container .header__subtitle {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: white; }
 
 @keyframes downArrow {
   0% {

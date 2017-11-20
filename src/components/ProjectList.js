@@ -50,6 +50,7 @@ export default class ProjectList extends React.Component {
 						easing="ease"
 						staggerDelayBy={30}
 						staggerDurationBy={20}
+
 						onFinishAll={() => {
 							this.forceUpdate();
 						}}
