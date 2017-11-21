@@ -8,7 +8,7 @@ export const projects = [
 		technologies: "React.js, ES6, Vanilla Javascript, Ajax, Sass, APIs",
 		demoLink: "https://sebastianrb.github.io/portfolio/",
 		githubLink: "https://github.com/sebastianrb/portfolio-react",
-		image: ""
+		image: "https://image.ibb.co/cumr56/Screen_Shot_2017_11_20_at_9_35_25_PM.png"
 	},
 	{
 		id: 1,
@@ -102,7 +102,7 @@ export const projects = [
 		name: "Handlebars Gallery",
 		shortDescription: "A photo gallery pulling random Unsplash images built with Handlebars.js",
 		description: "Handlebars gallery",
-		technologies: "Javascript, Handlebars,js, CSS",
+		technologies: "Javascript, Handlebars.js, CSS",
 		demoLink: "https://sebastianrb.github.io/handlebars-gallery/",
 		githubLink: "https://github.com/sebastianrb/handlebars-gallery",
 		image: "https://image.ibb.co/cnQrAw/handlebars.png"

@@ -6,6 +6,8 @@ import _ from "lodash";
 import $ from "jquery";
 import Banner from "./Banner";
 
+import Arrow from "../images/down-arrow.svg";
+
 import "../styles/project-description.css";
 
 export default class ProjectDescription extends React.Component {
@@ -19,6 +21,13 @@ export default class ProjectDescription extends React.Component {
 		const project = _.find(projects, function(object) {
 			return object.id.toString() === projectID;
 		});
+
+		let technologyArray = project.technologies.split(",").map(tech => tech.trim());
+		let technologyList = technologyArray.map(tech => {
+			return <li key={tech}>{tech}</li>
+		})
+
+		console.log(technologyArray);
 
 		return (
 			<EasyTransition
@@ -34,11 +43,20 @@ export default class ProjectDescription extends React.Component {
 					</h3>
 				</Banner>
 				<section className="project-description">
-					<p>
-						Title: {project ? project.name : "Sorry, nothing found"}
+					<p className="project-description__home-link">
+						<Link to="/"><img src={Arrow} alt="arrow"/>Go Home</Link>
 					</p>
-					<p>
-						<Link to="/">Go Home</Link>
+					<h3 className="project-description__description">
+						{project.description}
+					</h3>
+					<ul className="project-description__technology-list">
+						{technologyList}
+					</ul>
+					<p className="project-description__demo-link">
+						{project.demoLink}
+					</p>
+					<p className="project-description__github-link">
+						{project.githubLink}
 					</p>
 				</section>
 			</EasyTransition>

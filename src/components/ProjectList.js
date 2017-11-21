@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import ProjectCard from "./ProjectCard";
 import FlipMove from "react-flip-move";
 import testImage from "../images/bov.png";
@@ -44,20 +45,22 @@ export default class ProjectList extends React.Component {
 
 		return (
 			<div className="project-list">
-				<ul className="project-list__list">
-					<FlipMove
-						duration={700}
-						easing="ease"
-						staggerDelayBy={30}
-						staggerDurationBy={20}
+				<Fade delay={0} fraction={0.2} duration={600}>
+					<ul className="project-list__list">
+						<FlipMove
+							duration={700}
+							easing="ease"
+							staggerDelayBy={30}
+							staggerDurationBy={20}
 
-						onFinishAll={() => {
-							this.forceUpdate();
-						}}
-					>
-						{list}
-					</FlipMove>
-				</ul>
+							onFinishAll={() => {
+								this.forceUpdate();
+							}}
+						>
+							{list}
+						</FlipMove>
+					</ul>
+				</Fade>
 			</div>
 		);
 	}
