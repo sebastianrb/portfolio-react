@@ -76,13 +76,13 @@
     width: 100%;
     left: 50%;
     line-height: 1.5;
-    max-width: 1000px;
-    min-width: 875px;
     text-align: center; }
     .banner .portfolio-description .portfolio-description__quote {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 400;
       font-family: "Roboto Mono", monospace; }
+      .banner .portfolio-description .portfolio-description__quote:nth-child(2) {
+        margin-top: 10px; }
   .banner .banner__picture-popup-container {
     position: absolute;
     bottom: 5px;
@@ -105,8 +105,7 @@
     height: 30px;
     transition: opacity .2s;
     background: white;
-    opacity: .6;
-    border-radius: 3px; }
+    opacity: .6; }
     .banner .header__photo-info-button img {
       width: 97%; }
     .banner .header__photo-info-button:hover {
@@ -149,7 +148,7 @@
   width: 100%;
   z-index: 100;
   background: rgba(1, 1, 56, 0.7);
-  height: 170px; }
+  height: 160px; }
   .header .header__title-container .header__title {
     font-size: 2.5rem;
     font-weight: 200;
@@ -162,8 +161,11 @@
 
 @keyframes downArrow {
   0% {
+    opacity: 1;
     bottom: 10px; }
   50% {
+    opacity: .4;
     bottom: 20px; }
   100% {
+    opacity: 1;
     bottom: 10px; } }

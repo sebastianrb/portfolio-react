@@ -107,14 +107,16 @@
 		left: 50%;
 		// box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.25);
 		line-height: 1.5;
-		max-width: 1000px;
-		min-width: 875px;
 		text-align: center;
 
 		.portfolio-description__quote {
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 			font-weight: 400;
 			font-family: $secondary-font, monospace;
+
+			&:nth-child(2) {
+				margin-top: 10px;
+			}
 		}
 	}
 
@@ -141,7 +143,6 @@
 		transition: opacity .2s;
 		background: white;
 		opacity: .6;
-		border-radius: 3px;
 
 		img {
 			width: 97%;
@@ -217,14 +218,17 @@
 //animations
 @keyframes downArrow {
 	0% {
+		opacity: 1;
 		bottom: 10px;
 	}
 
 	50% {
+		opacity: .4;
 		bottom: 20px;
 	}
 
 	100% {
+		opacity: 1;
 		bottom: 10px;
 	}
 }

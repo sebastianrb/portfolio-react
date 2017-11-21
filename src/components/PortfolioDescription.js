@@ -7,7 +7,8 @@ const PortfolioDescription = props => {
 	//return
 	return (
 		<section className="portfolio-description">
-			<p className="portfolio-description__quote">I'm a React-focused front-end developer based in NYC</p>
+			<p className="portfolio-description__quote">I'm a React-focused front-end developer.</p>
+			<p className="portfolio-description__quote">Below, you can take a look at some of the projects I've built.</p>
 			<ul className="portfolio-description__fact-list" />
 		</section>
 	);
