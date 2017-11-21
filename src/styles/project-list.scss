@@ -103,11 +103,58 @@
 		margin: 60px;
 		cursor: pointer;
 		transition: border .25s, box-shadow .3s;
+		position: relative;
 		overflow: hidden;
 		border-top: 9px solid $secondary-color;
 		// box-shadow: 0 2px 8px 0 gray;
 		box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.45);
+		overflow: hidden;
 		// box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+		.project-list__project-tech-button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 75px;
+			height: 35px;
+			background: transparentize(white, .2);
+			border-bottom-left-radius: 3px;
+			@include flex-column(nowrap, center, center);
+			transition: background .3s;
+
+			img {
+				width: 27px;
+			}
+
+			&:hover {
+				background: lighten($secondary-color, 40%);
+				& + .project-list__project-tech-popup {
+					bottom: 0
+				}
+			}
+		}
+
+		.project-list__project-tech-caption {
+			color: $secondary-color;
+			font-size: 1.1rem;
+			margin-bottom: 20px;
+			font-weight: 600;
+		}
+
+		.project-list__project-tech-popup {
+			transition: bottom .5s;
+			border-top: 3px solid white;
+			position: absolute;
+			bottom: -300px;
+			width: 100%;
+			height: 300px;
+			background: $primary-color;
+			padding: 30px;
+			@include flex-column(nowrap, center, center);
+			font-size: 1rem;
+			font-family: $secondary-font, monospace;
+			z-index: 1000;
+		}
 
 		&:hover {
 			border-top: 9px solid lighten($secondary-color, 40%);
@@ -137,14 +184,17 @@
 		}
 
 		.project-list__project-name {
-			font-size: 1.35rem;
+			font-size: 1.4rem;
 			font-weight: bold;
+			letter-spacing: .4px;
 		}
 
 		.project-list__project-short-description {
-			font-weight: 200;
-			margin-top: 15px;
-			letter-spacing: .5px;
+			font-weight: 300;
+			font-size: .9rem;
+			margin-top: 17px;
+			letter-spacing: 0;
+			font-family: $secondary-font, monospace;
 		}
 
 		&.portfolio-tile {

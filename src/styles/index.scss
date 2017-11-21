@@ -3,6 +3,8 @@
 * {
 	box-sizing: border-box;
 	outline: none;
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -16,6 +18,7 @@ body {
 	overflow-x: hidden;
 	// background: radial-gradient(circle, white, #b5b5b5);
 	background: linear-gradient(to right, white, #b5b5b5);
+	color: $primary-color;
 }
 
 p,

@@ -21,11 +21,11 @@
 		// background: $primary-color;
 		border-radius: 50%;
 		@include flex-row(wrap, center, center);
-		animation: downArrow 1s infinite ease;
+		animation: downArrow 1.1s infinite ease;
 		opacity: .8;
 
 		img {
-			width: 90%;
+			width: 21px;
 		}
 	}
 
@@ -34,7 +34,7 @@
 			background: $primary-color;
 
 			img {
-				width: 80%;
+				width: 16px;
 				position: relative;
 				// left: 1px;
 				top: 1px;
@@ -52,11 +52,16 @@
 		font-size: 1.5rem;
 		background: transparentize($primary-color, .1);
 		font-weight: lighter;
-		letter-spacing: 1px;
+		letter-spacing: -.3px;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-weight: 500;
+		font-family: $secondary-font, monospace;
 
 		span {
 			color: $secondary-color;
-			font-weight: bold;
+			font-weight: lighter;
+			font-weight: 600;
 		}
 	}
 
@@ -107,10 +112,9 @@
 		text-align: center;
 
 		.portfolio-description__quote {
-			font-family: $intro-text-font, sans-serif;
-			font-size: 2.1rem;
-			letter-spacing: 1px;
-			font-weight: 900;
+			font-size: 1.8rem;
+			font-weight: 400;
+			font-family: $secondary-font, monospace;
 		}
 	}
 
@@ -135,8 +139,8 @@
 		width: 30px;
 		height: 30px;
 		transition: opacity .2s;
-		background: $secondary-color;
-		opacity: .8;
+		background: white;
+		opacity: .6;
 		border-radius: 3px;
 
 		img {
@@ -169,7 +173,7 @@
 		left: 100%;
 		top: -14.5%;
 		text-align: center;
-		font-weight: 500;
+		font-weight: 800;
 		letter-spacing: .7px;
 	}
 }
@@ -197,14 +201,14 @@
 
 		.header__title {
 			font-size: 2.5rem;
-			font-weight: 500;
+			font-weight: 200;
 			color: $secondary-color;
 		}
 
 		.header__subtitle {
 			margin-top: 10px;
 			font-size: 1.7rem;
-			font-weight: 300;
+			font-weight: 200;
 			color: white;
 		}
 	}

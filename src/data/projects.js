@@ -90,7 +90,7 @@ export const projects = [
 	{
 		id: 8,
 		name: "Random Fact Generator",
-		shortDescription: "A random fact genertaor using Ajax",
+		shortDescription: "A random fact generator using Ajax",
 		description: "A random fatc generator!",
 		technologies: "jQuery, Ajax, CSS",
 		demoLink: "https://sebastianrb.github.io/random-facts/",

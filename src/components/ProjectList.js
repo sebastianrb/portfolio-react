@@ -1,8 +1,10 @@
 import React from "react";
-import Fade from 'react-reveal/Fade';
+import ScrollAnimation from 'react-animate-on-scroll';
 import ProjectCard from "./ProjectCard";
 import FlipMove from "react-flip-move";
 import testImage from "../images/bov.png";
+
+import "../styles/animate.min.css";
 
 export default class ProjectList extends React.Component {
 	constructor(props) {
@@ -45,7 +47,7 @@ export default class ProjectList extends React.Component {
 
 		return (
 			<div className="project-list">
-				<Fade delay={0} fraction={0.2} duration={600}>
+				<ScrollAnimation animateIn="fadeIn" offset={150} duration={.8} animateOnce={true}>
 					<ul className="project-list__list">
 						<FlipMove
 							duration={700}
@@ -60,7 +62,7 @@ export default class ProjectList extends React.Component {
 							{list}
 						</FlipMove>
 					</ul>
-				</Fade>
+				</ScrollAnimation>
 			</div>
 		);
 	}

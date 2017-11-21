@@ -31,10 +31,7 @@ class App extends Component {
 			<div className="app">
 				<Helmet>
 					<title>Sebastian | Front-end Portfolio</title>
-					<link
-						href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300|Bad+Script|Roboto:100,300,400,500|Quicksand:300,400,500|Josefin+Sans:300,400,600"
-						rel="stylesheet"
-					/>
+					<link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,600|Roboto+Mono:300,400,500" rel="stylesheet" />
 				</Helmet>
 				<LoadingPanel />
 				<Header />

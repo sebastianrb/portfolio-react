@@ -188,8 +188,8 @@ $hover-highlight: white;
 }
 
 .contact-popup__icon-link {
-  width: 47px;
-  height: 47px;
+  width: 46px;
+  height: 46px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -240,8 +240,7 @@ $hover-highlight: white;
   border-radius: 3px;
   font-size: .90em;
   width: auto;
-  font-weight: bold;
-  font-family: $secondary-font;
+  font-weight: 300;
 
   &::after {
     content: "";
@@ -266,7 +265,7 @@ $hover-highlight: white;
 
 .evo_c-expand-and-fold-out-popup__popup-button:hover {
   z-index: 100;
-  transition: z-index .8s, transform .3s .1s;
+  transition: z-index .8s, transform .4s .1s;
 }
 
 .evo_c-expand-and-fold-out-popup__popup-button:hover .evo_c-expand-and-fold-out-popup__popup {
@@ -275,10 +274,8 @@ $hover-highlight: white;
   width: 200%;
   // height: 195%;
   height: $header-height * .55;
-  -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  -webkit-transition: all .7s cubic-bezier(0.215, 0.610, 0.355, 1.000) .1s;
-  transition: all .8s cubic-bezier(0.215, 0.610, 0.355, 1.000) .1s;
+  transition: all .85s cubic-bezier(0.215, 0.610, 0.355, 1.000) .1s;
   background: transparentize(white, 0);
 
   @media screen and (max-width: 920px) {

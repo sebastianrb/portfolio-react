@@ -77,9 +77,51 @@
     margin: 60px;
     cursor: pointer;
     transition: border .25s, box-shadow .3s;
+    position: relative;
     overflow: hidden;
     border-top: 9px solid #f94c0c;
-    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.45); }
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.45);
+    overflow: hidden; }
+    .project-list .project-list__project .project-list__project-tech-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 75px;
+      height: 35px;
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom-left-radius: 3px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      transition: background .3s; }
+      .project-list .project-list__project .project-list__project-tech-button img {
+        width: 27px; }
+      .project-list .project-list__project .project-list__project-tech-button:hover {
+        background: #fedfd3; }
+        .project-list .project-list__project .project-list__project-tech-button:hover + .project-list__project-tech-popup {
+          bottom: 0; }
+    .project-list .project-list__project .project-list__project-tech-caption {
+      color: #f94c0c;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      font-weight: 600; }
+    .project-list .project-list__project .project-list__project-tech-popup {
+      transition: bottom .5s;
+      border-top: 3px solid white;
+      position: absolute;
+      bottom: -300px;
+      width: 100%;
+      height: 300px;
+      background: #010138;
+      padding: 30px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-family: "Roboto Mono", monospace;
+      z-index: 1000; }
     .project-list .project-list__project:hover {
       border-top: 9px solid #fedfd3; }
       .project-list .project-list__project:hover img {
@@ -103,12 +145,15 @@
       padding: 0 40px;
       text-decoration: none; }
     .project-list .project-list__project .project-list__project-name {
-      font-size: 1.35rem;
-      font-weight: bold; }
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: .4px; }
     .project-list .project-list__project .project-list__project-short-description {
-      font-weight: 200;
-      margin-top: 15px;
-      letter-spacing: .5px; }
+      font-weight: 300;
+      font-size: .9rem;
+      margin-top: 17px;
+      letter-spacing: 0;
+      font-family: "Roboto Mono", monospace; }
     .project-list .project-list__project.portfolio-tile .project-list__project-text {
       height: 100%;
       padding: 20px; }

@@ -12,7 +12,7 @@
   align-items: center;
   transition: opacity .3s, transform .3s, z-index .1s 1.2s step-end;
   z-index: 101;
-  font-weight: lighter; }
+  font-weight: 100; }
   .loading-panel .loading-panel__letter {
     transform: scale(0);
     opacity: 0;
