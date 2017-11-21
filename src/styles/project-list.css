@@ -86,10 +86,10 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 75px;
+      width: 65px;
       height: 35px;
-      background: rgba(255, 255, 255, 0.8);
-      border-bottom-left-radius: 3px;
+      background: rgba(255, 255, 255, 0.7);
+      border-bottom-left-radius: 1px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;

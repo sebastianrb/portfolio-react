@@ -115,10 +115,10 @@
 			position: absolute;
 			top: 0;
 			right: 0;
-			width: 75px;
+			width: 65px;
 			height: 35px;
-			background: transparentize(white, .2);
-			border-bottom-left-radius: 3px;
+			background: transparentize(white, .3);
+			border-bottom-left-radius: 1px;
 			@include flex-column(nowrap, center, center);
 			transition: background .3s;
 
