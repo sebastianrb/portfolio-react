@@ -115,15 +115,15 @@
 			position: absolute;
 			top: 0;
 			right: 0;
-			width: 65px;
+			width: 50px;
 			height: 35px;
-			background: transparentize(white, .4);
+			background: transparentize(white, .45);
 			border-bottom-left-radius: 1px;
 			@include flex-column(nowrap, center, center);
 			transition: background .3s;
 
 			img {
-				width: 27px;
+				width: 25px;
 			}
 
 			&:hover {
