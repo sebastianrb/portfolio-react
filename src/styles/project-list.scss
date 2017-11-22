@@ -117,7 +117,7 @@
 			right: 0;
 			width: 65px;
 			height: 35px;
-			background: transparentize(white, .3);
+			background: transparentize(white, .4);
 			border-bottom-left-radius: 1px;
 			@include flex-column(nowrap, center, center);
 			transition: background .3s;
