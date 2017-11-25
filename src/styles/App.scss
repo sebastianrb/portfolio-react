@@ -8,7 +8,8 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background: $primary-color;
+	// background: $primary-color;
+	background: linear-gradient(to bottom, $primary-color, lighten($primary-color, 5%));
 	@include flex-column(nowrap, center, center);
 	transition: opacity .3s, transform .3s, z-index .1s 1.2s step-end;
 	z-index: $header-z + 1;

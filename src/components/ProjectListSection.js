@@ -44,7 +44,7 @@ export default class ProjectListSection extends React.Component {
 			<EasyTransition
 				path={window.location.pathname}
 				// eslint-disable-line
-				initialStyle={{ opacity: 0, transform: "scale(.9)" }}
+				initialStyle={{ opacity: 0, transform: "scale(.95)" }}
 				transition={transitionSetting}
 				finalStyle={{ opacity: 1, transform: "scale(1)" }}
 			>

@@ -11,7 +11,7 @@
     display: block;
     padding: 20px;
     font-size: 1.8rem;
-    border-right: 4px solid #f94c0c;
+    border-right: 4px solid #f5612b;
     margin-right: 20px;
     color: #010138; }
   .project-search .project-search__form {
@@ -47,7 +47,7 @@
   .project-search .project-search__loading-bar {
     width: 0;
     height: 100%;
-    background: #f94c0c;
+    background: #f5612b;
     opacity: 0;
     bottom: 0;
     position: absolute; }
@@ -79,7 +79,7 @@
     transition: border .25s, box-shadow .3s;
     position: relative;
     overflow: hidden;
-    border-top: 9px solid #f94c0c;
+    border-top: 9px solid #f5612b;
     box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.45);
     overflow: hidden; }
     .project-list .project-list__project .project-list__project-tech-button {
@@ -98,11 +98,11 @@
       .project-list .project-list__project .project-list__project-tech-button img {
         width: 25px; }
       .project-list .project-list__project .project-list__project-tech-button:hover {
-        background: #fedfd3; }
+        background: #fef2ee; }
         .project-list .project-list__project .project-list__project-tech-button:hover + .project-list__project-tech-popup {
           bottom: 0; }
     .project-list .project-list__project .project-list__project-tech-caption {
-      color: #f94c0c;
+      color: #f5612b;
       font-size: 1.1rem;
       margin-bottom: 20px;
       font-weight: 600; }
@@ -123,7 +123,7 @@
       font-family: "Roboto Mono", monospace;
       z-index: 1000; }
     .project-list .project-list__project:hover {
-      border-top: 9px solid #fedfd3; }
+      border-top: 9px solid #fef2ee; }
       .project-list .project-list__project:hover img {
         backface-visibility: hidden;
         transform: scale(1) translateZ(0);

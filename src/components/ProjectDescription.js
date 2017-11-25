@@ -32,7 +32,7 @@ export default class ProjectDescription extends React.Component {
 		return (
 			<EasyTransition
 				path={window.location.pathname}
-				initialStyle={{ opacity: 0, transform: "scale(.9)" }}
+				initialStyle={{ opacity: 0, transform: "scale(.95)" }}
 				transition={transitionSetting}
 				finalStyle={{ opacity: 1, transform: "scale(1)" }}
 			>
