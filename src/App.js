@@ -31,7 +31,7 @@ class App extends Component {
 			<div className="app">
 				<Helmet>
 					<title>Sebastian | Front-end Portfolio</title>
-					<link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,600|Roboto+Mono:300,400,500" rel="stylesheet" />
+					<link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,600|Roboto+Mono:300,400,500|Inconsolata:400,700" rel="stylesheet" />
 				</Helmet>
 				<LoadingPanel />
 				<Header />

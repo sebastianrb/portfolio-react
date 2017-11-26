@@ -7,9 +7,22 @@ export const projects = [
 			"The portfolio you are currently viewing is built with React and makes calls to an API to fetch data about my projects in JSON format.",
 		technologies: "React.js, ES6, Vanilla Javascript, Ajax, Sass, APIs",
 		technologyObjects: [
-			{},
-			{},
-			{}
+			{
+				name: "React.js",
+				tag: "react"
+			},
+			{
+				name: "ES6",
+				tag: "es6"
+			},
+			{
+				name: "Vanilla JavaScript",
+				tag: "js"
+			},
+			{
+				name: "Sass",
+				tag: "sass"
+			}
 		],
 		demoLink: "https://sebastianrb.github.io/portfolio/",
 		githubLink: "https://github.com/sebastianrb/portfolio-react",

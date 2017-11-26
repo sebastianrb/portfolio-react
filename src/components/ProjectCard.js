@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Code from "../images/code.svg";
+import Code from "../images/new-code.svg";
 
 export default class ProjectCard extends React.Component {
 	constructor(props) {
