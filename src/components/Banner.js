@@ -4,20 +4,17 @@ import downArrow from "../images/down-arrow.svg";
 const Banner = props => {
 	//logic
 	//figure out background image
-	console.log("Banner props: ", props);
 	const project = props.project;
 	let backgroundImage = "";
 	let styles = {};
 
 	if (props.type === "project") {
-		console.log("type is project");
 		backgroundImage = project.image;
 		styles = {
 			backgroundImage: "url(" + backgroundImage + ")"
 			// filter: "grayscale(1)",
 			// opacity: "0.3"
 		};
-		console.log(styles);
 	}
 
 	//return

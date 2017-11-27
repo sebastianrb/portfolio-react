@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "./abstract.scss", "./variables.scss";
 
 .project-description {
 	min-height: 800px;
@@ -8,7 +8,7 @@
 	    background: transparentize($primary-color, .80);
 	    color: white;
 	    text-align: center;
-	    margin-bottom: 120px;
+	    margin-bottom: 100px;
 	    border-bottom-right-radius: 6px;
 	    font-size: 1.2rem;
 	    padding: 0;
@@ -47,11 +47,45 @@
 	    }
 	}
 
+
+	.project-description__section {
+		margin: 0 auto 100px;
+	}
+
+
+
 	.project-description__description {
 	    width: 80%;
 	    margin: 0 auto 50px;
-	    font-size: 2.3rem;
+	    font-size: 2.1rem;
 	    line-height: 1.5;
 	    text-align: center;
+	}
+
+
+	.project-description__technology-header {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.project-description__technology-list {
+		margin: 40px auto 0;
+		width: 80%;
+		@include flex-row(wrap, center, center);
+
+		.project-description__technology-list-item {
+			width: 150px;
+			height: 150px;
+			background: transparentize($primary-color, .3);
+			margin: 20px;
+			border-radius: 6px;
+			@include flex-column(nowrap, center, center);
+			color: white;
+
+			img {
+				height: 50px;
+				margin-bottom: 20px;
+			}
+		}
 	}
 }
