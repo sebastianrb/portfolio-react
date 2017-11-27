@@ -71,14 +71,14 @@
     position: absolute;
     top: 55%;
     transform: translateY(-50%) translateX(-50%);
-    padding: 30px 20px;
+    padding: 30px 70px;
     color: white;
     width: 100%;
     left: 50%;
     line-height: 1.5;
-    text-align: center; }
+    text-align: left; }
     .banner .portfolio-description .portfolio-description__quote {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 400;
       font-family: "Roboto Mono", monospace; }
       .banner .portfolio-description .portfolio-description__quote:nth-child(2) {

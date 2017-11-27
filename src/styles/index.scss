@@ -17,7 +17,8 @@ body {
 	font-family: $primary-font, Arial, sans-serif;
 	overflow-x: hidden;
 	// background: radial-gradient(circle, white, #b5b5b5);
-	background: linear-gradient(to right, white, #b5b5b5);
+	// background: linear-gradient(to right, white, #b5b5b5);
+	background-image: url("../images/background.png");
 	color: $primary-color;
 }
 

@@ -100,17 +100,17 @@
 		transform: translateY(-50%) translateX(-50%);
 		// background: rgba(1, 1, 56, 0.7);
 		// background: radial-gradient(rgba(1, 1, 56, 0.70), $primary-color);
-		padding: 30px 20px;
+		padding: 30px 70px;
 		color: white;
 		// width: 65%;
 		width: 100%;
 		left: 50%;
 		// box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.25);
 		line-height: 1.5;
-		text-align: center;
+		text-align: left;
 
 		.portfolio-description__quote {
-			font-size: 1.6rem;
+			font-size: 1.5rem;
 			font-weight: 400;
 			font-family: $secondary-font, monospace;
 
