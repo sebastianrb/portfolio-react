@@ -11,6 +11,13 @@
     padding: 0;
     cursor: pointer;
     transition: all .1s; }
+    @media screen and (max-width: 950px) {
+      .project-description .project-description__home-link {
+        border-bottom-left-radius: 6px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 70px; } }
     .project-description .project-description__home-link:hover {
       background: rgba(1, 1, 56, 0.3); }
       .project-description .project-description__home-link:hover a img {
@@ -54,6 +61,9 @@
           position: relative;
           cursor: auto;
           opacity: .8; }
+          @media screen and (max-width: 950px) {
+            .project-description .project-description__section.project-description__section--links .project-link.github-disabled {
+              display: none; } }
           .project-description .project-description__section.project-description__section--links .project-link.github-disabled:hover {
             background: rgba(128, 128, 128, 0.8); }
           .project-description .project-description__section.project-description__section--links .project-link.github-disabled a {
@@ -119,6 +129,9 @@
     font-size: 1.9rem;
     line-height: 1.5;
     text-align: center; }
+    @media screen and (max-width: 950px) {
+      .project-description .project-description__description {
+        font-size: 1.7rem; } }
   .project-description .project-description__technology-header,
   .project-description .project-description__links-header {
     text-align: center;

@@ -1,5 +1,7 @@
 @import "abstract.scss", "variables.scss";
 
+$mobile-breakpoint-primary: 950px;
+
 .banner {
 	font-size: 1.2rem;
 	background-position: 50%;
@@ -197,13 +199,26 @@
 	background: transparentize($primary-color, .3);
 	height: $header-height;
 
-	.header__title-container {
+	@include mediaQuery($mobile-breakpoint-primary) {
+		@include flex-column(nowrap, center, center);
+		padding: 20px 50px;
+		height: $header-height-mobile;
+	}
 
+	.header__title-container {
+		width: 100%;
+		@include mediaQuery($mobile-breakpoint-primary) {
+			@include flex-column(nowrap, space-between, center);
+		}
 
 		.header__title {
 			font-size: 2.5rem;
 			font-weight: 200;
 			color: $secondary-color;
+
+			@include mediaQuery($mobile-breakpoint-primary) {
+				// font-size: 2.4rem;
+			}
 		}
 
 		.header__subtitle {
@@ -211,6 +226,33 @@
 			font-size: 1.7rem;
 			font-weight: 200;
 			color: white;
+
+			@include mediaQuery($mobile-breakpoint-primary) {
+				font-size: 1.4em;
+			}
+		}
+	}
+
+	.header__mobile-contact-buttons {
+		display: none;
+
+		@include mediaQuery($mobile-breakpoint-primary) {
+			width: 30%;
+			@include flex-row(nowrap, space-between, center);
+			padding: 4px 12px;
+			margin-top: 25px;
+			background: rgba(255, 255, 255, 0.75);
+			border-radius: 5px;
+
+			.contact-popup__icon-link {
+				width: 40px;
+				height: 37px;
+				opacity: 1;
+
+				img {
+					width: 85%;
+				}
+			}
 		}
 	}
 }

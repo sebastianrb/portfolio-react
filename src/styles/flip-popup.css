@@ -1,3 +1,7 @@
+@media screen and (max-width: 950px) {
+  .evo_c-expand-and-fold-out-popup-demo-wrapper {
+    display: none; } }
+
 .evo_c-expand-and-fold-out-popup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,7 +16,7 @@
   align-items: center;
   z-index: 10;
   padding-left: 0; }
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 950px) {
     .evo_c-expand-and-fold-out-popup {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -36,9 +40,6 @@
   .evo_c-expand-and-fold-out-popup__popup-button:hover {
     transition: z-index .8s, transform .4s 0s;
     transform: translateY(-50%); }
-  @media screen and (max-width: 920px) {
-    .evo_c-expand-and-fold-out-popup__popup-button {
-      display: none; } }
 
 .evo_c-expand-and-fold-out-popup__text-spacer {
   color: transparent;
@@ -216,7 +217,7 @@
   transition-delay: 0s;
   transition: all 0.85s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
   background: white; }
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 950px) {
     .evo_c-expand-and-fold-out-popup__popup-button:hover .evo_c-expand-and-fold-out-popup__popup {
       width: 100%;
       left: 0; } }
@@ -244,6 +245,6 @@
   padding: 0;
   font-size: 1.35em;
   color: #f94c0c; }
-  @media screen and (min-width: 920px) {
+  @media screen and (min-width: 950px) {
     .popup-mobile-close {
       display: none; } }

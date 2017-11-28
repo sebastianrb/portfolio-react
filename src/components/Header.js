@@ -1,5 +1,6 @@
 import React from "react";
 import FlipPopup from "./FlipPopup";
+import MobileContactButtons from "./MobileContactButtons";
 import "../styles/header.css";
 
 export default class HeaderNav extends React.Component {
@@ -18,6 +19,7 @@ export default class HeaderNav extends React.Component {
 					<p className="header__subtitle">Front-end Portfolio</p>
 				</div>
 				<FlipPopup />
+				<MobileContactButtons />
 			</header>
 		);
 	}

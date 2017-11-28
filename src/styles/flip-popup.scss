@@ -4,6 +4,13 @@ $primary-color: #010138;
 $secondary-color: #f94c0c;
 $secondary-color-muted: #d4643b;
 $hover-highlight: white;
+$media-breakpoint-primary: 950px;
+
+.evo_c-expand-and-fold-out-popup-demo-wrapper {
+  @media screen and (max-width: $media-breakpoint-primary) {
+    display: none;
+  }
+}
 
 .evo_c-expand-and-fold-out-popup {
   display: -webkit-box;
@@ -21,7 +28,7 @@ $hover-highlight: white;
   padding-left: 0;
   // box-shadow: 0 0 30px 0 black;
 
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: $media-breakpoint-primary) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -47,10 +54,6 @@ $hover-highlight: white;
   &:hover {
     transition: z-index .8s, transform .4s 0s;
     transform: translateY(-50%);
-  }
-
-  @media screen and (max-width: 920px) {
-    display: none;
   }
 }
 
@@ -278,7 +281,7 @@ $hover-highlight: white;
   transition: all .85s cubic-bezier(0.215, 0.610, 0.355, 1.000) .1s;
   background: transparentize(white, 0);
 
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: $media-breakpoint-primary) {
     width: 100%;
     left: 0;
   }
@@ -311,7 +314,7 @@ $hover-highlight: white;
   font-size: 1.35em;
   color: $secondary-color;
 
-  @media screen and (min-width: 920px) {
+  @media screen and (min-width: $media-breakpoint-primary) {
     display: none;
   }
 }
