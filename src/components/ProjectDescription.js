@@ -55,17 +55,21 @@ export default class ProjectDescription extends React.Component {
 						</h3>
 					</div>
 					<div className="project-description__section">
-						<h4 className="project-description__technology-header">Technologies Used</h4>
+						<h4 className="project-description__technology-header">Technologies used</h4>
 						<ul className="project-description__technology-list">
 							{technologyList}
 						</ul>
 					</div>
 					<div className="project-description__section project-description__section--links">
-						<div className="project-description__demo-link project-link">
-							<a href={project.demoLink}>View Demo</a>
-						</div>
-						<div className={`project-description__github-link project-link ${!project.githubLink ? "github-disabled" : ""}`}>
-							<a href={project.githubLink}>View GitHub Repo</a>
+						<h4 className="project-description__links-header">Check out the project</h4>
+						<div className="project-description__buttons">
+							<button className="project-description__demo-link project-link">
+								<a href={project.demoLink}>View Demo</a>
+							</button>
+							<button className={`project-description__github-link project-link ${!project.githubLink ? "github-disabled" : ""}`}>
+								<a href={project.githubLink}>View GitHub Repo</a>
+								<div className="github-disabled-message">Sorry, this repo belongs to an organization and is private</div>
+							</button>
 						</div>
 					</div>
 				</section>
