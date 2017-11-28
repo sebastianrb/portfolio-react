@@ -31,7 +31,7 @@
         top: 3px;
         transition: all .2s; }
   .project-description .project-description__section {
-    margin: 0 auto 100px; }
+    margin: 0 auto 120px; }
     .project-description .project-description__section.project-description__section--links {
       display: flex;
       flex-flow: column wrap;
@@ -45,7 +45,8 @@
         font-size: 1.2rem;
         margin: 20px;
         transition: all .1s;
-        border: none; }
+        border: none;
+        box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.11) inset; }
         .project-description .project-description__section.project-description__section--links .project-link .github-disabled-message {
           display: none; }
         .project-description .project-description__section.project-description__section--links .project-link.github-disabled {
@@ -135,7 +136,6 @@
       height: 130px;
       background: rgba(1, 1, 56, 0.6);
       margin: 20px;
-      border-radius: 6px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;

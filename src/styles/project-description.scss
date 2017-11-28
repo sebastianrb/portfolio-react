@@ -49,7 +49,7 @@
 
 
 	.project-description__section {
-		margin: 0 auto 100px;
+		margin: 0 auto 120px;
 
 		&.project-description__section--links {
 			@include flex-column(wrap, center, center);
@@ -63,6 +63,7 @@
 				margin: 20px;
 				transition: all .1s;
 				border: none;
+				box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.11) inset;
 
 				.github-disabled-message {
 					display: none;
@@ -176,7 +177,7 @@
 			height: 130px;
 			background: transparentize($primary-color, .4);
 			margin: 20px;
-			border-radius: 6px;
+			// border-radius: 6px;
 			@include flex-column(nowrap, center, center);
 			color: white;
 
