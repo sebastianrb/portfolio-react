@@ -97,7 +97,7 @@
 .project-list {
   z-index: 200;
   position: relative;
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto; }
   .project-list .project-list__list > div {
     display: flex;

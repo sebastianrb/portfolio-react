@@ -137,7 +137,8 @@
         .banner .portfolio-description .portfolio-description__quote {
           width: 80%;
           margin: 0 auto;
-          font-size: 1.1rem; } }
+          font-size: 1.1rem;
+          font-weight: 400; } }
       .banner .portfolio-description .portfolio-description__quote:nth-child(2) {
         margin-top: 10px; }
         @media screen and (max-width: 950px) {
