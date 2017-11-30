@@ -99,6 +99,10 @@ $mobile-breakpoint-primary: 950px;
 					display: none;
 				}
 
+				&.no-demo {
+					display: none;
+				}
+
 				&.github-disabled {
 					background: transparentize(gray, .2);
 					position: relative;

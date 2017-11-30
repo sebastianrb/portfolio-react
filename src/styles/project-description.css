@@ -75,6 +75,8 @@
             height: 60px; } }
         .project-description .project-description__section.project-description__section--links .project-link .github-disabled-message {
           display: none; }
+        .project-description .project-description__section.project-description__section--links .project-link.no-demo {
+          display: none; }
         .project-description .project-description__section.project-description__section--links .project-link.github-disabled {
           background: rgba(128, 128, 128, 0.8);
           position: relative;

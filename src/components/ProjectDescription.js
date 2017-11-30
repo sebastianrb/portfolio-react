@@ -21,16 +21,20 @@ export default class ProjectDescription extends React.Component {
 			return object.id.toString() === projectID;
 		});
 
+		console.log(typeof projectID);
 
 		let technologyArray = project.technologyObjects;
 		let technologyList = technologyArray.map(tech => {
 			const imgURL = require(`../images/tech-icons/${tech.tag}.png`);
-			return <li key={tech.name} className="project-description__technology-list-item">
-					<img src={imgURL} alt="tech"/>
-					<p>{tech.name}</p>
-				 </li>
-		})
-
+			return (
+				<li key={tech.name} className="project-description__technology-list-item">
+					<img src={imgURL} alt="tech" />
+					<p>
+						{tech.name}
+					</p>
+				</li>
+			);
+		});
 
 		return (
 			<EasyTransition
@@ -47,7 +51,9 @@ export default class ProjectDescription extends React.Component {
 				</Banner>
 				<section className="project-description">
 					<p className="project-description__home-link">
-						<Link to="/"><img src={Arrow} alt="arrow"/>Go Home</Link>
+						<Link to="/">
+							<img src={Arrow} alt="arrow" />Go Home
+						</Link>
 					</p>
 					<div className="project-description__section">
 						<h3 className="project-description__description">
@@ -63,12 +69,22 @@ export default class ProjectDescription extends React.Component {
 					<div className="project-description__section project-description__section--links">
 						<h4 className="project-description__links-header">Check out the project</h4>
 						<div className="project-description__buttons">
-							<button className="project-description__demo-link project-link">
+							<button
+								className={`project-description__demo-link project-link ${projectID === "0"
+									? "no-demo"
+									: ""}`}
+							>
 								<a href={project.demoLink}>View Demo</a>
 							</button>
-							<button className={`project-description__github-link project-link ${!project.githubLink ? "github-disabled" : ""}`}>
+							<button
+								className={`project-description__github-link project-link ${!project.githubLink
+									? "github-disabled"
+									: ""}`}
+							>
 								<a href={project.githubLink}>View GitHub Repo</a>
-								<div className="github-disabled-message">Sorry, this repo belongs to an organization and is private</div>
+								<div className="github-disabled-message">
+									Sorry, this repo belongs to an organization and is private
+								</div>
 							</button>
 						</div>
 					</div>
