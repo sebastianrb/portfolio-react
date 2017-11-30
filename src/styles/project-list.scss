@@ -1,5 +1,7 @@
 @import "abstract.scss", "variables.scss";
 
+$mobile-breakpoint-primary: 950px;
+
 .project-list-section {
 	// background: radial-gradient(circle, white, #b5b5b5);
 }
@@ -10,6 +12,15 @@
 	padding: 100px 0 0;
 	@include flex-row(wrap, center, center);
 
+	@include mediaQuery(1050px) {
+		@include flex-column(wrap, center, center);
+		padding: 80px 0 0;
+	}
+
+	@include mediaQuery(900px) {
+		padding: 50px 0 0;
+	}
+
 	.project-search__caption {
 		height: 100%;
 		display: block;
@@ -18,13 +29,30 @@
 		border-right: 4px solid $secondary-color;
 		margin-right: 20px;
 		color: $primary-color;
+
+		@include mediaQuery(1050px) {
+			margin-right: 0;
+			border-right: none;
+			font-size: 1.7rem;
+		}
+
+		@include mediaQuery(800px) {
+			font-size: 1.6rem;
+		}
 	}
 
 	.project-search__form {
 		width: 55%;
-		// margin: 0 auto;
 		position: relative;
 		max-width: 900px;
+
+		@include mediaQuery(1050px) {
+			width: 75%;
+		}
+
+		@include mediaQuery(900px) {
+			width: 93%;
+		}
 	}
 
 	.project-search__search-box {
@@ -32,7 +60,7 @@
 		color: $primary-color;
 		border: none;
 		// margin-bottom: 20px;
-		padding: 20px 60px 20px 30px;
+		padding: 20px 60px 20px 20px;
 		background: transparentize($primary-color, .8);
 		font-size: 1.25rem;
 		display: block;
@@ -43,6 +71,24 @@
 		font-weight: lighter;
 		transition: all .25s;
 		z-index: 1;
+
+		@include mediaQuery(1250px) {
+			font-size: 1.1rem;
+			letter-spacing: -.4px;
+		}
+
+		@include mediaQuery(1050px) {
+			padding: 18px 60px 18px 20px;
+			font-size: 1.2rem;
+		}
+
+		@include mediaQuery(800px) {
+			font-size: 1rem;
+		}
+
+		@include mediaQuery(600px) {
+			font-size: .9rem;
+		}
 
 		&:focus + .project-search__loading-bar-container {
 			// bottom: -6px;
@@ -100,7 +146,7 @@
 		text-align: center;
 		// background: radial-gradient(circle, transparentize($primary-color, .5), transparentize($primary-color, .4));
 		background: transparentize($primary-color, .2);
-		margin: 60px;
+		margin: 50px;
 		cursor: pointer;
 		transition: border .25s, box-shadow .3s;
 		position: relative;
@@ -110,6 +156,15 @@
 		box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.45);
 		overflow: hidden;
 		// box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+		@include mediaQuery($mobile-breakpoint-primary) {
+			margin: 40px;
+		}
+
+		@include mediaQuery(800px) {
+			width: 280px;
+			height: 375px;
+		}
 
 		.project-list__project-tech-button {
 			position: absolute;
@@ -129,7 +184,7 @@
 			&:hover {
 				background: lighten($secondary-color, 40%);
 				& + .project-list__project-tech-popup {
-					bottom: 0
+					bottom: 0;
 				}
 			}
 		}
@@ -187,6 +242,10 @@
 			font-size: 1.4rem;
 			font-weight: bold;
 			letter-spacing: .4px;
+
+			@include mediaQuery(800px) {
+				font-size: 1.2rem;
+			}
 		}
 
 		.project-list__project-short-description {
@@ -195,6 +254,10 @@
 			margin-top: 17px;
 			letter-spacing: 0;
 			font-family: $secondary-font, monospace;
+
+			@include mediaQuery(800px) {
+				font-size: .85rem;
+			}
 		}
 
 		&.portfolio-tile {

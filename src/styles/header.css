@@ -7,6 +7,12 @@
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 10; }
+  @media screen and (max-width: 950px) {
+    .banner {
+      height: 700px; } }
+  @media screen and (max-width: 600px) {
+    .banner {
+      height: 575px; } }
   .banner .banner__down-arrow {
     width: 32px;
     height: 32px;
@@ -21,7 +27,11 @@
     justify-content: center;
     align-items: center;
     animation: downArrow 1.1s infinite ease;
-    opacity: .8; }
+    opacity: .8;
+    cursor: pointer; }
+    @media screen and (max-width: 500px) {
+      .banner .banner__down-arrow {
+        display: none; } }
     .banner .banner__down-arrow img {
       width: 21px; }
   .banner.project-background .banner__down-arrow {
@@ -44,7 +54,30 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 500;
-    font-family: "Roboto Mono", monospace; }
+    font-family: "Roboto Mono", monospace;
+    text-align: center; }
+    @media screen and (max-width: 950px) {
+      .banner .banner__project-description {
+        width: 55%;
+        font-size: 1.3rem;
+        top: 55%; } }
+    @media screen and (max-width: 800px) {
+      .banner .banner__project-description {
+        font-size: 1.2rem;
+        width: 70%;
+        padding: 25px 15px; } }
+    @media screen and (max-width: 700px) {
+      .banner .banner__project-description {
+        font-size: 1.15rem;
+        width: 75%;
+        top: 58%; } }
+    @media screen and (max-width: 500px) {
+      .banner .banner__project-description {
+        width: 85%; } }
+    @media screen and (max-width: 400px) {
+      .banner .banner__project-description {
+        width: 85%;
+        font-size: 1rem; } }
     .banner .banner__project-description span {
       color: #f5612b;
       font-weight: lighter;
@@ -54,7 +87,7 @@
     .banner.intro-background .banner__overlay {
       height: 100%;
       width: 100%;
-      background: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.7));
+      background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75));
       position: absolute;
       left: 0;
       top: 0;
@@ -77,12 +110,37 @@
     left: 50%;
     line-height: 1.5;
     text-align: left; }
+    @media screen and (max-width: 950px) {
+      .banner .portfolio-description {
+        text-align: center;
+        padding: 30px 50px; } }
+    @media screen and (max-width: 800px) {
+      .banner .portfolio-description {
+        top: 63%; } }
+    @media screen and (max-width: 700px) {
+      .banner .portfolio-description {
+        padding: 30px;
+        width: 100%; } }
     .banner .portfolio-description .portfolio-description__quote {
       font-size: 1.5rem;
       font-weight: 400;
       font-family: "Roboto Mono", monospace; }
+      @media screen and (max-width: 950px) {
+        .banner .portfolio-description .portfolio-description__quote {
+          font-size: 1.3rem; } }
+      @media screen and (max-width: 700px) {
+        .banner .portfolio-description .portfolio-description__quote {
+          font-size: 1.2rem; } }
+      @media screen and (max-width: 500px) {
+        .banner .portfolio-description .portfolio-description__quote {
+          width: 80%;
+          margin: 0 auto;
+          font-size: 1.1rem; } }
       .banner .portfolio-description .portfolio-description__quote:nth-child(2) {
         margin-top: 10px; }
+        @media screen and (max-width: 950px) {
+          .banner .portfolio-description .portfolio-description__quote:nth-child(2) {
+            margin-top: 20px; } }
   .banner .banner__picture-popup-container {
     position: absolute;
     bottom: 5px;
@@ -147,7 +205,7 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(1, 1, 56, 0.7);
+  background: rgba(1, 1, 56, 0.85);
   height: 160px; }
   @media screen and (max-width: 950px) {
     .header {
@@ -156,7 +214,14 @@
       justify-content: center;
       align-items: center;
       padding: 20px 50px;
-      height: 200px; } }
+      height: 210px; } }
+  @media screen and (max-width: 650px) {
+    .header {
+      padding: 20px;
+      background: rgba(1, 1, 56, 0.95); } }
+  @media screen and (max-width: 550px) {
+    .header {
+      padding: 15px 9px; } }
   .header .header__title-container {
     width: 100%; }
     @media screen and (max-width: 950px) {
@@ -167,8 +232,23 @@
         align-items: center; } }
     .header .header__title-container .header__title {
       font-size: 2.5rem;
-      font-weight: 200;
-      color: #f5612b; }
+      font-weight: 400;
+      color: #f5612b;
+      letter-spacing: .2px; }
+      @media screen and (max-width: 610px) {
+        .header .header__title-container .header__title {
+          font-size: 2.2rem; } }
+      @media screen and (max-width: 550px) {
+        .header .header__title-container .header__title {
+          font-size: 2rem; } }
+      @media screen and (max-width: 500px) {
+        .header .header__title-container .header__title {
+          font-size: 1.85rem;
+          text-align: center; } }
+      @media screen and (max-width: 400px) {
+        .header .header__title-container .header__title {
+          font-size: 1.62rem;
+          margin-top: 12px; } }
     .header .header__title-container .header__subtitle {
       margin-top: 10px;
       font-size: 1.7rem;
@@ -186,23 +266,29 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        padding: 4px 12px;
-        margin-top: 25px;
-        background: rgba(255, 255, 255, 0.75);
-        border-radius: 5px; }
+        padding: 3px 14px;
+        border-radius: 10px;
+        min-width: 200px;
+        margin-top: 15px; }
         .header .header__mobile-contact-buttons .contact-popup__icon-link {
           width: 40px;
           height: 37px;
           opacity: 1; }
           .header .header__mobile-contact-buttons .contact-popup__icon-link img {
-            width: 85%; } }
+            width: 81%; } }
+    @media screen and (max-width: 550px) {
+      .header .header__mobile-contact-buttons {
+        padding: 0 14px; }
+        .header .header__mobile-contact-buttons .contact-popup__icon-link {
+          width: 36px;
+          height: 36px; } }
 
 @keyframes downArrow {
   0% {
     opacity: 1;
     bottom: 10px; }
   50% {
-    opacity: .4;
+    opacity: .3;
     bottom: 20px; }
   100% {
     opacity: 1;

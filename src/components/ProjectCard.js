@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import Code from "../images/new-code.svg";
 
 export default class ProjectCard extends React.Component {
-	constructor(props) {
-		super(props);
-	}
+	// constructor(props) {
+	// 	super(props);
+	// }
 
 	shouldComponentUpdate(nextProps, nextState) {
 		return false;
@@ -20,7 +20,7 @@ export default class ProjectCard extends React.Component {
 				<li className="project-list__project portfolio-tile">
 					<Link to={`/project/${id}`}>
 						<div className="project-list__project-tech-button">
-							<img src={Code} alt="code"></img>
+							<img src={Code} alt="code" />
 						</div>
 						<div className="project-list__project-tech-popup">
 							<p className="project-list__project-tech-caption">Technologies Used</p>
@@ -42,7 +42,7 @@ export default class ProjectCard extends React.Component {
 				<li key={id} className="project-list__project">
 					<Link to={`/project/${id}`}>
 						<div className="project-list__project-tech-button">
-							<img src={Code} alt="code"></img>
+							<img src={Code} alt="code" />
 						</div>
 						<div className="project-list__project-tech-popup">
 							<p className="project-list__project-tech-caption">Technologies used</p>

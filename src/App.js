@@ -6,7 +6,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectDescription from "./components/ProjectDescription";
 import ProjectListSection from "./components/ProjectListSection";
-import PortfolioDescription from "./components/PortfolioDescription";
 import LoadingPanel from "./components/LoadingPanel";
 
 import "./styles/normalize.css";
@@ -25,13 +24,16 @@ class App extends Component {
 	componentWillMount() {}
 
 	render() {
-		console.log("project data: ", this.state.projects);
-		console.log("Environemnt: ", process.env.NODE_ENV);
+		// console.log("project data: ", this.state.projects);
+		// console.log("Environemnt: ", process.env.NODE_ENV);
 		return (
 			<div className="app">
 				<Helmet>
 					<title>Sebastian | Front-end Portfolio</title>
-					<link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,600|Roboto+Mono:300,400,500|Inconsolata:400,700" rel="stylesheet" />
+					<link
+						href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,600|Roboto+Mono:300,400,500"
+						rel="stylesheet"
+					/>
 				</Helmet>
 				<LoadingPanel />
 				<Header />

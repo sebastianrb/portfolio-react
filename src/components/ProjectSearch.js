@@ -6,11 +6,24 @@ export default class ProjectSearch extends React.Component {
 		super(props);
 
 		this.state = {
-			loading: false
+			loading: false,
+			placeholderText: ""
 		};
 
 		this.onSearchChange = this.onSearchChange.bind(this);
 		this.loadingToggle = this.loadingToggle.bind(this);
+	}
+
+	componentWillMount() {
+		if (window.innerWidth > 500) {
+			this.setState({
+				placeholderText: "Search based on technologies used, project title, keywords, etc..."
+			});
+		} else {
+			this.setState({
+				placeholderText: "Search projects"
+			});
+		}
 	}
 
 	onSearchChange(searchValue) {
@@ -55,7 +68,7 @@ export default class ProjectSearch extends React.Component {
 					<InputBoxDoneTyping
 						id="input-box-done-typing"
 						className="project-search__search-box"
-						placeholder="Find projects based on technologies used, project title, keywords, etc..."
+						placeholder={this.state.placeholderText}
 						maxLength={20}
 						defaultValue=""
 						autoComplete="off"

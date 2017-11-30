@@ -35,7 +35,7 @@ export default class ProjectListSection extends React.Component {
 		const PhotoIcon = props =>
 			<div className="banner__picture-popup-container">
 				<p className="header__photo-info-button">
-					<img src={pictureIcon} alt="photo" />
+					<img src={pictureIcon} alt="" />
 				</p>
 				<p className="banner__picture-popup">Photo taken by Sebastian</p>
 			</div>;

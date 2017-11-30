@@ -4,6 +4,11 @@ $mobile-breakpoint-primary: 950px;
 
 .project-description {
 	min-height: 800px;
+	padding-bottom: 30px;
+
+	@include mediaQuery(700px) {
+		padding-bottom: 0;
+	}
 
 	.project-description__home-link {
 		width: 200px;
@@ -18,11 +23,12 @@ $mobile-breakpoint-primary: 950px;
 		transition: all .1s;
 
 		@include mediaQuery($mobile-breakpoint-primary) {
-			border-bottom-left-radius: 6px;
 			position: relative;
 			left: 50%;
 			transform: translateX(-50%);
-			margin-bottom: 70px;
+			margin-bottom: 75px;
+			width: 100%;
+			border-radius: 0;
 		}
 
 		&:hover {
@@ -55,14 +61,18 @@ $mobile-breakpoint-primary: 950px;
 	}
 
 	.project-description__section {
-		margin: 0 auto 120px;
+		margin: 0 auto 100px;
+
+		@include mediaQuery($mobile-breakpoint-primary) {
+			margin: 0 auto 80px;
+		}
 
 		&.project-description__section--links {
 			@include flex-column(wrap, center, center);
 
 			.project-link {
 				width: 300px;
-				height: 75px;
+				height: 73px;
 				background: $secondary-color-muted;
 				cursor: pointer;
 				font-size: 1.2rem;
@@ -70,6 +80,20 @@ $mobile-breakpoint-primary: 950px;
 				transition: all .1s;
 				border: none;
 				box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.11) inset;
+
+				@include mediaQuery($mobile-breakpoint-primary) {
+					width: 275px;
+				}
+
+				@include mediaQuery(800px) {
+					width: 250px;
+					height: 65px;
+				}
+
+				@include mediaQuery(600px) {
+					font-size: 1.1rem;
+					height: 60px;
+				}
 
 				.github-disabled-message {
 					display: none;
@@ -161,13 +185,23 @@ $mobile-breakpoint-primary: 950px;
 
 	.project-description__description {
 		width: 80%;
-		margin: 0 auto 50px;
+		margin: 0 auto;
 		font-size: 1.9rem;
 		line-height: 1.5;
 		text-align: center;
 
 		@include mediaQuery($mobile-breakpoint-primary) {
 			font-size: 1.7rem;
+		}
+
+		@include mediaQuery(800px) {
+			font-size: 1.5rem;
+			width: 85%;
+		}
+
+		@include mediaQuery(600px) {
+			font-size: 1.4rem;
+			width: 95%;
 		}
 	}
 
@@ -191,6 +225,11 @@ $mobile-breakpoint-primary: 950px;
 			// border-radius: 6px;
 			@include flex-column(nowrap, center, center);
 			color: white;
+
+			@include mediaQuery(800px) {
+				width: 140px;
+				height: 120px;
+			}
 
 			p {
 				font-size: .85rem;

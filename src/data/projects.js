@@ -38,7 +38,8 @@ export const projects = [
 		shortDescription: "Landing Page for an Initial Coin Offer built with React.js",
 		description:
 			"My employer launched a cryptocurrency called Skratch, and I built the site to teach the public about the project. The site is built with React and utilizes server-side rendering via a static-site generator caled Gatsby.",
-		technologies: "React, Isomorphic/Server-side Rendering, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs, Gatsby.js",
+		technologies:
+			"React, Isomorphic/Server-side Rendering, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs, Gatsby.js",
 		technologyObjects: [
 			{
 				name: "React",
@@ -230,7 +231,7 @@ export const projects = [
 		id: 8,
 		name: "Random Fact Generator",
 		shortDescription: "A random fact generator using Ajax",
-		description: "A random fatc generator!",
+		description: "A random fact generator!",
 		technologies: "jQuery, Ajax, CSS",
 		technologyObjects: [
 			{

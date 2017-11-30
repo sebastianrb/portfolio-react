@@ -18,8 +18,12 @@ body {
 	overflow-x: hidden;
 	// background: radial-gradient(circle, white, #b5b5b5);
 	// background: linear-gradient(to right, white, #b5b5b5);
-	background-image: url("../images/cork-background.png");
+	background: linear-gradient(to bottom, $primary-color, lighten($primary-color, 7%));
 	color: $primary-color;
+
+	&.home-banner-image {
+		background: url("../images/cork-background.png");
+	}
 }
 
 p,

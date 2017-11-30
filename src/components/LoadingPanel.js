@@ -12,6 +12,9 @@ export default class LoadingPanel extends React.Component {
 	}
 
 	componentDidMount() {
+		//set background image to avoid load flashing
+		document.body.classList.add("home-banner-image");
+
 		this.setState(
 			{
 				started: true

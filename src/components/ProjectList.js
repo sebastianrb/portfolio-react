@@ -1,16 +1,11 @@
 import React from "react";
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from "react-animate-on-scroll";
 import ProjectCard from "./ProjectCard";
 import FlipMove from "react-flip-move";
-import testImage from "../images/bov.png";
 
 import "../styles/animate.min.css";
 
 export default class ProjectList extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
 	componentDidMount() {}
 
 	render() {
@@ -47,14 +42,13 @@ export default class ProjectList extends React.Component {
 
 		return (
 			<div className="project-list">
-				<ScrollAnimation animateIn="fadeIn" offset={150} duration={.8} animateOnce={true}>
+				<ScrollAnimation animateIn="fadeIn" offset={150} duration={0.8} animateOnce={true}>
 					<ul className="project-list__list">
 						<FlipMove
 							duration={700}
 							easing="ease"
 							staggerDelayBy={30}
 							staggerDurationBy={20}
-
 							onFinishAll={() => {
 								this.forceUpdate();
 							}}

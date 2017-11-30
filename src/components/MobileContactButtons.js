@@ -1,7 +1,7 @@
 import React from "react";
-import githubImage from "../images/github.svg";
-import linkedinImage from "../images/linkedin.svg";
-import mailImage from "../images/mail.svg";
+import githubImage from "../images/github-orange.svg";
+import linkedinImage from "../images/linkedin-orange.svg";
+import mailImage from "../images/mail-orange.svg";
 import "../styles/flip-popup.css";
 
 const MobileContactButtons = props => {
