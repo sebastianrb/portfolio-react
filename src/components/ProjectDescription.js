@@ -1,5 +1,6 @@
 import React from "react";
 import EasyTransition from "react-easy-transition";
+import ScrollAnimation from "react-animate-on-scroll";
 import { transitionSetting } from "../index.js";
 import { Link } from "react-router-dom";
 import _ from "lodash";
@@ -55,39 +56,41 @@ export default class ProjectDescription extends React.Component {
 							<img src={Arrow} alt="arrow" />Go Home
 						</Link>
 					</p>
-					<div className="project-description__section">
-						<h3 className="project-description__description">
-							{project.description}
-						</h3>
-					</div>
-					<div className="project-description__section">
-						<h4 className="project-description__technology-header">Technologies used</h4>
-						<ul className="project-description__technology-list">
-							{technologyList}
-						</ul>
-					</div>
-					<div className="project-description__section project-description__section--links">
-						<h4 className="project-description__links-header">Check out the project</h4>
-						<div className="project-description__buttons">
-							<button
-								className={`project-description__demo-link project-link ${projectID === "0"
-									? "no-demo"
-									: ""}`}
-							>
-								<a href={project.demoLink}>View Demo</a>
-							</button>
-							<button
-								className={`project-description__github-link project-link ${!project.githubLink
-									? "github-disabled"
-									: ""}`}
-							>
-								<a href={project.githubLink}>View GitHub Repo</a>
-								<div className="github-disabled-message">
-									Sorry, this repo belongs to an organization and is private
-								</div>
-							</button>
+					<ScrollAnimation animateIn="fadeIn" offset={200} duration={0.8} animateOnce={true}>
+						<div className="project-description__section">
+							<h3 className="project-description__description">
+								{project.description}
+							</h3>
 						</div>
-					</div>
+						<div className="project-description__section">
+							<h4 className="project-description__technology-header">Technologies used</h4>
+							<ul className="project-description__technology-list">
+								{technologyList}
+							</ul>
+						</div>
+						<div className="project-description__section project-description__section--links">
+							<h4 className="project-description__links-header">Check out the project</h4>
+							<div className="project-description__buttons">
+								<button
+									className={`project-description__demo-link project-link ${projectID === "0"
+										? "no-demo"
+										: ""}`}
+								>
+									<a href={project.demoLink}>View Demo</a>
+								</button>
+								<button
+									className={`project-description__github-link project-link ${!project.githubLink
+										? "github-disabled"
+										: ""}`}
+								>
+									<a href={project.githubLink}>View GitHub Repo</a>
+									<div className="github-disabled-message">
+										Sorry, this repo belongs to an organization and is private
+									</div>
+								</button>
+							</div>
+						</div>
+					</ScrollAnimation>
 				</section>
 			</EasyTransition>
 		);
