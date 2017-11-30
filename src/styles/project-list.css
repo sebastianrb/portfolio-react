@@ -108,7 +108,7 @@
     padding: 50px 0 80px;
     min-height: 500px; }
   .project-list .project-list__project {
-    width: 330px;
+    width: 320px;
     height: 430px;
     text-align: center;
     background: rgba(1, 1, 56, 0.8);
@@ -190,18 +190,17 @@
       padding: 0 40px;
       text-decoration: none; }
     .project-list .project-list__project .project-list__project-name {
-      font-size: 1.4rem;
+      font-size: 1.45rem;
       font-weight: bold;
       letter-spacing: .4px; }
       @media screen and (max-width: 800px) {
         .project-list .project-list__project .project-list__project-name {
           font-size: 1.2rem; } }
     .project-list .project-list__project .project-list__project-short-description {
-      font-weight: 300;
-      font-size: .9rem;
-      margin-top: 17px;
-      letter-spacing: 0;
-      font-family: "Roboto Mono", monospace; }
+      font-weight: 200;
+      font-size: .95rem;
+      margin-top: 18px;
+      letter-spacing: 0; }
       @media screen and (max-width: 800px) {
         .project-list .project-list__project .project-list__project-short-description {
           font-size: .85rem; } }
