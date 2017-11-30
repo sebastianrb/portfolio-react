@@ -2,9 +2,10 @@ export const projects = [
 	{
 		id: 0,
 		name: "Front-end Portfolio",
-		shortDescription: "A showcase of my work built with React.js (you are currently viewing this project)",
+		shortDescription:
+			"The project you are currently viewing; it's a showcase of my front-end web development work. Click here to learn more about it",
 		description:
-			"The portfolio you are currently viewing is built with React and makes calls to an API to fetch data about my projects in JSON format.",
+			"This portfolio is built with React and pulls in JSON data about my various projects to construct the user interface dynamically .",
 		technologies: "React, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs",
 		technologyObjects: [
 			{
@@ -34,10 +35,10 @@ export const projects = [
 	},
 	{
 		id: 1,
-		name: "Skratch ICO Website",
-		shortDescription: "Landing Page for an Initial Coin Offer built with React.js",
+		name: "Skratch Application",
+		shortDescription: "A web application for the Skratch Initial Coin Offering",
 		description:
-			"My employer launched a cryptocurrency called Skratch, and I built the site to teach the public about the project. The site is built with React and utilizes server-side rendering via a static-site generator caled Gatsby.",
+			"This application teaches visitors about Skratch, a new cryptocurrency grared geared towards the music industry. The site is built with React. Users can enter and submit personal data, which is then saved to a cloud-based content management system called Contentful via front-end APIs.",
 		technologies:
 			"React, Isomorphic/Server-side Rendering, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs, Gatsby.js",
 		technologyObjects: [
@@ -72,10 +73,10 @@ export const projects = [
 	},
 	{
 		id: 2,
-		name: "Student Profile Site",
-		shortDescription: "Student profile site built with pure Javascript",
+		name: "Student Profiles",
+		shortDescription: "A student profile site built with pure, vanilla Javascript",
 		description:
-			"I was a lead developer on the team that built a student profile site for Bov Academy. The site contains profiles for the school's student body and heavily utilizes multimedia and various animation effects.",
+			"I was a lead developer on the team that built a student profile site for Bov Academy, a school for web development. The site contains profiles for the school's student body and implements multimedia and various animation effects via pure vanilla JavaScript and CSS.",
 		technologies: "Vanilla Javascript, CSS, Handlebars Templating, Grunt",
 		technologyObjects: [
 			{
@@ -102,9 +103,9 @@ export const projects = [
 	{
 		id: 3,
 		name: "Weather Application",
-		shortDescription: "Weather forecasting app built with React.js and Redux",
+		shortDescription: "A weather forecasting and clothing recommendation app utilizing Redux",
 		description:
-			"This weather app allows the user to search for a city and then makes calls to two external weather API's to provide weather forecasting and clothing recommendations. The site's content adjusts dynamically in response to new city searches.",
+			"This weather app allows the user to search for a city and then makes calls to two external weather APIs to provide weather forecasting and clothing recommendations. The site is built with React and Redux.",
 		technologies: "React, Redux, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs",
 		technologyObjects: [
 			{
@@ -139,9 +140,9 @@ export const projects = [
 	{
 		id: 4,
 		name: "Photo Gallery",
-		shortDescription: "Photo gallery built with Vue.js",
+		shortDescription: "Photo gallery showcasing my personal work built with Vue.js",
 		description:
-			"This is a photo gallery featuring some of my amateur photography work. The application is built using the Vue.js JavaScript framework.",
+			"I am an amateur photographer, and this photo gallery app features some of my work. The application is built using the Vue.js JavaScript framework.",
 		technologies: "Vue.js, ES6, Sass",
 		technologyObjects: [
 			{
@@ -164,9 +165,9 @@ export const projects = [
 	{
 		id: 5,
 		name: "Developer Profile",
-		shortDescription: "Learn about me",
+		shortDescription: "A profile site about yours truly",
 		description:
-			"My developer profile is meant to help visitors get to know me better both professionally and personally. The site contains a short bio as well as pictures and other information about my life and interests. It also includes contact information.",
+			"The developer profile is meant to help visitors get to know me both professionally and personally. The site contains a short bio as well as pictures and other information about my life and interests. It is built with vanilla Javascript and jQuery.",
 		technologies: "Vanilla Javascript, jQuery Sass, Gulp",
 		technologyObjects: [
 			{
@@ -193,8 +194,9 @@ export const projects = [
 	{
 		id: 6,
 		name: "Jigsaw Puzzle",
-		shortDescription: "A jigsaw puzzle built with pure Javascript",
-		description: "A jigsaw game!",
+		shortDescription: "Jigsaw puzzle game built with pure Javascript",
+		description:
+			"This is a working, interactive jigsaw puzzle game. The user can ask for hints, reset the game as needed, and increase the difficulty. Be warned: the puzzle is fairly challenging, so pay close attention to the three available hints!",
 		technologies: "Vanilla JavaScript, CSS",
 		technologyObjects: [
 			{
@@ -208,10 +210,10 @@ export const projects = [
 	},
 	{
 		id: 7,
-		name: "Tic Tac Toe",
-		shortDescription: "A game of tic tac toe built with jQuery",
+		name: "Tic-Tac-Toe",
+		shortDescription: "Game of tic-tac-toe built with jQuery",
 		description:
-			"This is a fully functional game of Tic Tac Toe. The computer opponent is moderately intelligent; it will win when possible and often try to block the player when the player is nearing victory. In addition, the computer will sometimes move first to keep things fair and interesting.",
+			"This is a fully functional game of Tic-Tac-Toe. The computer opponent is moderately intelligent; it will win when possible and often try to block the player when the player is nearing victory. In addition, the computer will sometimes move first to keep things fair and interesting.",
 		technologies: "jQuery, Sass",
 		technologyObjects: [
 			{
@@ -230,8 +232,9 @@ export const projects = [
 	{
 		id: 8,
 		name: "Random Fact Generator",
-		shortDescription: "A random fact generator using Ajax",
-		description: "A random fact generator!",
+		shortDescription: "Generate random facts using Ajax",
+		description:
+			"The random fact generator uses Ajax to retrieve a random fact from an extrernal API and display it. The user can show a new random fact by pressing a button.",
 		technologies: "jQuery, Ajax, CSS",
 		technologyObjects: [
 			{
@@ -250,8 +253,9 @@ export const projects = [
 	{
 		id: 9,
 		name: "Handlebars Gallery",
-		shortDescription: "A photo gallery pulling random Unsplash images built with Handlebars.js",
-		description: "Handlebars gallery",
+		shortDescription: "Random photo gallery built with Handlebars.js",
+		description:
+			"This application is built using the Handlebars templating engine. It pulls in dozens of images from Unsplash and then randomly orders them.",
 		technologies: "Vanilla Javascript, Handlebars Templating, CSS",
 		technologyObjects: [
 			{

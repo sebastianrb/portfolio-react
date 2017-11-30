@@ -149,7 +149,7 @@ $mobile-breakpoint-primary: 950px;
 		width: 90%;
 		left: 50%;
 		// box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.25);
-		line-height: 1.5;
+		line-height: 1.4;
 		text-align: left;
 
 		@include mediaQuery($mobile-breakpoint-primary) {
@@ -158,7 +158,7 @@ $mobile-breakpoint-primary: 950px;
 		}
 
 		@include mediaQuery(800px) {
-			top: 63%;
+			top: 63.5%;
 		}
 
 		@include mediaQuery(700px) {
@@ -177,6 +177,8 @@ $mobile-breakpoint-primary: 950px;
 
 			@include mediaQuery(700px) {
 				font-size: 1.2rem;
+				line-height: 1.2;
+				letter-spacing: -.4px;
 			}
 
 			@include mediaQuery(500px) {
@@ -190,6 +192,10 @@ $mobile-breakpoint-primary: 950px;
 
 				@include mediaQuery($mobile-breakpoint-primary) {
 					margin-top: 20px;
+				}
+
+				@include mediaQuery(700px) {
+					margin-top: 15px;
 				}
 			}
 		}
