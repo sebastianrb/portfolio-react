@@ -144,15 +144,14 @@ $mobile-breakpoint-primary: 950px;
 		width: 320px;
 		height: 430px;
 		text-align: center;
-		// background: radial-gradient(circle, transparentize($primary-color, .5), transparentize($primary-color, .4));
-		background: transparentize($primary-color, .2);
+		background: transparentize($primary-color, .05);
+		// background: $primary-color;
 		margin: 50px;
 		cursor: pointer;
 		transition: border .25s, box-shadow .3s;
 		position: relative;
 		overflow: hidden;
 		border-top: 9px solid $secondary-color;
-		// box-shadow: 0 2px 8px 0 gray;
 		box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.45);
 		overflow: hidden;
 		// box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -164,6 +163,11 @@ $mobile-breakpoint-primary: 950px;
 		@include mediaQuery(800px) {
 			width: 280px;
 			height: 375px;
+		}
+
+		@include mediaQuery(600px) {
+			width: 260px;
+			height: 360px;
 		}
 
 		.project-list__project-tech-button {
@@ -234,8 +238,16 @@ $mobile-breakpoint-primary: 950px;
 		.project-list__project-text {
 			height: 55%;
 			@include flex-column(nowrap, center, center);
-			padding: 0 40px;
+			padding: 0 35px;
 			text-decoration: none;
+
+			@include mediaQuery(800px) {
+				padding: 0 30px;
+			}
+
+			@include mediaQuery(600px) {
+				padding: 0 20px;
+			}
 		}
 
 		.project-list__project-name {
@@ -244,6 +256,10 @@ $mobile-breakpoint-primary: 950px;
 			letter-spacing: .4px;
 
 			@include mediaQuery(800px) {
+				font-size: 1.2rem;
+			}
+
+			@include mediaQuery(600px) {
 				font-size: 1.2rem;
 			}
 		}
@@ -258,12 +274,16 @@ $mobile-breakpoint-primary: 950px;
 			@include mediaQuery(800px) {
 				font-size: .85rem;
 			}
+
+			@include mediaQuery(600px) {
+				font-size: .8rem;
+			}
 		}
 
 		&.portfolio-tile {
 			.project-list__project-text {
 				height: 100%;
-				padding: 20px;
+				padding: 20px 25px;
 			}
 		}
 	}

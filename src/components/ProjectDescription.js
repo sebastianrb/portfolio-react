@@ -56,7 +56,7 @@ export default class ProjectDescription extends React.Component {
 							<img src={Arrow} alt="arrow" />Go Home
 						</Link>
 					</p>
-					<ScrollAnimation animateIn="fadeIn" offset={200} duration={0.8} animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" offset={220} duration={0.6} animateOnce={true}>
 						<div className="project-description__section">
 							<h3 className="project-description__description">
 								{project.description}

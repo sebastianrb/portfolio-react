@@ -35,12 +35,21 @@ $mobile-breakpoint-primary: 950px;
 		opacity: .8;
 		cursor: pointer;
 
-		@include mediaQuery(500px) {
-			display: none;
+		// @include mediaQuery(500px) {
+		// 	display: none;
+		// }
+
+		@include mediaQuery(600px) {
+			width: 29px;
+			height: 29px;
 		}
 
 		img {
 			width: 21px;
+
+			@include mediaQuery(600px) {
+				width: 18px;
+			}
 		}
 	}
 
@@ -94,6 +103,7 @@ $mobile-breakpoint-primary: 950px;
 
 		@include mediaQuery(500px) {
 			width: 85%;
+			padding: 20px 15px;
 		}
 
 		@include mediaQuery(400px) {

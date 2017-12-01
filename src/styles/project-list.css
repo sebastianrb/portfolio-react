@@ -111,7 +111,7 @@
     width: 320px;
     height: 430px;
     text-align: center;
-    background: rgba(1, 1, 56, 0.8);
+    background: rgba(1, 1, 56, 0.95);
     margin: 50px;
     cursor: pointer;
     transition: border .25s, box-shadow .3s;
@@ -127,6 +127,10 @@
       .project-list .project-list__project {
         width: 280px;
         height: 375px; } }
+    @media screen and (max-width: 600px) {
+      .project-list .project-list__project {
+        width: 260px;
+        height: 360px; } }
     .project-list .project-list__project .project-list__project-tech-button {
       position: absolute;
       top: 0;
@@ -187,13 +191,22 @@
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      padding: 0 40px;
+      padding: 0 35px;
       text-decoration: none; }
+      @media screen and (max-width: 800px) {
+        .project-list .project-list__project .project-list__project-text {
+          padding: 0 30px; } }
+      @media screen and (max-width: 600px) {
+        .project-list .project-list__project .project-list__project-text {
+          padding: 0 20px; } }
     .project-list .project-list__project .project-list__project-name {
       font-size: 1.45rem;
       font-weight: bold;
       letter-spacing: .4px; }
       @media screen and (max-width: 800px) {
+        .project-list .project-list__project .project-list__project-name {
+          font-size: 1.2rem; } }
+      @media screen and (max-width: 600px) {
         .project-list .project-list__project .project-list__project-name {
           font-size: 1.2rem; } }
     .project-list .project-list__project .project-list__project-short-description {
@@ -204,9 +217,12 @@
       @media screen and (max-width: 800px) {
         .project-list .project-list__project .project-list__project-short-description {
           font-size: .85rem; } }
+      @media screen and (max-width: 600px) {
+        .project-list .project-list__project .project-list__project-short-description {
+          font-size: .8rem; } }
     .project-list .project-list__project.portfolio-tile .project-list__project-text {
       height: 100%;
-      padding: 20px; }
+      padding: 20px 25px; }
   .project-list .project-list__project-image-container {
     height: 41%;
     overflow: hidden;

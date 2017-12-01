@@ -31,6 +31,10 @@ $mobile-breakpoint-primary: 950px;
 			border-radius: 0;
 		}
 
+		@include mediaQuery(600px) {
+			font-size: 1.1rem;
+		}
+
 		&:hover {
 			background: transparentize($primary-color, .70);
 			a {
@@ -65,6 +69,10 @@ $mobile-breakpoint-primary: 950px;
 
 		@include mediaQuery($mobile-breakpoint-primary) {
 			margin: 0 auto 80px;
+		}
+
+		@include mediaQuery(500px) {
+			margin: 0 auto 70px;
 		}
 
 		&.project-description__section--links {
@@ -190,12 +198,12 @@ $mobile-breakpoint-primary: 950px;
 	.project-description__description {
 		width: 80%;
 		margin: 0 auto;
-		font-size: 1.9rem;
+		font-size: 1.8rem;
 		line-height: 1.4;
 		text-align: center;
 
 		@include mediaQuery($mobile-breakpoint-primary) {
-			font-size: 1.7rem;
+			font-size: 1.65rem;
 		}
 
 		@include mediaQuery(800px) {
@@ -204,7 +212,7 @@ $mobile-breakpoint-primary: 950px;
 		}
 
 		@include mediaQuery(600px) {
-			font-size: 1.4rem;
+			font-size: 1.3rem;
 			width: 95%;
 		}
 	}
@@ -218,12 +226,21 @@ $mobile-breakpoint-primary: 950px;
 
 	.project-description__technology-list {
 		margin: 20px auto 0;
-		width: 80%;
+		width: 85%;
+		max-width: 900px;
 		@include flex-row(wrap, center, center);
 
+		@include mediaQuery(800px) {
+			width: 90%;
+		}
+
+		@include mediaQuery(500px) {
+			width: 99%;
+		}
+
 		.project-description__technology-list-item {
-			width: 150px;
-			height: 130px;
+			width: 140px;
+			height: 125px;
 			background: transparentize($primary-color, .4);
 			margin: 20px;
 			// border-radius: 6px;
@@ -233,6 +250,10 @@ $mobile-breakpoint-primary: 950px;
 			@include mediaQuery(800px) {
 				width: 140px;
 				height: 120px;
+			}
+
+			@include mediaQuery(500px) {
+				margin: 20px 14px;
 			}
 
 			p {
