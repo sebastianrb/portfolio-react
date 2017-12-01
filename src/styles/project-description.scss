@@ -239,16 +239,16 @@ $mobile-breakpoint-primary: 950px;
 		}
 
 		.project-description__technology-list-item {
-			width: 140px;
+			width: 135px;
 			height: 125px;
-			background: transparentize($primary-color, .4);
+			background: transparentize($primary-color, .5);
 			margin: 20px;
 			// border-radius: 6px;
 			@include flex-column(nowrap, center, center);
 			color: white;
 
 			@include mediaQuery(800px) {
-				width: 140px;
+				width: 130px;
 				height: 120px;
 			}
 

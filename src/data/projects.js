@@ -173,6 +173,10 @@ export const projects = [
 			{
 				name: "Vanilla Javascript",
 				tag: "js"
+			},
+			{
+				name: "CSS",
+				tag: "css"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/jigsaw/",
