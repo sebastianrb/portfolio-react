@@ -54,7 +54,7 @@
     font-size: 1.5rem;
     background: rgba(1, 1, 56, 0.9);
     font-weight: lighter;
-    letter-spacing: -.3px;
+    letter-spacing: -.9px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 500;
@@ -142,7 +142,7 @@
       font-size: 1.5rem;
       font-weight: 300;
       font-family: "Roboto Mono", monospace;
-      letter-spacing: -.3px; }
+      letter-spacing: -1px; }
       @media screen and (max-width: 950px) {
         .banner .portfolio-description .portfolio-description__quote,
         .banner .portfolio-description .portfolio-description__quote--mobile {
@@ -152,7 +152,7 @@
         .banner .portfolio-description .portfolio-description__quote--mobile {
           font-size: 1.2rem;
           line-height: 1.2;
-          letter-spacing: -.4px; } }
+          letter-spacing: -.9px; } }
       @media screen and (max-width: 500px) {
         .banner .portfolio-description .portfolio-description__quote,
         .banner .portfolio-description .portfolio-description__quote--mobile {
