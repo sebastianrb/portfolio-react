@@ -129,8 +129,9 @@
         height: 375px; } }
     @media screen and (max-width: 600px) {
       .project-list .project-list__project {
-        width: 260px;
-        height: 360px; } }
+        width: 250px;
+        height: 350px;
+        margin: 25px 30px; } }
     .project-list .project-list__project .project-list__project-tech-button {
       position: absolute;
       top: 0;

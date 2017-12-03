@@ -8,7 +8,8 @@ const PortfolioDescription = props => {
 		<section className="portfolio-description">
 			<p className="portfolio-description__quote">I'm a React-focused front-end developer.</p>
 			<p className="portfolio-description__quote">Below, you can take a look at some of my projects.</p>
-			<ul className="portfolio-description__fact-list" />
+			<p className="portfolio-description__quote--mobile">Welcome to my portfolio</p>
+			{/*			<ul className="portfolio-description__fact-list" />*/}
 		</section>
 	);
 };

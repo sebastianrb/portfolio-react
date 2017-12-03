@@ -1,6 +1,7 @@
 @import "abstract.scss", "variables.scss";
 
 $mobile-breakpoint-primary: 950px;
+$banner-height-mobile: 575px;
 
 .banner {
 	font-size: 1.2rem;
@@ -17,7 +18,7 @@ $mobile-breakpoint-primary: 950px;
 	}
 
 	@include mediaQuery(600px) {
-		height: 575px;
+		height: $banner-height-mobile;
 	}
 
 	.banner__down-arrow {
@@ -101,6 +102,10 @@ $mobile-breakpoint-primary: 950px;
 			top: 58%;
 		}
 
+		@include mediaQuery(650px) {
+			top: 60%;
+		}
+
 		@include mediaQuery(500px) {
 			width: 85%;
 			padding: 20px 15px;
@@ -132,6 +137,10 @@ $mobile-breakpoint-primary: 950px;
 			left: 0;
 			top: 0;
 			z-index: -10;
+
+			@include mediaQuery(600px) {
+				background: rgba(1, 1, 56, 0.5);
+			}
 		}
 	}
 
@@ -165,10 +174,12 @@ $mobile-breakpoint-primary: 950px;
 		@include mediaQuery($mobile-breakpoint-primary) {
 			text-align: center;
 			padding: 30px 50px;
+			top: 61%;
 		}
 
 		@include mediaQuery(800px) {
-			top: 63.5%;
+			padding: 30px;
+			width: 100%;
 		}
 
 		@include mediaQuery(700px) {
@@ -176,10 +187,16 @@ $mobile-breakpoint-primary: 950px;
 			width: 100%;
 		}
 
-		.portfolio-description__quote {
+		@include mediaQuery(650px) {
+			top: 63.5%;
+		}
+
+		.portfolio-description__quote,
+		.portfolio-description__quote--mobile {
 			font-size: 1.5rem;
 			font-weight: 300;
 			font-family: $secondary-font, monospace;
+			letter-spacing: -.3px;
 
 			@include mediaQuery($mobile-breakpoint-primary) {
 				font-size: 1.3rem;
@@ -208,6 +225,19 @@ $mobile-breakpoint-primary: 950px;
 				@include mediaQuery(700px) {
 					margin-top: 15px;
 				}
+			}
+
+			@include mediaQuery(600px) {
+				display: none;
+			}
+		}
+
+		.portfolio-description__quote--mobile {
+			display: none;
+
+			@include mediaQuery(600px) {
+				display: block;
+				font-size: 1.2rem;
 			}
 		}
 	}
@@ -300,7 +330,14 @@ $mobile-breakpoint-primary: 950px;
 	@include mediaQuery(650px) {
 		padding: 20px;
 		background: transparentize($primary-color, .05);
+		height: $header-height-mobile + 30;
 	}
+
+	// @include mediaQuery(600px) {
+	// 	height: $banner-height-mobile * .61;
+	// 	background: transparent;
+	// 	@include flex-column(nowrap, flex-end, center);
+	// }
 
 	@include mediaQuery(550px) {
 		padding: 15px 9px;
@@ -316,7 +353,7 @@ $mobile-breakpoint-primary: 950px;
 			font-size: 2.5rem;
 			font-weight: 400;
 			color: $secondary-color;
-			letter-spacing: .2px;
+			letter-spacing: .1px;
 
 			@include mediaQuery(610px) {
 				font-size: 2.2rem;
@@ -329,10 +366,11 @@ $mobile-breakpoint-primary: 950px;
 			@include mediaQuery(500px) {
 				font-size: 1.85rem;
 				text-align: center;
+				letter-spacing: -.3px;
 			}
 
 			@include mediaQuery(400px) {
-				font-size: 1.62rem;
+				font-size: 1.68rem;
 				margin-top: 12px;
 			}
 		}
