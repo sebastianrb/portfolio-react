@@ -269,6 +269,10 @@ export const projects = [
 			{
 				name: "Handlebars",
 				tag: "handlebarsjs"
+			},
+			{
+				name: "Sass",
+				tag: "sass"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/handlebars-gallery/",

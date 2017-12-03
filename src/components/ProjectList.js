@@ -42,7 +42,7 @@ export default class ProjectList extends React.Component {
 
 		return (
 			<div className="project-list">
-				<ScrollAnimation animateIn="fadeIn" offset={220} duration={0.6} animateOnce={true}>
+				<ScrollAnimation animateIn="fadeIn" offset={260} duration={0.6} animateOnce={true}>
 					<ul className="project-list__list">
 						<FlipMove
 							duration={700}
