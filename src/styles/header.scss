@@ -77,7 +77,7 @@ $banner-height-mobile: 575px;
 		font-size: 1.5rem;
 		background: transparentize($primary-color, .1);
 		font-weight: lighter;
-		letter-spacing: -.3px;
+		letter-spacing: -.9px;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		font-weight: 500;
@@ -196,7 +196,7 @@ $banner-height-mobile: 575px;
 			font-size: 1.5rem;
 			font-weight: 300;
 			font-family: $secondary-font, monospace;
-			letter-spacing: -.3px;
+			letter-spacing: -1px;
 
 			@include mediaQuery($mobile-breakpoint-primary) {
 				font-size: 1.3rem;
@@ -205,7 +205,7 @@ $banner-height-mobile: 575px;
 			@include mediaQuery(700px) {
 				font-size: 1.2rem;
 				line-height: 1.2;
-				letter-spacing: -.4px;
+				letter-spacing: -.9px;
 			}
 
 			@include mediaQuery(500px) {
