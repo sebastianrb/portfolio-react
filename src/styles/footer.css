@@ -6,4 +6,5 @@
   text-align: center;
   box-shadow: 0 0 20px 2px grey;
   line-height: 1.5;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  z-index: 110; }

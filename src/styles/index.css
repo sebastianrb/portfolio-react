@@ -31,3 +31,28 @@ ul {
 
 ::selection {
   background: #ffb7b7; }
+
+.ScrollUpButton__Container {
+  background-color: #010138;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  position: fixed;
+  bottom: 20px;
+  width: 39px;
+  height: 39px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-property: opacity, right;
+  transition-property: opacity, right;
+  cursor: pointer;
+  opacity: 0;
+  right: -75px;
+  z-index: 99;
+  padding: 3px; }
+
+.ScrollUpButton__Toggled {
+  opacity: .8;
+  right: 20px; }
+  @media screen and (max-width: 600px) {
+    .ScrollUpButton__Toggled {
+      right: 10px; } }

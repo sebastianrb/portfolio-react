@@ -354,3 +354,13 @@ $mobile-breakpoint-primary: 950px;
 	/* Firefox 18- */
 	color: $primary-color;
 }
+
+@keyframes fadeEnter {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

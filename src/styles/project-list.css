@@ -278,3 +278,9 @@
 :-moz-placeholder {
   /* Firefox 18- */
   color: #010138; }
+
+@keyframes fadeEnter {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
