@@ -37,6 +37,25 @@ export default class ProjectDescription extends React.Component {
 			);
 		});
 
+		let githubButton;
+
+		if (!project.githubLink) {
+			githubButton = (
+				<button className="project-description__github-link project-link github-disabled">
+					<p>View GitHub Repo</p>{" "}
+					<div className="github-disabled-message">
+						Sorry, this repo belongs to an organization and is private
+					</div>
+				</button>
+			);
+		} else {
+			githubButton = (
+				<a href={project.githubLink} className="project-description__github-link project-link">
+					<p>View GitHub Repo</p>{" "}
+				</a>
+			);
+		}
+
 		return (
 			<EasyTransition
 				path={window.location.pathname}
@@ -71,23 +90,15 @@ export default class ProjectDescription extends React.Component {
 						<div className="project-description__section project-description__section--links">
 							<h4 className="project-description__links-header">Check out the project</h4>
 							<div className="project-description__buttons">
-								<button
+								<a
+									href={project.demoLink}
 									className={`project-description__demo-link project-link ${projectID === "0"
 										? "no-demo"
 										: ""}`}
 								>
-									<a href={project.demoLink}>View Demo</a>
-								</button>
-								<button
-									className={`project-description__github-link project-link ${!project.githubLink
-										? "github-disabled"
-										: ""}`}
-								>
-									<a href={project.githubLink}>View GitHub Repo</a>
-									<div className="github-disabled-message">
-										Sorry, this repo belongs to an organization and is private
-									</div>
-								</button>
+									{" "}<p>View Demo</p>
+								</a>
+								{githubButton}
 							</div>
 						</div>
 					</ScrollAnimation>

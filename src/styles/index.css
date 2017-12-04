@@ -48,10 +48,14 @@ ul {
   opacity: 0;
   right: -75px;
   z-index: 99;
-  padding: 3px; }
+  padding: 4px; }
+  @media screen and (max-width: 600px) {
+    .ScrollUpButton__Container {
+      width: 36px;
+      height: 36px; } }
 
 .ScrollUpButton__Toggled {
-  opacity: .8;
+  opacity: .75;
   right: 20px; }
   @media screen and (max-width: 600px) {
     .ScrollUpButton__Toggled {

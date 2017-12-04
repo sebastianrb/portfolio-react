@@ -88,6 +88,7 @@ $mobile-breakpoint-primary: 950px;
 				transition: all .1s;
 				border: none;
 				box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.11) inset;
+				border-radius: 5px;
 
 				@include mediaQuery($mobile-breakpoint-primary) {
 					width: 275px;
@@ -116,6 +117,7 @@ $mobile-breakpoint-primary: 950px;
 					position: relative;
 					cursor: auto;
 					opacity: .8;
+					color: white;
 
 					@include mediaQuery($mobile-breakpoint-primary) {
 						display: none;
