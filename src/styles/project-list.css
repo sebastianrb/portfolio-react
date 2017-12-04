@@ -133,22 +133,26 @@
         height: 350px;
         margin: 25px 30px; } }
     .project-list .project-list__project .project-list__project-tech-button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50px;
-      height: 35px;
-      background: rgba(255, 255, 255, 0.55);
-      border-bottom-left-radius: 1px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #f5612b;
+      padding: 4px;
+      margin-bottom: 18px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
       transition: background .3s; }
+      @media screen and (max-width: 800px) {
+        .project-list .project-list__project .project-list__project-tech-button {
+          display: none; } }
       .project-list .project-list__project .project-list__project-tech-button img {
-        width: 25px; }
+        width: 75%;
+        position: relative;
+        top: .5px; }
       .project-list .project-list__project .project-list__project-tech-button:hover {
-        background: #fef2ee; }
+        background: #f7855c; }
         .project-list .project-list__project .project-list__project-tech-button:hover + .project-list__project-tech-popup {
           bottom: 0; }
     .project-list .project-list__project .project-list__project-tech-caption {
@@ -213,7 +217,7 @@
     .project-list .project-list__project .project-list__project-short-description {
       font-weight: 200;
       font-size: .95rem;
-      margin-top: 18px;
+      margin-top: 10px;
       letter-spacing: 0; }
       @media screen and (max-width: 800px) {
         .project-list .project-list__project .project-list__project-short-description {
