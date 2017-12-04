@@ -38,7 +38,7 @@ export const projects = [
 		name: "Skratch Application",
 		shortDescription: "Web application for the Skratch Initial Coin Offering",
 		description:
-			"This application teaches visitors about Skratch, a new cryptocurrency geared geared towards the music industry. The site is built with React. Users can enter and submit personal data, which is then saved to a cloud-based content management system called Contentful via front-end APIs.",
+			"This application teaches visitors about Skratch, a new cryptocurrency geared towards the music industry. The site is built with React. Users can enter and submit personal data, which is then saved to a cloud-based content management system called Contentful via front-end APIs.",
 		technologies:
 			"React, Isomorphic/Server-side Rendering, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs, Gatsby.js",
 		technologyObjects: [
@@ -167,7 +167,7 @@ export const projects = [
 		name: "Jigsaw Puzzle",
 		shortDescription: "Jigsaw puzzle app built with vanilla Javascript",
 		description:
-			"This is a working, interactive jigsaw puzzle game. The user can ask for hints, reset the game as needed, and increase the difficulty. Be warned: the puzzle is fairly challenging, so pay close attention to the three available hints!",
+			"This is a fully featured jigsaw puzzle game. The user can ask for hints, reset the game as needed, and increase the difficulty. Be warned: the puzzle is fairly challenging, so pay close attention to the three available hints!",
 		technologies: "Vanilla JavaScript, CSS",
 		technologyObjects: [
 			{
@@ -238,7 +238,7 @@ export const projects = [
 		name: "Random Fact Generator",
 		shortDescription: "Generate random facts using AJAX",
 		description:
-			"This app uses Ajax to retrieve a random fact from an extrernal API and then displays it. The user can show a new random fact by pressing a button.",
+			"This app uses Ajax to retrieve a random fact from an API and then displays it. The user can show a new random fact by pressing a button.",
 		technologies: "jQuery, Ajax, CSS",
 		technologyObjects: [
 			{
