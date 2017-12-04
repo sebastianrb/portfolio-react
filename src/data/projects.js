@@ -3,9 +3,9 @@ export const projects = [
 		id: 0,
 		name: "Front-end Portfolio",
 		shortDescription:
-			"The project you are currently viewing; it's a showcase of my front-end web development work. Click here to learn more about it",
+			"A showcase of my front-end web development work (and the project you are currently viewing)",
 		description:
-			"This portfolio is built with React and pulls in JSON data about my projects to dynamically construct the UI.",
+			"This portfolio is built with React and uses JSON data about my projects to dynamically construct the UI.",
 		technologies: "React, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs",
 		technologyObjects: [
 			{
@@ -36,7 +36,7 @@ export const projects = [
 	{
 		id: 1,
 		name: "Skratch Application",
-		shortDescription: "A web application for the Skratch Initial Coin Offering",
+		shortDescription: "Web application for the Skratch Initial Coin Offering",
 		description:
 			"This application teaches visitors about Skratch, a new cryptocurrency geared geared towards the music industry. The site is built with React. Users can enter and submit personal data, which is then saved to a cloud-based content management system called Contentful via front-end APIs.",
 		technologies:
@@ -74,7 +74,7 @@ export const projects = [
 	{
 		id: 2,
 		name: "Student Profiles",
-		shortDescription: "A student profile site built with vanilla Javascript",
+		shortDescription: "Student profile site built with vanilla Javascript",
 		description:
 			"I was a lead developer on the team that built a student profile site for Bov Academy, a school for web development. The site contains profiles for the school's student body and implements multimedia and various animation effects via vanilla JavaScript and CSS.",
 		technologies: "Vanilla Javascript, CSS, Handlebars Templating, Grunt",
@@ -103,7 +103,7 @@ export const projects = [
 	{
 		id: 3,
 		name: "Weather Application",
-		shortDescription: "A weather forecasting and clothing recommendation app utilizing Redux",
+		shortDescription: "Weather forecasting and clothing recommendation app utilizing Redux",
 		description:
 			"This weather app allows the user to search for a city and then calls two weather APIs to provide weather forecasting and clothing recommendations. The app is built with React and Redux.",
 		technologies: "React, Redux, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs",
@@ -257,9 +257,9 @@ export const projects = [
 	{
 		id: 9,
 		name: "Handlebars Gallery",
-		shortDescription: "Random photo gallery built with Handlebars.js",
+		shortDescription: "Randomized photo gallery built with Handlebars.js",
 		description:
-			"This application is built using the Handlebars templating engine. It retrieves dozens of random images from the Unsplash API and then displays them in a grid.",
+			"This application is built using the Handlebars templating engine. It retrieves dozens of random images from the Unsplash API and then displays them in an album-like grid.",
 		technologies: "Vanilla Javascript, Handlebars Templating, CSS",
 		technologyObjects: [
 			{

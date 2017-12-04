@@ -172,12 +172,7 @@ $mobile-breakpoint-primary: 950px;
 		}
 
 		.project-list__project-tech-button {
-			// position: absolute;
-			// top: 15%;
-			// right: 50%;
-			// transform: translate(50%);
 			width: 34px;
-			// border: 2px solid white;
 			height: 34px;
 			border-radius: 50%;
 			background: $secondary-color;
@@ -185,6 +180,7 @@ $mobile-breakpoint-primary: 950px;
 			margin-bottom: 18px;
 			@include flex-column(nowrap, center, center);
 			transition: background .3s;
+			opacity: .9;
 
 			@include mediaQuery(800px) {
 				display: none;
@@ -197,7 +193,7 @@ $mobile-breakpoint-primary: 950px;
 			}
 
 			&:hover {
-				background: lighten($secondary-color, 10%);
+				background: lighten($secondary-color, 15%);
 				& + .project-list__project-tech-popup {
 					bottom: 0;
 				}
@@ -217,7 +213,7 @@ $mobile-breakpoint-primary: 950px;
 			position: absolute;
 			bottom: -300px;
 			width: 100%;
-			height: auto;
+			height: 210px;
 			background: black;
 			padding: 35px 25px;
 			@include flex-column(nowrap, center, center);
