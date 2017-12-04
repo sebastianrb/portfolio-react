@@ -158,7 +158,7 @@
     .project-list .project-list__project .project-list__project-tech-caption {
       color: #f5612b;
       font-size: 1.1rem;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
       font-weight: 600; }
     .project-list .project-list__project .project-list__project-tech-popup {
       transition: bottom .5s;
@@ -166,16 +166,19 @@
       position: absolute;
       bottom: -300px;
       width: 100%;
-      height: 300px;
-      background: #010138;
-      padding: 30px;
+      height: auto;
+      background: black;
+      padding: 35px 25px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      font-size: 1rem;
+      font-size: .88rem;
       font-family: "Roboto Mono", monospace;
       z-index: 1000; }
+      @media screen and (max-width: 800px) {
+        .project-list .project-list__project .project-list__project-tech-popup {
+          display: none; } }
     .project-list .project-list__project:hover {
       border-top: 9px solid #fef2ee; }
       .project-list .project-list__project:hover img {

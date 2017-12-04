@@ -46,7 +46,7 @@ export default class ProjectCard extends React.Component {
 								<img src={Code} alt="code" />
 							</div>
 							<div className="project-list__project-tech-popup">
-								<p className="project-list__project-tech-caption">Technologies used</p>
+								<p className="project-list__project-tech-caption">Technologies Used</p>
 								{project.technologies}
 							</div>
 							<h3 className="project-list__project-name">

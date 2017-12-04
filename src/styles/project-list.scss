@@ -207,7 +207,7 @@ $mobile-breakpoint-primary: 950px;
 		.project-list__project-tech-caption {
 			color: $secondary-color;
 			font-size: 1.1rem;
-			margin-bottom: 20px;
+			margin-bottom: 14px;
 			font-weight: 600;
 		}
 
@@ -217,13 +217,17 @@ $mobile-breakpoint-primary: 950px;
 			position: absolute;
 			bottom: -300px;
 			width: 100%;
-			height: 300px;
-			background: $primary-color;
-			padding: 30px;
+			height: auto;
+			background: black;
+			padding: 35px 25px;
 			@include flex-column(nowrap, center, center);
-			font-size: 1rem;
+			font-size: .88rem;
 			font-family: $secondary-font, monospace;
 			z-index: 1000;
+
+			@include mediaQuery(800px) {
+				display: none;
+			}
 		}
 
 		&:hover {
