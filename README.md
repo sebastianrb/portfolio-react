@@ -1,3 +1,3 @@
 ## React Portfolio
 
-Demo: [sebastianrb.surge.sh](http://sebastianrb.surge.sh/)
+Demo: [sebastianrb.surge.sh](https://sebastianrb.surge.sh/)
