@@ -64,6 +64,7 @@ ul {
   z-index: $header-z - 1;
   padding: 4px;
 
+
   @include mediaQuery(600px) {
       width: 36px;
       height: 36px;
@@ -73,6 +74,7 @@ ul {
 .ScrollUpButton__Toggled {
   opacity: .75;
   right: 20px;
+
 
   @include mediaQuery(600px) {
   	right: 10px;

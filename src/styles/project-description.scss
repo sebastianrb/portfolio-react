@@ -198,7 +198,8 @@ $mobile-breakpoint-primary: 950px;
 	}
 
 	.project-description__description {
-		width: 80%;
+		width: 74%;
+		max-width: 1080px;
 		margin: 0 auto;
 		font-size: 1.8rem;
 		line-height: 1.4;
@@ -217,13 +218,27 @@ $mobile-breakpoint-primary: 950px;
 			font-size: 1.3rem;
 			width: 95%;
 		}
+
+		@include mediaQuery(400px) {
+			font-size: 1.25rem;
+			width: 95%;
+		}
 	}
 
 	.project-description__technology-header,
 	.project-description__links-header {
 		text-align: center;
-		font-size: 1.5rem;
+		font-size: 1.55rem;
 		color: gray;
+
+		@include mediaQuery(800px) {
+			font-size: 1.45rem;
+		}
+
+		@include mediaQuery(600px) {
+			font-size: 1.3rem;
+			width: 95%;
+		}
 	}
 
 	.project-description__technology-list {
@@ -252,6 +267,11 @@ $mobile-breakpoint-primary: 950px;
 			@include mediaQuery(800px) {
 				width: 130px;
 				height: 120px;
+			}
+
+			@include mediaQuery(500px) {
+				width: 125px;
+				height: 110px;
 			}
 
 			@include mediaQuery(500px) {
