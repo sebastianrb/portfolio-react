@@ -60,15 +60,16 @@
       align-items: center; }
       .project-description .project-description__section.project-description__section--links .project-link {
         width: 300px;
-        height: 73px;
+        height: 72px;
         background: #d4643b;
         cursor: pointer;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin: 20px;
         transition: all .1s;
         border: none;
         box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.11) inset;
-        border-radius: 5px; }
+        border-radius: 5px;
+        font-weight: 500; }
         @media screen and (max-width: 950px) {
           .project-description .project-description__section.project-description__section--links .project-link {
             width: 275px; } }
@@ -130,12 +131,12 @@
             @media screen and (max-width: 900px) {
               .project-description .project-description__section.project-description__section--links .project-link.github-disabled .github-disabled-message {
                 display: none; } }
-        .project-description .project-description__section.project-description__section--links .project-link:hover {
+        .project-description .project-description__section.project-description__section--links .project-link:hover:not(.github-disabled) {
           background: #f5612b; }
-          .project-description .project-description__section.project-description__section--links .project-link:hover .github-disabled-message {
-            left: 110%;
-            opacity: 1;
-            transition: opacity .4s, left .45s; }
+        .project-description .project-description__section.project-description__section--links .project-link:hover .github-disabled-message {
+          left: 110%;
+          opacity: 1;
+          transition: opacity .4s, left .45s; }
       .project-description .project-description__section.project-description__section--links a {
         text-decoration: none;
         color: white;

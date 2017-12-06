@@ -80,15 +80,16 @@ $mobile-breakpoint-primary: 950px;
 
 			.project-link {
 				width: 300px;
-				height: 73px;
+				height: 72px;
 				background: $secondary-color-muted;
 				cursor: pointer;
-				font-size: 1.2rem;
+				font-size: 1.3rem;
 				margin: 20px;
 				transition: all .1s;
 				border: none;
 				box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.11) inset;
 				border-radius: 5px;
+				font-weight: 500;
 
 				@include mediaQuery($mobile-breakpoint-primary) {
 					width: 275px;
@@ -173,7 +174,10 @@ $mobile-breakpoint-primary: 950px;
 				}
 
 				&:hover {
-					background: $secondary-color;
+
+					&:not(.github-disabled) {
+						background: $secondary-color;
+					}
 
 					.github-disabled-message {
 						left: 110%;
