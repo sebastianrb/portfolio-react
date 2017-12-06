@@ -211,10 +211,10 @@ export const projects = [
 	},
 	{
 		id: 6,
-		name: "Developer Profile",
+		name: "Profile",
 		shortDescription: "A profile site about me",
 		description:
-			"The developer profile is meant to help visitors get to know me both professionally and personally. The site contains a short bio as well as pictures and other information about my life and interests. It is built with vanilla Javascript and jQuery.",
+			"The profile app tells visitors a little bit about me. The site contains a short bio as well as pictures and other information about my life and interests. It is built with vanilla Javascript and jQuery.",
 		technologies: "Vanilla Javascript, jQuery Sass, Gulp",
 		technologyObjects: [
 			{
