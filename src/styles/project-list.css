@@ -107,9 +107,15 @@
     margin: 0 auto;
     padding: 50px 0 80px;
     min-height: 500px; }
+    @media screen and (max-width: 1350px) {
+      .project-list .project-list__list > div {
+        padding: 50px 20px 80px; } }
+    @media screen and (max-width: 900px) {
+      .project-list .project-list__list > div {
+        padding: 50px 0 80px; } }
   .project-list .project-list__project {
-    width: 320px;
-    height: 430px;
+    width: 315px;
+    height: 425px;
     text-align: center;
     background: rgba(1, 1, 56, 0.95);
     margin: 50px;
@@ -222,7 +228,8 @@
       font-weight: 200;
       font-size: .95rem;
       margin-top: 10px;
-      letter-spacing: 0; }
+      letter-spacing: 0;
+      width: 95%; }
       @media screen and (max-width: 800px) {
         .project-list .project-list__project .project-list__project-short-description {
           font-size: .85rem; } }

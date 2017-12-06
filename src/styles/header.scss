@@ -188,8 +188,9 @@ $banner-height-mobile: 575px;
 		}
 
 		@include mediaQuery(650px) {
-			top: 63.5%;
+			top: 65%;
 		}
+
 
 		.portfolio-description__quote,
 		.portfolio-description__quote--mobile {
@@ -197,6 +198,7 @@ $banner-height-mobile: 575px;
 			font-weight: 300;
 			font-family: $secondary-font, monospace;
 			letter-spacing: -1px;
+			opacity: .9;
 
 			@include mediaQuery($mobile-breakpoint-primary) {
 				font-size: 1.3rem;
@@ -238,6 +240,11 @@ $banner-height-mobile: 575px;
 			@include mediaQuery(600px) {
 				display: block;
 				font-size: 1.2rem;
+			}
+
+			@include mediaQuery(400px) {
+				display: block;
+				font-size: 1.1rem;
 			}
 		}
 	}
