@@ -10,23 +10,28 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "React",
-				tag: "react"
+				tag: "react",
+				link: "https://reactjs.org/"
 			},
 			{
 				name: "ES6",
-				tag: "es6"
+				tag: "es6",
+				link: "https://babeljs.io/learn-es2015/"
 			},
 			{
 				name: "Webpack",
-				tag: "webpack"
+				tag: "webpack",
+				link: "https://webpack.js.org/"
 			},
 			{
 				name: "Vanilla JavaScript",
-				tag: "js"
+				tag: "js",
+				link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			},
 			{
 				name: "Sass",
-				tag: "sass"
+				tag: "sass",
+				link: "http://sass-lang.com/"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/portfolio/",
@@ -44,27 +49,33 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "React",
-				tag: "react"
+				tag: "react",
+				link: "https://reactjs.org/"
 			},
 			{
 				name: "ES6",
-				tag: "es6"
+				tag: "es6",
+				link: "https://babeljs.io/learn-es2015/"
 			},
 			{
 				name: "Webpack",
-				tag: "webpack"
+				tag: "webpack",
+				link: "https://webpack.js.org/"
 			},
 			{
 				name: "Vanilla JavaScript",
-				tag: "js"
+				tag: "js",
+				link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			},
 			{
 				name: "Sass",
-				tag: "sass"
+				tag: "sass",
+				link: "http://sass-lang.com/"
 			},
 			{
 				name: "Gatsby.js",
-				tag: "gatsby"
+				tag: "gatsby",
+				link: "https://www.gatsbyjs.org/"
 			}
 		],
 		demoLink: "https://www.undergroundhiphop.com/skratch/",
@@ -81,19 +92,23 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "Vanilla JavaScript",
-				tag: "js"
+				tag: "js",
+				link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			},
 			{
-				name: "CSS",
-				tag: "sass"
+				name: "Vanilla CSS",
+				tag: "css",
+				link: "https://www.w3.org/Style/CSS/Overview.en.html"
 			},
 			{
 				name: "Handlebars",
-				tag: "handlebarsjs"
+				tag: "handlebarsjs",
+				link: "http://handlebarsjs.com/"
 			},
 			{
 				name: "Grunt",
-				tag: "grunt"
+				tag: "grunt",
+				link: "https://gruntjs.com/"
 			}
 		],
 		demoLink: "https://students.bovacademy.com/",
@@ -110,27 +125,33 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "React",
-				tag: "react"
+				tag: "react",
+				link: "https://reactjs.org/"
 			},
 			{
 				name: "Redux",
-				tag: "redux"
+				tag: "redux",
+				link: "https://redux.js.org/"
 			},
 			{
 				name: "ES6",
-				tag: "es6"
+				tag: "es6",
+				link: "https://babeljs.io/learn-es2015/"
 			},
 			{
 				name: "Webpack",
-				tag: "webpack"
+				tag: "webpack",
+				link: "https://webpack.js.org/"
 			},
 			{
 				name: "Vanilla JavaScript",
-				tag: "js"
+				tag: "js",
+				link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			},
 			{
 				name: "Sass",
-				tag: "sass"
+				tag: "sass",
+				link: "http://sass-lang.com/"
 			}
 		],
 		demoLink: "http://sebastian-react-weather-app.surge.sh/",
@@ -147,15 +168,18 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "Vue",
-				tag: "vue"
+				tag: "vue",
+				link: "https://vuejs.org/"
 			},
 			{
 				name: "ES6",
-				tag: "es6"
+				tag: "es6",
+				link: "https://babeljs.io/learn-es2015/"
 			},
 			{
 				name: "Sass",
-				tag: "sass"
+				tag: "sass",
+				link: "http://sass-lang.com/"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/vue-photo-gallery/",
@@ -172,11 +196,13 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "Vanilla Javascript",
-				tag: "js"
+				tag: "js",
+				link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			},
 			{
-				name: "CSS",
-				tag: "css"
+				name: "Vanilla CSS",
+				tag: "css",
+				link: "https://www.w3.org/Style/CSS/Overview.en.html"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/jigsaw/",
@@ -193,19 +219,23 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "Vanilla Javascript",
-				tag: "js"
+				tag: "js",
+				link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			},
 			{
 				name: "jQuery",
-				tag: "jquery"
+				tag: "jquery",
+				link: "https://jquery.com/"
 			},
 			{
 				name: "Sass",
-				tag: "sass"
+				tag: "sass",
+				link: "http://sass-lang.com/"
 			},
 			{
 				name: "Gulp",
-				tag: "gulp"
+				tag: "gulp",
+				link: "https://gulpjs.com/"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/developer-profile/",
@@ -222,11 +252,13 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "jQuery",
-				tag: "jquery"
+				tag: "jquery",
+				link: "https://jquery.com/"
 			},
 			{
 				name: "Sass",
-				tag: "sass"
+				tag: "sass",
+				link: "http://sass-lang.com/"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/tic-tac-toe/",
@@ -243,11 +275,13 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "jQuery",
-				tag: "jquery"
+				tag: "jquery",
+				link: "https://jquery.com/"
 			},
 			{
-				name: "CSS",
-				tag: "css"
+				name: "Vanilla CSS",
+				tag: "css",
+				link: "https://www.w3.org/Style/CSS/Overview.en.html"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/random-facts/",
@@ -264,15 +298,18 @@ export const projects = [
 		technologyObjects: [
 			{
 				name: "Vanilla Javascript",
-				tag: "js"
+				tag: "js",
+				link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			},
 			{
 				name: "Handlebars",
-				tag: "handlebarsjs"
+				tag: "handlebarsjs",
+				link: "http://handlebarsjs.com/"
 			},
 			{
 				name: "Sass",
-				tag: "sass"
+				tag: "sass",
+				link: "http://sass-lang.com/"
 			}
 		],
 		demoLink: "https://sebastianrb.github.io/handlebars-gallery/",

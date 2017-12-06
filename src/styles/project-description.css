@@ -79,7 +79,8 @@
         @media screen and (max-width: 600px) {
           .project-description .project-description__section.project-description__section--links .project-link {
             font-size: 1.1rem;
-            height: 60px; } }
+            height: 60px;
+            margin: 20px 20px 12px; } }
         .project-description .project-description__section.project-description__section--links .project-link .github-disabled-message {
           display: none; }
         .project-description .project-description__section.project-description__section--links .project-link.no-demo {
@@ -93,7 +94,7 @@
           @media screen and (max-width: 950px) {
             .project-description .project-description__section.project-description__section--links .project-link.github-disabled {
               display: none; } }
-          .project-description .project-description__section.project-description__section--links .project-link.github-disabled:hover {
+          .project-description .project-description__section.project-description__section--links .project-link.github-disabled .project-description .project-description__section.project-description__section--links .project-link.github-disabled:hover {
             background: rgba(128, 128, 128, 0.8); }
           .project-description .project-description__section.project-description__section--links .project-link.github-disabled a {
             pointer-events: none; }
@@ -152,6 +153,9 @@
       flex-flow: row wrap;
       justify-content: center;
       align-items: center; }
+      @media screen and (max-width: 700px) {
+        .project-description .project-description__section .project-description__buttons {
+          margin: 10px auto 0; } }
   .project-description .project-description__description {
     width: 74%;
     max-width: 1080px;
@@ -169,7 +173,8 @@
     @media screen and (max-width: 600px) {
       .project-description .project-description__description {
         font-size: 1.3rem;
-        width: 95%; } }
+        width: 95%;
+        line-height: 1.3; } }
     @media screen and (max-width: 400px) {
       .project-description .project-description__description {
         font-size: 1.25rem;
@@ -211,20 +216,35 @@
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      color: white; }
+      color: white;
+      transition: background .1s; }
+      .project-description .project-description__technology-list .project-description__technology-list-item:hover {
+        background: rgba(1, 1, 56, 0.65); }
       @media screen and (max-width: 800px) {
         .project-description .project-description__technology-list .project-description__technology-list-item {
           width: 130px;
           height: 120px; } }
       @media screen and (max-width: 500px) {
         .project-description .project-description__technology-list .project-description__technology-list-item {
-          width: 125px;
+          width: 120px;
           height: 110px; } }
       @media screen and (max-width: 500px) {
         .project-description .project-description__technology-list .project-description__technology-list-item {
-          margin: 20px 14px; } }
+          margin: 14px; } }
+      .project-description .project-description__technology-list .project-description__technology-list-item a {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: inherit;
+        text-decoration: none; }
       .project-description .project-description__technology-list .project-description__technology-list-item p {
         font-size: .85rem; }
+        @media screen and (max-width: 500px) {
+          .project-description .project-description__technology-list .project-description__technology-list-item p {
+            font-size: .80rem; } }
       .project-description .project-description__technology-list .project-description__technology-list-item img {
         height: 40px;
         margin-bottom: 20px; }

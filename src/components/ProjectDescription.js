@@ -29,10 +29,12 @@ export default class ProjectDescription extends React.Component {
 			const imgURL = require(`../images/tech-icons/${tech.tag}.png`);
 			return (
 				<li key={tech.name} className="project-description__technology-list-item">
-					<img src={imgURL} alt="tech" />
-					<p>
-						{tech.name}
-					</p>
+					<a href={tech.link}>
+						<img src={imgURL} alt="tech" />
+						<p>
+							{tech.name}
+						</p>
+					</a>
 				</li>
 			);
 		});
@@ -75,7 +77,7 @@ export default class ProjectDescription extends React.Component {
 							<img src={Arrow} alt="arrow" />Go Home
 						</Link>
 					</p>
-					<ScrollAnimation animateIn="fadeIn" offset={250} duration={0.6} animateOnce={true}>
+					<ScrollAnimation animateIn="fadeIn" offset={270} duration={0.6} animateOnce={true}>
 						<div className="project-description__section">
 							<h3 className="project-description__description">
 								{project.description}
