@@ -192,6 +192,14 @@ $banner-height-mobile: 575px;
 		}
 
 
+		.portfolio-description__quote {
+			width: 745px;
+
+			@include mediaQuery($mobile-breakpoint-primary) {
+				width: auto;
+			}
+		}
+
 		.portfolio-description__quote,
 		.portfolio-description__quote--mobile {
 			font-size: 1.5rem;

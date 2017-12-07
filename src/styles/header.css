@@ -95,7 +95,7 @@
     .banner.intro-background .banner__overlay {
       height: 100%;
       width: 100%;
-      background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75));
+      background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
       position: absolute;
       left: 0;
       top: 0;
@@ -137,6 +137,11 @@
     @media screen and (max-width: 650px) {
       .banner .portfolio-description {
         top: 65%; } }
+    .banner .portfolio-description .portfolio-description__quote {
+      width: 745px; }
+      @media screen and (max-width: 950px) {
+        .banner .portfolio-description .portfolio-description__quote {
+          width: auto; } }
     .banner .portfolio-description .portfolio-description__quote,
     .banner .portfolio-description .portfolio-description__quote--mobile {
       font-size: 1.5rem;
