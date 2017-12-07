@@ -8,3 +8,12 @@
   line-height: 1.7;
   font-size: 1.2rem;
   z-index: 110; }
+  @media screen and (max-width: 700px) {
+    .footer {
+      font-size: 1.1rem; } }
+  @media screen and (max-width: 500px) {
+    .footer {
+      font-size: 1rem;
+      padding: 75px 25px; } }
+  .footer span {
+    color: #f5612b; }
