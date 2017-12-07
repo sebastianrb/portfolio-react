@@ -118,7 +118,7 @@
     padding: 30px 70px;
     color: white;
     width: 90%;
-    left: 50%;
+    left: 49%;
     line-height: 1.4;
     text-align: left; }
     @media screen and (max-width: 950px) {
@@ -132,13 +132,12 @@
         width: 100%; } }
     @media screen and (max-width: 700px) {
       .banner .portfolio-description {
-        padding: 30px;
         width: 100%; } }
     @media screen and (max-width: 650px) {
       .banner .portfolio-description {
         top: 65%; } }
     .banner .portfolio-description .portfolio-description__quote {
-      width: 745px; }
+      width: 730px; }
       @media screen and (max-width: 950px) {
         .banner .portfolio-description .portfolio-description__quote {
           width: auto; } }

@@ -5,8 +5,8 @@ export const projects = [
 		shortDescription:
 			"A showcase of my front-end web development work (and the project you are currently viewing)",
 		description:
-			"This portfolio is built with React and uses JSON data about my projects to dynamically construct the UI.",
-		technologies: "React, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs",
+			"This portfolio is built with React and uses JSON data about my projects to dynamically construct the various UI components.",
+		technologies: "React, ES6, Webpack, Vanilla Javascript, AJAX, Sass, APIs",
 		technologyObjects: [
 			{
 				name: "React",
@@ -45,7 +45,7 @@ export const projects = [
 		description:
 			"This application teaches visitors about Skratch, a new cryptocurrency geared towards the music industry. The site is built with React. Users can enter and submit personal data, which is then saved to a cloud-based content management system called Contentful via front-end APIs.",
 		technologies:
-			"React, Isomorphic/Server-side Rendering, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs, Gatsby.js",
+			"React, Isomorphic/Server-side Rendering, ES6, Webpack, Vanilla Javascript, AJAX, Sass, APIs, Gatsby.js",
 		technologyObjects: [
 			{
 				name: "React",
@@ -121,7 +121,7 @@ export const projects = [
 		shortDescription: "Weather forecasting and clothing recommendation app utilizing Redux",
 		description:
 			"This weather app allows the user to search for a city and then calls two weather APIs to provide weather forecasting and clothing recommendations. The app is built with React and Redux.",
-		technologies: "React, Redux, ES6, Webpack, Vanilla Javascript, Ajax, Sass, APIs",
+		technologies: "React, Redux, ES6, Webpack, Vanilla Javascript, AJAX, Sass, APIs",
 		technologyObjects: [
 			{
 				name: "React",
@@ -161,7 +161,7 @@ export const projects = [
 	{
 		id: 4,
 		name: "Photo Gallery",
-		shortDescription: "Photo gallery showcasing my personal work and built with Vue.js",
+		shortDescription: "Photo gallery showcasing my personal photography work built with Vue.js",
 		description:
 			"I am an amateur photographer, and this photo gallery app features some of my work. The application is built using the Vue.js JavaScript framework.",
 		technologies: "Vue.js, ES6, Sass",
@@ -191,7 +191,7 @@ export const projects = [
 		name: "Jigsaw Puzzle",
 		shortDescription: "Jigsaw puzzle app built with vanilla Javascript",
 		description:
-			"This is a fully featured jigsaw puzzle game. The user can ask for hints, reset the game as needed, and increase the difficulty. Be warned: the puzzle is fairly challenging, so pay close attention to the three available hints!",
+			"This is a feature-rich jigsaw puzzle game. The user can ask for hints, reset the game as needed, and increase the difficulty. Be warned: the puzzle is fairly challenging, so pay close attention to the three available hints!",
 		technologies: "Vanilla JavaScript, CSS",
 		technologyObjects: [
 			{
@@ -212,9 +212,9 @@ export const projects = [
 	{
 		id: 6,
 		name: "Profile",
-		shortDescription: "A profile site about me",
+		shortDescription: "A personal profile site",
 		description:
-			"The profile app tells visitors a little bit about me. The site contains a short bio as well as pictures and other information about my life and interests. It is built with vanilla Javascript and jQuery.",
+			"The profile app teaches visitors a little bit about me. The site contains a short bio as well as pictures and other information about my background. It is built with vanilla Javascript and jQuery.",
 		technologies: "Vanilla Javascript, jQuery Sass, Gulp",
 		technologyObjects: [
 			{
@@ -270,8 +270,8 @@ export const projects = [
 		name: "Random Fact Generator",
 		shortDescription: "Generate random facts using AJAX",
 		description:
-			"This app uses Ajax to retrieve a random fact from an API and then displays it. The user can show a new random fact by pressing a button.",
-		technologies: "jQuery, Ajax, CSS",
+			"This app uses AJAX to retrieve a random fact from an API and then displays it. The user can show a new random fact by pressing a button.",
+		technologies: "jQuery, AJAX, CSS",
 		technologyObjects: [
 			{
 				name: "jQuery",
