@@ -29,7 +29,7 @@ export default class ProjectDescription extends React.Component {
 			const imgURL = require(`../images/tech-icons/${tech.tag}.png`);
 			return (
 				<li key={tech.name} className="project-description__technology-list-item">
-					<a href={tech.link}>
+					<a href={tech.link} target="_blank">
 						<img src={imgURL} alt="tech" />
 						<p>
 							{tech.name}
@@ -52,7 +52,7 @@ export default class ProjectDescription extends React.Component {
 			);
 		} else {
 			githubButton = (
-				<a href={project.githubLink} className="project-description__github-link project-link">
+				<a href={project.githubLink} className="project-description__github-link project-link" target="_blank">
 					<p>View GitHub Repo</p>{" "}
 				</a>
 			);
@@ -97,6 +97,7 @@ export default class ProjectDescription extends React.Component {
 									className={`project-description__demo-link project-link ${projectID === "0"
 										? "no-demo"
 										: ""}`}
+									target="_blank"
 								>
 									{" "}<p>View Demo</p>
 								</a>
