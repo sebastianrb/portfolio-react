@@ -8,7 +8,7 @@ const Footer = props => {
 	//return
 	return (
 		<footer className="footer">
-			&copy; 2017<br />Sebastian Ramirez-Brunner
+			&copy; 2017<br />Built by Sebastian Ramirez-Brunner
 		</footer>
 	);
 };
