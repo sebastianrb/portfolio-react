@@ -160,14 +160,10 @@ $banner-height-mobile: 575px;
 		position: absolute;
 		top: 55%;
 		transform: translateY(-50%) translateX(-50%);
-		// background: rgba(1, 1, 56, 0.7);
-		// background: radial-gradient(rgba(1, 1, 56, 0.70), $primary-color);
 		padding: 30px 70px;
 		color: white;
-		// width: 65%;
 		width: 90%;
-		left: 50%;
-		// box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.25);
+		left: 49%;
 		line-height: 1.4;
 		text-align: left;
 
@@ -183,7 +179,6 @@ $banner-height-mobile: 575px;
 		}
 
 		@include mediaQuery(700px) {
-			padding: 30px;
 			width: 100%;
 		}
 
@@ -193,7 +188,7 @@ $banner-height-mobile: 575px;
 
 
 		.portfolio-description__quote {
-			width: 745px;
+			width: 730px;
 
 			@include mediaQuery($mobile-breakpoint-primary) {
 				width: auto;
