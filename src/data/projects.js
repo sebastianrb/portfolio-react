@@ -78,7 +78,7 @@ export const projects = [
 				link: "https://www.gatsbyjs.org/"
 			}
 		],
-		demoLink: "https://www.undergroundhiphop.com/skratch/",
+		demoLink: "http://skratch-ico.surge.sh/",
 		githubLink: "",
 		image: "https://image.ibb.co/mEOuVw/skratch.png"
 	},
