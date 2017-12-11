@@ -4,7 +4,7 @@ $mobile-breakpoint-primary: 950px;
 
 .project-description {
 	min-height: 800px;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 
 	@include mediaQuery(700px) {
 		padding-bottom: 0;
@@ -65,7 +65,7 @@ $mobile-breakpoint-primary: 950px;
 	}
 
 	.project-description__section {
-		margin: 0 auto 100px;
+		margin: 0 auto 90px;
 
 		@include mediaQuery($mobile-breakpoint-primary) {
 			margin: 0 auto 80px;

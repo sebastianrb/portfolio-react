@@ -91,14 +91,13 @@ $banner-height-mobile: 575px;
 		}
 
 		@include mediaQuery(800px) {
-			font-size: 1.2rem;
 			width: 70%;
 			padding: 25px 15px;
 		}
 
 		@include mediaQuery(700px) {
-			font-size: 1.15rem;
-			width: 75%;
+			font-size: 1.2rem;
+			// width: 75%;
 			top: 58%;
 		}
 
