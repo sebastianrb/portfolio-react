@@ -267,7 +267,7 @@ export const projects = [
 	},
 	{
 		id: 8,
-		name: "Random Fact Generator",
+		name: "Fact Generator",
 		shortDescription: "Generate random facts using AJAX",
 		description:
 			"This app uses AJAX to retrieve a random fact from an API and then displays it. The user can show a new random fact by pressing a button.",

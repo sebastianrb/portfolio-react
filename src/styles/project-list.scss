@@ -247,7 +247,7 @@ $mobile-breakpoint-primary: 950px;
 			}
 			img {
 				backface-visibility: hidden;
-				transform: scale(1.00) translateZ(0);
+				transform: scale(1.01) translateZ(0);
 				filter: grayscale(0%);
 				opacity: 1;
 			}
@@ -331,7 +331,7 @@ $mobile-breakpoint-primary: 950px;
 		position: absolute;
 		bottom: 0;
 		@include flex-row(nowrap, center, center);
-		border-top: 1px solid $primary-color;
+		// border-top: 1px solid $primary-color;
 
 		img {
 			backface-visibility: hidden;

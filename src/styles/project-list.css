@@ -114,7 +114,7 @@
       .project-list .project-list__list > div {
         padding: 50px 0 80px; } }
   .project-list .project-list__project {
-    width: 375px;
+    width: 370px;
     height: 350px;
     text-align: center;
     background: rgba(1, 1, 56, 0.95);
@@ -208,7 +208,7 @@
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      padding: 0 30px;
+      padding: 0 25px;
       text-decoration: none;
       position: absolute;
       width: 80%;
@@ -268,7 +268,7 @@
       filter: grayscale(100%);
       height: 100%;
       position: relative;
-      left: -25%; }
+      left: -21%; }
   .project-list .project-not-found {
     position: absolute;
     top: 50%;
