@@ -16,7 +16,11 @@ export default class ProjectCard extends React.Component {
 	}
 
 	shouldComponentUpdate(nextProps, nextState) {
-		return false;
+		if(this.state === nextState) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 
 	showTechCard() {
@@ -41,7 +45,7 @@ export default class ProjectCard extends React.Component {
 						<div className="project-list__project-text">
 							<div
 								onMouseEnter={this.showTechCard}
-    								onMouseLeave={this.hideTechCard}
+								onMouseLeave={this.hideTechCard}
     								className="project-list__project-tech-button">
 
 								<img src={Code} alt="code" />
@@ -53,7 +57,7 @@ export default class ProjectCard extends React.Component {
 								{project.shortDescription}
 							</p>
 						</div>
-						<div className="project-list__project-tech-popup">
+						<div className={`project-list__project-tech-popup ${this.state.techCardShown ? "tech-popup-shown" : "" }`}>
 							<p className="project-list__project-tech-caption">Technologies Used</p>
 							{project.technologies}
 						</div>
@@ -65,7 +69,7 @@ export default class ProjectCard extends React.Component {
 				<li key={id} className="project-list__project">
 					<Link to={`/project/${id}`}>
 						<div className="project-list__project-text">
-							<div onMouseEnter={this.showTechCard}
+							<div  onMouseEnter={this.showTechCard}
     								onMouseLeave={this.hideTechCard}
     								className="project-list__project-tech-button">
 
@@ -81,7 +85,7 @@ export default class ProjectCard extends React.Component {
 						<div className="project-list__project-image-container">
 							<img src={project.image} alt="project" />
 						</div>
-						<div className="project-list__project-tech-popup">
+						<div className={`project-list__project-tech-popup ${this.state.techCardShown ? "tech-popup-shown" : "" }`}>
 							<p className="project-list__project-tech-caption">Technologies Used</p>
 							{project.technologies}
 						</div>

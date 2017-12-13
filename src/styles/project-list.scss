@@ -136,7 +136,7 @@ $mobile-breakpoint-primary: 950px;
 	.project-list__list > div {
 		@include flex-row(wrap, center, flex-start);
 		margin: 0 auto;
-		padding: 50px 0 80px;
+		padding: 60px 0 80px;
 		min-height: 500px;
 
 		@include mediaQuery(1350px) {
@@ -219,7 +219,7 @@ $mobile-breakpoint-primary: 950px;
 			position: absolute;
 			bottom: -210px;
 			width: 100%;
-			height: 210px;
+			height: auto;
 			background: black;
 			padding: 35px 25px;
 			@include flex-column(nowrap, center, center);
@@ -238,7 +238,13 @@ $mobile-breakpoint-primary: 950px;
 
 		&:hover {
 			border-top: 9px solid lighten($secondary-color, 40%);
-			background: $primary-color;
+		}
+
+		&:hover:not(.portfolio-tile) {
+
+			.project-list__project-text {
+				background: $primary-color;
+			}
 			img {
 				backface-visibility: hidden;
 				transform: scale(1.00) translateZ(0);
@@ -268,6 +274,7 @@ $mobile-breakpoint-primary: 950px;
 			top: 50%;
 			transform: translateY(-50%) translateX(-50%);
 			left: 50%;
+			transition: all .3s;
 
 			@include mediaQuery(800px) {
 				padding: 0 30px;
@@ -329,7 +336,7 @@ $mobile-breakpoint-primary: 950px;
 		img {
 			backface-visibility: hidden;
 			opacity: 1;
-			width: 100%;
+			// width: 100%;
 			// object-fit: cover;
 			transition: all .35s;
 			transform: scale(1.2, 1.2) translateZ(0);
