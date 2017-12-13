@@ -115,27 +115,28 @@
         padding: 50px 0 80px; } }
   .project-list .project-list__project {
     width: 370px;
-    height: 350px;
+    height: 370px;
     text-align: center;
     background: rgba(1, 1, 56, 0.95);
-    margin: 30px;
+    margin: 32px;
     cursor: pointer;
     transition: border .25s, box-shadow .3s;
     position: relative;
     overflow: hidden;
     border-top: 9px solid #f5612b;
     box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.45);
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 100; }
     @media screen and (max-width: 950px) {
       .project-list .project-list__project {
-        margin: 40px; } }
+        margin: 25px; } }
     @media screen and (max-width: 800px) {
       .project-list .project-list__project {
-        width: 280px;
-        height: 375px; } }
+        width: 285px;
+        height: 375px;
+        margin: 20px; } }
     @media screen and (max-width: 600px) {
       .project-list .project-list__project {
-        width: 250px;
         height: 350px;
         margin: 25px 30px; } }
     .project-list .project-list__project .project-list__project-tech-button {
@@ -155,7 +156,7 @@
         .project-list .project-list__project .project-list__project-tech-button {
           display: none; } }
       .project-list .project-list__project .project-list__project-tech-button img {
-        width: 78%;
+        width: 21px;
         position: relative;
         top: .5px; }
       .project-list .project-list__project .project-list__project-tech-button:hover {
@@ -192,7 +193,7 @@
       background: #010138; }
     .project-list .project-list__project:hover:not(.portfolio-tile) img {
       backface-visibility: hidden;
-      transform: scale(1) translateZ(0);
+      transform: scale(1.01) translateZ(0);
       filter: grayscale(0%);
       opacity: 1; }
     .project-list .project-list__project a {
@@ -213,7 +214,7 @@
       position: absolute;
       width: 80%;
       z-index: 100;
-      background: rgba(1, 1, 56, 0.8);
+      background: rgba(1, 1, 56, 0.85);
       top: 50%;
       transform: translateY(-50%) translateX(-50%);
       left: 50%;
@@ -243,9 +244,6 @@
       @media screen and (max-width: 800px) {
         .project-list .project-list__project .project-list__project-short-description {
           font-size: .85rem; } }
-      @media screen and (max-width: 600px) {
-        .project-list .project-list__project .project-list__project-short-description {
-          font-size: .8rem; } }
     .project-list .project-list__project.portfolio-tile .project-list__project-text {
       height: 100%;
       padding: 20px 25px;
@@ -258,8 +256,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
-    border-top: 1px solid #010138; }
+    align-items: center; }
     .project-list .project-list__project-image-container img {
       backface-visibility: hidden;
       opacity: 1;

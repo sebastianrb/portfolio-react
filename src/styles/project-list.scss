@@ -150,11 +150,11 @@ $mobile-breakpoint-primary: 950px;
 
 	.project-list__project {
 		width: 370px;
-    		height: 350px;
+    		height: 370px;
 		text-align: center;
 		background: transparentize($primary-color, .05);
 		// background: $primary-color;
-		margin: 30px;
+		margin: 32px;
 		cursor: pointer;
 		transition: border .25s, box-shadow .3s;
 		position: relative;
@@ -162,19 +162,21 @@ $mobile-breakpoint-primary: 950px;
 		border-top: 9px solid $secondary-color;
 		box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.45);
 		overflow: hidden;
+		z-index: 100;
 		// box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 		@include mediaQuery($mobile-breakpoint-primary) {
-			margin: 40px;
+			// margin: 40px;
+			margin: 25px;
 		}
 
 		@include mediaQuery(800px) {
-			width: 280px;
+			width: 285px;
 			height: 375px;
+			margin: 20px;
 		}
 
 		@include mediaQuery(600px) {
-			width: 250px;
 			height: 350px;
 			margin: 25px 30px;
 		}
@@ -195,7 +197,7 @@ $mobile-breakpoint-primary: 950px;
 			}
 
 			img {
-				width: 78%;
+				width: 21px;
 				position: relative;
 				top: .5px;
 			}
@@ -270,7 +272,7 @@ $mobile-breakpoint-primary: 950px;
 			position: absolute;
 			width: 80%;
 			z-index: 100;
-			background: transparentize($primary-color, .2);
+			background: transparentize($primary-color, .15);
 			top: 50%;
 			transform: translateY(-50%) translateX(-50%);
 			left: 50%;
@@ -311,9 +313,6 @@ $mobile-breakpoint-primary: 950px;
 				font-size: .85rem;
 			}
 
-			@include mediaQuery(600px) {
-				font-size: .8rem;
-			}
 		}
 
 		&.portfolio-tile {
