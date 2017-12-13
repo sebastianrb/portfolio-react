@@ -149,12 +149,12 @@ $mobile-breakpoint-primary: 950px;
 	}
 
 	.project-list__project {
-		width: 315px;
-		height: 425px;
+		width: 375px;
+    		height: 350px;
 		text-align: center;
 		background: transparentize($primary-color, .05);
 		// background: $primary-color;
-		margin: 50px;
+		margin: 30px;
 		cursor: pointer;
 		transition: border .25s, box-shadow .3s;
 		position: relative;
@@ -202,10 +202,8 @@ $mobile-breakpoint-primary: 950px;
 
 			&:hover {
 				background: lighten($secondary-color, 15%);
-				& + .project-list__project-tech-popup {
-					bottom: 0;
-				}
 			}
+
 		}
 
 		.project-list__project-tech-caption {
@@ -219,7 +217,7 @@ $mobile-breakpoint-primary: 950px;
 			transition: bottom .5s;
 			border-top: 3px solid white;
 			position: absolute;
-			bottom: -300px;
+			bottom: -210px;
 			width: 100%;
 			height: 210px;
 			background: black;
@@ -232,11 +230,15 @@ $mobile-breakpoint-primary: 950px;
 			@include mediaQuery(800px) {
 				display: none;
 			}
+
+			&.tech-popup-shown {
+				bottom: 0;
+			}
 		}
 
 		&:hover {
 			border-top: 9px solid lighten($secondary-color, 40%);
-
+			background: $primary-color;
 			img {
 				backface-visibility: hidden;
 				transform: scale(1.00) translateZ(0);
@@ -255,10 +257,17 @@ $mobile-breakpoint-primary: 950px;
 		}
 
 		.project-list__project-text {
-			height: 55%;
+			height: 200px;
 			@include flex-column(nowrap, center, center);
-			padding: 0 35px;
+			padding: 0 30px;
 			text-decoration: none;
+			position: absolute;
+			width: 80%;
+			z-index: 100;
+			background: transparentize($primary-color, .2);
+			top: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			left: 50%;
 
 			@include mediaQuery(800px) {
 				padding: 0 30px;
@@ -310,24 +319,24 @@ $mobile-breakpoint-primary: 950px;
 	}
 
 	.project-list__project-image-container {
-		// width: 100%;
-		height: 41%;
+		height: 100%;
 		overflow: hidden;
 		position: absolute;
 		bottom: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-top: 2px solid $primary-color;
+		@include flex-row(nowrap, center, center);
+		border-top: 1px solid $primary-color;
 
 		img {
 			backface-visibility: hidden;
-			opacity: .9;
+			opacity: 1;
 			width: 100%;
-			object-fit: cover;
+			// object-fit: cover;
 			transition: all .35s;
 			transform: scale(1.2, 1.2) translateZ(0);
 			filter: grayscale(100%);
+			height: 100%;
+			position: relative;
+			left: -25%;
 		}
 	}
 
