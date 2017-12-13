@@ -141,10 +141,10 @@
           width: auto; } }
     .banner .portfolio-description .portfolio-description__quote,
     .banner .portfolio-description .portfolio-description__quote--mobile {
-      font-size: 2rem;
+      font-size: 1.9rem;
       font-weight: 400;
       font-family: "Roboto Mono", monospace;
-      letter-spacing: -1px;
+      letter-spacing: -1.5px;
       opacity: .9; }
       @media screen and (max-width: 950px) {
         .banner .portfolio-description .portfolio-description__quote,
@@ -301,7 +301,7 @@
           margin-top: 12px; } }
     .header .header__title-container .header__subtitle {
       margin-top: 10px;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 200;
       color: white; }
       @media screen and (max-width: 950px) {
