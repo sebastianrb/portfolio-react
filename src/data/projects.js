@@ -36,7 +36,7 @@ export const projects = [
 		],
 		demoLink: "https://sebastianrb.github.io/portfolio/",
 		githubLink: "https://github.com/sebastianrb/portfolio-react",
-		image: "https://image.ibb.co/cumr56/Screen_Shot_2017_11_20_at_9_35_25_PM.png"
+		image: "https://image.ibb.co/bBhn5R/portfolio.png"
 	},
 	{
 		id: 1,
