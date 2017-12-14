@@ -355,8 +355,13 @@ $banner-height-mobile: 575px;
 		padding: 15px 9px;
 	}
 
+	.header__home-link {
+		text-decoration: none;
+	}
+
 	.header__title-container {
 		width: 100%;
+		cursor: pointer;
 		@include mediaQuery($mobile-breakpoint-primary) {
 			@include flex-column(nowrap, space-between, center);
 		}

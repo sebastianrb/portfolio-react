@@ -271,8 +271,11 @@
   @media screen and (max-width: 550px) {
     .header {
       padding: 15px 9px; } }
+  .header .header__home-link {
+    text-decoration: none; }
   .header .header__title-container {
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
     @media screen and (max-width: 950px) {
       .header .header__title-container {
         display: flex;

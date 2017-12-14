@@ -4,75 +4,33 @@ $mobile-breakpoint-primary: 950px;
 
 .project-description {
 	min-height: 800px;
-	padding-bottom: 40px;
+	padding: 117px 0 17px;
 
-	@include mediaQuery(700px) {
-		padding-bottom: 0;
+	@include mediaQuery(1100px) {
+		padding: 100px 0 20px;
 	}
 
-	.project-description__home-link {
-		width: 200px;
-		background: transparentize($primary-color, .80);
-		color: white;
-		text-align: center;
-		margin-bottom: 100px;
-		border-bottom-right-radius: 6px;
-		font-size: 1.2rem;
-		padding: 0;
-		cursor: pointer;
-		transition: all .1s;
+	@include mediaQuery(900px) {
+		padding: 90px 0 15px;
+	}
 
-		@include mediaQuery($mobile-breakpoint-primary) {
-			position: relative;
-			left: 50%;
-			transform: translateX(-50%);
-			margin-bottom: 75px;
-			width: 100%;
-			border-radius: 0;
-		}
+	@include mediaQuery(700px) {
+		padding: 85px 0 10px;
+	}
 
-		@include mediaQuery(600px) {
-			font-size: 1.1rem;
-		}
-
-		&:hover {
-			background: transparentize($primary-color, .70);
-			a {
-				img {
-					right: 16px;
-				}
-			}
-		}
-
-		a {
-			padding: 18px 20px;
-			text-decoration: none;
-			color: $primary-color;
-			display: block;
-			width: 100%;
-			height: 100%;
-
-			img {
-				display: inline-block;
-				width: 20px;
-				transform: rotate(90deg);
-				position: relative;
-				right: 10px;
-				top: 3px;
-				transition: all .2s;
-			}
-		}
+	@include mediaQuery(500px) {
+		padding: 68px 0 0;
 	}
 
 	.project-description__section {
-		margin: 0 auto 90px;
+		margin: 0 auto 85px;
 
 		@include mediaQuery($mobile-breakpoint-primary) {
-			margin: 0 auto 80px;
+			margin: 0 auto 70px;
 		}
 
 		@include mediaQuery(500px) {
-			margin: 0 auto 70px;
+			margin: 0 auto 60px;
 		}
 
 		&.project-description__section--links {
@@ -81,7 +39,7 @@ $mobile-breakpoint-primary: 950px;
 			.project-link {
 				width: 290px;
 				height: 71px;
-				background: $secondary-color-muted;
+				background: $secondary-color;
 				cursor: pointer;
 				font-size: 1.3rem;
 				margin: 20px;
@@ -176,7 +134,7 @@ $mobile-breakpoint-primary: 950px;
 				&:hover {
 
 					&:not(.github-disabled) {
-						background: $secondary-color;
+						background: $secondary-color-muted;
 					}
 
 					.github-disabled-message {
@@ -287,7 +245,7 @@ $mobile-breakpoint-primary: 950px;
 			}
 
 			@include mediaQuery(500px) {
-				width: 120px;
+				width: 118px;
 				height: 110px;
 			}
 
@@ -318,3 +276,54 @@ $mobile-breakpoint-primary: 950px;
 		}
 	}
 }
+
+.project-description__home-link {
+		width: 100%;
+		background: transparentize($primary-color, .80);
+		color: white;
+		text-align: center;
+		margin: 0 auto;
+		// border-top-right-radius: 6px;
+		// border-top-left-radius: 6px;
+		font-size: 1.2rem;
+		padding: 0;
+		cursor: pointer;
+		transition: all .1s;
+
+		@include mediaQuery($mobile-breakpoint-primary) {
+			width: 100%;
+			border-radius: 0;
+		}
+
+		@include mediaQuery(600px) {
+			font-size: 1.1rem;
+		}
+
+		&:hover {
+			background: transparentize($primary-color, .70);
+			a {
+				img {
+					right: 16px;
+				}
+			}
+		}
+
+		a {
+			padding: 18px 20px;
+			text-decoration: none;
+			color: $primary-color;
+			display: block;
+			width: 100%;
+			height: 100%;
+
+			img {
+				display: inline-block;
+				width: 20px;
+				transform: rotate(90deg);
+				position: relative;
+				right: 10px;
+				top: 3px;
+				transition: all .2s;
+			}
+		}
+	}

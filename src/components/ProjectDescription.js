@@ -72,11 +72,6 @@ export default class ProjectDescription extends React.Component {
 					</h3>
 				</Banner>
 				<section className="project-description">
-					<p className="project-description__home-link">
-						<Link to="/">
-							<img src={Arrow} alt="arrow" />Go Home
-						</Link>
-					</p>
 					<ScrollAnimation animateIn="fadeIn" offset={270} duration={0.6} animateOnce={true}>
 						<div className="project-description__section">
 							<h3 className="project-description__description">
@@ -106,6 +101,11 @@ export default class ProjectDescription extends React.Component {
 						</div>
 					</ScrollAnimation>
 				</section>
+				<p className="project-description__home-link">
+					<Link to="/">
+						<img src={Arrow} alt="arrow" />Home
+					</Link>
+				</p>
 			</EasyTransition>
 		);
 	}
