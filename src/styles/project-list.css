@@ -124,7 +124,7 @@
     position: relative;
     overflow: hidden;
     border-top: 9px solid #f5612b;
-    box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 2px 11px 1px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     z-index: 100; }
     @media screen and (max-width: 950px) {
@@ -156,10 +156,12 @@
         .project-list .project-list__project .project-list__project-tech-button {
           display: none; } }
       .project-list .project-list__project .project-list__project-tech-button img {
-        width: 21px;
+        width: 19px;
         position: relative;
         top: .5px;
-        left: -.5px; }
+        left: -.5px;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0) scale(1, 1); }
       .project-list .project-list__project .project-list__project-tech-button:hover {
         background: #f89774; }
     .project-list .project-list__project .project-list__project-tech-caption {

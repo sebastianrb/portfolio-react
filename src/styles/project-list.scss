@@ -198,10 +198,12 @@ $mobile-breakpoint-primary: 950px;
 			}
 
 			img {
-				width: 21px;
+				width: 19px;
 				position: relative;
 				top: .5px;
 				left: -.5px;
+				-webkit-backface-visibility: hidden;
+				-webkit-transform: translateZ(0) scale(1.0, 1.0);
 			}
 
 			&:hover {
