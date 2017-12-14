@@ -114,11 +114,11 @@
       .project-list .project-list__list > div {
         padding: 50px 0 80px; } }
   .project-list .project-list__project {
-    width: 370px;
-    height: 370px;
+    width: 385px;
+    height: 350px;
     text-align: center;
     background: rgba(1, 1, 56, 0.95);
-    margin: 32px;
+    margin: 31px;
     cursor: pointer;
     transition: border .25s, box-shadow .3s;
     position: relative;
@@ -204,7 +204,7 @@
       height: 100%;
       text-decoration: none; }
     .project-list .project-list__project .project-list__project-text {
-      height: 200px;
+      height: 60%;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
@@ -212,7 +212,7 @@
       padding: 0 25px;
       text-decoration: none;
       position: absolute;
-      width: 80%;
+      width: 70%;
       z-index: 100;
       background: rgba(1, 1, 56, 0.85);
       top: 50%;

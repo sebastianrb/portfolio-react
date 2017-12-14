@@ -149,12 +149,12 @@ $mobile-breakpoint-primary: 950px;
 	}
 
 	.project-list__project {
-		width: 370px;
-    		height: 370px;
+		width: 385px;
+    		height: 350px;
 		text-align: center;
 		background: transparentize($primary-color, .05);
 		// background: $primary-color;
-		margin: 32px;
+		margin: 31px;
 		cursor: pointer;
 		transition: border .25s, box-shadow .3s;
 		position: relative;
@@ -265,12 +265,14 @@ $mobile-breakpoint-primary: 950px;
 		}
 
 		.project-list__project-text {
-			height: 200px;
+			// height: 200px;
+			height: 60%;
 			@include flex-column(nowrap, center, center);
 			padding: 0 25px;
 			text-decoration: none;
 			position: absolute;
-			width: 80%;
+			// width: 80%;
+			width: 70%;
 			z-index: 100;
 			background: transparentize($primary-color, .15);
 			top: 50%;
