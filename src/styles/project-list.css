@@ -158,7 +158,8 @@
       .project-list .project-list__project .project-list__project-tech-button img {
         width: 21px;
         position: relative;
-        top: .5px; }
+        top: .5px;
+        left: -.5px; }
       .project-list .project-list__project .project-list__project-tech-button:hover {
         background: #f89774; }
     .project-list .project-list__project .project-list__project-tech-caption {
@@ -221,12 +222,7 @@
       transition: all .3s; }
       @media screen and (max-width: 800px) {
         .project-list .project-list__project .project-list__project-text {
-          padding: 0 30px; } }
-      @media screen and (max-width: 600px) {
-        .project-list .project-list__project .project-list__project-text {
-          padding: 0 20px; } }
-      @media screen and (max-width: 450px) {
-        .project-list .project-list__project .project-list__project-text {
+          padding: 0 20px;
           width: 75%; } }
     .project-list .project-list__project .project-list__project-name {
       font-size: 1.45rem;
