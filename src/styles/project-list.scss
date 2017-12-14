@@ -268,7 +268,7 @@ $mobile-breakpoint-primary: 950px;
 			// height: 200px;
 			height: 60%;
 			@include flex-column(nowrap, center, center);
-			padding: 0 25px;
+			padding: 0 23px;
 			text-decoration: none;
 			position: absolute;
 			// width: 80%;
@@ -306,7 +306,7 @@ $mobile-breakpoint-primary: 950px;
 		.project-list__project-short-description {
 			font-weight: 200;
 			font-size: .95rem;
-			margin-top: 10px;
+			margin-top: 8px;
 			letter-spacing: 0;
 			width: 95%;
 			// font-family: $secondary-font, monospace;
@@ -320,7 +320,7 @@ $mobile-breakpoint-primary: 950px;
 		&.portfolio-tile {
 			.project-list__project-text {
 				height: 100%;
-				padding: 20px 25px;
+				padding: 20px 30px;
 				width: 100%;
 			}
 		}
