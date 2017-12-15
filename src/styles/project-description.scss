@@ -7,19 +7,19 @@ $mobile-breakpoint-primary: 950px;
 	padding: 117px 0 17px;
 
 	@include mediaQuery(1100px) {
-		padding: 100px 0 20px;
+		padding: 100px 0 15px;
 	}
 
 	@include mediaQuery(900px) {
-		padding: 90px 0 15px;
+		padding: 90px 0 13px;
 	}
 
 	@include mediaQuery(700px) {
-		padding: 85px 0 10px;
+		padding: 85px 0 7px;
 	}
 
 	@include mediaQuery(500px) {
-		padding: 68px 0 0;
+		padding: 66px 0 0;
 	}
 
 	.project-description__section {
