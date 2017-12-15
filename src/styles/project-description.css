@@ -3,16 +3,16 @@
   padding: 117px 0 17px; }
   @media screen and (max-width: 1100px) {
     .project-description {
-      padding: 100px 0 20px; } }
+      padding: 100px 0 15px; } }
   @media screen and (max-width: 900px) {
     .project-description {
-      padding: 90px 0 15px; } }
+      padding: 90px 0 13px; } }
   @media screen and (max-width: 700px) {
     .project-description {
-      padding: 85px 0 10px; } }
+      padding: 85px 0 7px; } }
   @media screen and (max-width: 500px) {
     .project-description {
-      padding: 68px 0 0; } }
+      padding: 66px 0 0; } }
   .project-description .project-description__section {
     margin: 0 auto 85px; }
     @media screen and (max-width: 950px) {

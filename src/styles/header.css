@@ -127,10 +127,10 @@
     @media screen and (max-width: 800px) {
       .banner .portfolio-description {
         padding: 30px;
-        width: 100%; } }
+        width: 85%; } }
     @media screen and (max-width: 700px) {
       .banner .portfolio-description {
-        width: 100%; } }
+        width: 96%; } }
     @media screen and (max-width: 650px) {
       .banner .portfolio-description {
         top: 65%; } }
@@ -156,39 +156,25 @@
           font-size: 1.3rem;
           line-height: 1.2;
           letter-spacing: -.9px; } }
+      @media screen and (max-width: 600px) {
+        .banner .portfolio-description .portfolio-description__quote,
+        .banner .portfolio-description .portfolio-description__quote--mobile {
+          width: 90%;
+          margin: 0 auto;
+          font-size: 1.15rem;
+          font-weight: 400;
+          text-align: left; } }
       @media screen and (max-width: 500px) {
         .banner .portfolio-description .portfolio-description__quote,
         .banner .portfolio-description .portfolio-description__quote--mobile {
-          width: 80%;
-          margin: 0 auto;
-          font-size: 1.15rem;
-          font-weight: 400; } }
-      .banner .portfolio-description .portfolio-description__quote:nth-child(2),
-      .banner .portfolio-description .portfolio-description__quote--mobile:nth-child(2) {
-        margin-top: 10px; }
-        @media screen and (max-width: 950px) {
-          .banner .portfolio-description .portfolio-description__quote:nth-child(2),
-          .banner .portfolio-description .portfolio-description__quote--mobile:nth-child(2) {
-            margin-top: 20px; } }
-        @media screen and (max-width: 700px) {
-          .banner .portfolio-description .portfolio-description__quote:nth-child(2),
-          .banner .portfolio-description .portfolio-description__quote--mobile:nth-child(2) {
-            margin-top: 15px; } }
-      @media screen and (max-width: 600px) {
+          width: 95%;
+          font-size: 1.1rem; } }
+      @media screen and (max-width: 400px) {
         .banner .portfolio-description .portfolio-description__quote,
         .banner .portfolio-description .portfolio-description__quote--mobile {
-          display: none; } }
+          font-size: 1rem; } }
     .banner .portfolio-description .portfolio-description__quote--mobile {
       display: none; }
-      @media screen and (max-width: 600px) {
-        .banner .portfolio-description .portfolio-description__quote--mobile {
-          display: block;
-          font-size: 1.2rem; } }
-      @media screen and (max-width: 400px) {
-        .banner .portfolio-description .portfolio-description__quote--mobile {
-          display: block;
-          font-size: 1.15rem;
-          width: 85%; } }
   .banner .banner__picture-popup-container {
     position: absolute;
     bottom: 5px;

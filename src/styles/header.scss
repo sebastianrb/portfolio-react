@@ -175,11 +175,11 @@ $banner-height-mobile: 575px;
 
 		@include mediaQuery(800px) {
 			padding: 30px;
-			width: 100%;
+			width: 85%;
 		}
 
 		@include mediaQuery(700px) {
-			width: 100%;
+			width: 96%;
 		}
 
 		@include mediaQuery(650px) {
@@ -214,43 +214,27 @@ $banner-height-mobile: 575px;
 				letter-spacing: -.9px;
 			}
 
-			@include mediaQuery(500px) {
-				width: 80%;
+			@include mediaQuery(600px) {
+				width: 90%;
 				margin: 0 auto;
 				font-size: 1.15rem;
 				font-weight: 400;
+				text-align: left;
 			}
 
-			&:nth-child(2) {
-				margin-top: 10px;
-
-				@include mediaQuery($mobile-breakpoint-primary) {
-					margin-top: 20px;
-				}
-
-				@include mediaQuery(700px) {
-					margin-top: 15px;
-				}
+			@include mediaQuery(500px) {
+				width: 95%;
+				font-size: 1.1rem;
 			}
 
-			@include mediaQuery(600px) {
-				display: none;
+			@include mediaQuery(400px) {
+				font-size: 1rem;
 			}
+
 		}
 
 		.portfolio-description__quote--mobile {
 			display: none;
-
-			@include mediaQuery(600px) {
-				display: block;
-				font-size: 1.2rem;
-			}
-
-			@include mediaQuery(400px) {
-				display: block;
-				font-size: 1.15rem;
-				width: 85%;
-			}
 		}
 	}
 
