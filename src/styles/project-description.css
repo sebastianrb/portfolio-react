@@ -148,6 +148,12 @@
       .project-description .project-description__description {
         font-size: 1.25rem;
         width: 95%; } }
+    .project-description .project-description__description a {
+      text-decoration: none;
+      color: #d4643b;
+      transition: all .1s; }
+      .project-description .project-description__description a:hover {
+        color: #010138; }
   .project-description .project-description__technology-header,
   .project-description .project-description__links-header {
     text-align: center;
@@ -220,7 +226,7 @@
 
 .project-description__home-link {
   width: 100%;
-  background: rgba(1, 1, 56, 0.2);
+  background: rgba(1, 1, 56, 0.15);
   color: white;
   text-align: center;
   margin: 0 auto;
@@ -236,7 +242,7 @@
     .project-description__home-link {
       font-size: 1.1rem; } }
   .project-description__home-link:hover {
-    background: rgba(1, 1, 56, 0.3); }
+    background: rgba(1, 1, 56, 0.25); }
     .project-description__home-link:hover a img {
       right: 16px; }
   .project-description__home-link a {

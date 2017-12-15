@@ -193,6 +193,16 @@ $mobile-breakpoint-primary: 950px;
 			font-size: 1.25rem;
 			width: 95%;
 		}
+
+		a {
+			text-decoration: none;
+			color: $secondary-color-muted;
+			transition: all .1s;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
 	}
 
 	.project-description__technology-header,
@@ -279,7 +289,7 @@ $mobile-breakpoint-primary: 950px;
 
 .project-description__home-link {
 		width: 100%;
-		background: transparentize($primary-color, .80);
+		background: transparentize($primary-color, .85);
 		color: white;
 		text-align: center;
 		margin: 0 auto;
@@ -300,7 +310,7 @@ $mobile-breakpoint-primary: 950px;
 		}
 
 		&:hover {
-			background: transparentize($primary-color, .70);
+			background: transparentize($primary-color, .75);
 			a {
 				img {
 					right: 16px;

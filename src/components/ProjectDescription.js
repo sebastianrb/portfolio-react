@@ -22,7 +22,12 @@ export default class ProjectDescription extends React.Component {
 			return object.id.toString() === projectID;
 		});
 
-		console.log(typeof projectID);
+		let portfolioJSONText;
+		if(projectID === "0") {
+			portfolioJSONText = <span> You can view the JSON data <a href="https://github.com/sebastianrb/portfolio-react/blob/master/src/data/projects.js" target="_blank" rel="noopener noreferrer">here.</a></span>
+		} else {
+			portfolioJSONText = "";
+		}
 
 		let technologyArray = project.technologyObjects;
 		let technologyList = technologyArray.map(tech => {
@@ -75,7 +80,7 @@ export default class ProjectDescription extends React.Component {
 					<ScrollAnimation animateIn="fadeIn" offset={270} duration={0.6} animateOnce={true}>
 						<div className="project-description__section">
 							<h3 className="project-description__description">
-								{project.description}
+								{project.description}{portfolioJSONText}
 							</h3>
 						</div>
 						<div className="project-description__section">
