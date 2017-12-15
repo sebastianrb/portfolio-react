@@ -3,7 +3,6 @@
 $mobile-breakpoint-primary: 950px;
 
 .project-description {
-	min-height: 800px;
 	padding: 117px 0 15px;
 
 	@include mediaQuery(1100px) {
