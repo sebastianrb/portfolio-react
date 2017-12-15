@@ -1,12 +1,12 @@
 .project-description {
   min-height: 800px;
-  padding: 117px 0 17px; }
+  padding: 117px 0 15px; }
   @media screen and (max-width: 1100px) {
     .project-description {
-      padding: 100px 0 15px; } }
+      padding: 100px 0 12px; } }
   @media screen and (max-width: 900px) {
     .project-description {
-      padding: 90px 0 13px; } }
+      padding: 90px 0 12px; } }
   @media screen and (max-width: 700px) {
     .project-description {
       padding: 85px 0 7px; } }
