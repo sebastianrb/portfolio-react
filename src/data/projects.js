@@ -43,7 +43,7 @@ export const projects = [
 		name: "Skratch Application",
 		shortDescription: "Web application for the Skratch Initial Coin Offering",
 		description:
-			"This application teaches visitors about Skratch, a new cryptocurrency geared towards the music industry. The site is built with React. Users can enter and submit personal data, which is then saved to a cloud-based content management system called Contentful via front-end APIs.",
+			"This application teaches visitors about Skratch, a new cryptocurrency geared towards the music industry. The site is built with React. Users can enter and submit personal data, which is then saved via front-end APIs to a cloud-based content management system called Contentful.",
 		technologies:
 			"React, Isomorphic/Server-side Rendering, ES6, Webpack, Vanilla Javascript, AJAX, Sass, APIs, Gatsby.js",
 		technologyObjects: [
