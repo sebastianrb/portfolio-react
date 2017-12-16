@@ -1,11 +1,11 @@
 .project-description {
-  padding: 117px 0 15px; }
+  padding: 117px 0 11px; }
   @media screen and (max-width: 1100px) {
     .project-description {
-      padding: 100px 0 12px; } }
+      padding: 100px 0 8px; } }
   @media screen and (max-width: 900px) {
     .project-description {
-      padding: 90px 0 12px; } }
+      padding: 90px 0 8px; } }
   @media screen and (max-width: 700px) {
     .project-description {
       padding: 85px 0 7px; } }
