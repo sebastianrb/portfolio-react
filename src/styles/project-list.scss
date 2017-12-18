@@ -51,7 +51,7 @@ $mobile-breakpoint-primary: 950px;
 		}
 
 		@include mediaQuery(900px) {
-			width: 93%;
+			width: 90%;
 		}
 	}
 
@@ -136,7 +136,7 @@ $mobile-breakpoint-primary: 950px;
 	.project-list__list > div {
 		@include flex-row(wrap, center, flex-start);
 		margin: 0 auto;
-		padding: 60px 0 80px;
+		padding: 70px 0 80px;
 		min-height: 500px;
 
 		@include mediaQuery(1350px) {
