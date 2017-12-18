@@ -24,7 +24,7 @@ export default class ProjectDescription extends React.Component {
 
 		let portfolioJSONText;
 		if(projectID === "0") {
-			portfolioJSONText = <span> You can view the JSON data <a href="https://github.com/sebastianrb/portfolio-react/blob/master/src/data/projects.js" target="_blank" rel="noopener noreferrer">here.</a></span>
+			portfolioJSONText = <span> You can view the data <a href="https://github.com/sebastianrb/portfolio-react/blob/master/src/data/projects.js" target="_blank" rel="noopener noreferrer">here.</a></span>
 		} else {
 			portfolioJSONText = "";
 		}

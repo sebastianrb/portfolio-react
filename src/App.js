@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import ScrollUpButton from "react-scroll-up-button";
-import { projects } from "./data/projects";
+import projects from "./data/projects-json";
 import Helmet from "react-helmet";
 import Header from "./components/Header";
 import Footer from "./components/Footer";

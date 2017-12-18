@@ -5,7 +5,7 @@ export const projects = [
 		shortDescription:
 			"A showcase of my front-end web development work (and the project you are currently viewing)",
 		description:
-			"This portfolio is built with React and uses JSON data about my projects to dynamically construct the various UI components.",
+			"This portfolio is built with React and uses JavaScript object-based data about my projects to dynamically construct the various UI components.",
 		technologies: "React, ES6, Webpack, Vanilla Javascript, AJAX, Sass, APIs",
 		technologyObjects: [
 			{
