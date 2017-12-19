@@ -20,7 +20,7 @@ export default class ProjectList extends React.Component {
 				const searchTermArray = searchTerm.split(" ");
 				let match = false;
 				for (var i = 0; i < searchTermArray.length; i++) {
-					if (searchThrough.indexOf(searchTermArray[i].toLowerCase()) >= 0) {
+					if (searchThrough.includes(searchTermArray[i].toLowerCase())) {
 						match = true;
 						break;
 					}
