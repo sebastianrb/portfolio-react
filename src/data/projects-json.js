@@ -75,7 +75,7 @@ const projects = [
       }
     ],
     "demoLink": "http://skratch-ico.surge.sh/",
-    "githubLink": "",
+    "githubLink": "https://github.com/sebastianrb/skratch-ico",
     "image": "https://image.ibb.co/mEOuVw/skratch.png"
   },
   {
