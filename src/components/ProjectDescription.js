@@ -46,7 +46,7 @@ export default class ProjectDescription extends React.Component {
 
 		let githubButton;
 
-		if (!project.githubLink) {
+		if (project.githubLink === "") {
 			githubButton = (
 				<button className="project-description__github-link project-link github-disabled">
 					<p>View GitHub Repo</p>{" "}
